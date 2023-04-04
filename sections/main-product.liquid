@@ -1,3 +1,13 @@
+<div class="color-background-2 rr-page-intro">
+  <div class="page-width--narrow">
+    <h1 class="main-page-title page-title h0">
+      <h1>{{ product.title | escape }}</h1>
+    </h1>
+    <div class="rte center">
+      {{ product.metafields.custom.teaser }}
+    </div>
+  </div>
+</div>
 <section
   id="MainProduct-{{ section.id }}"
   class="page-width section-{{ section.id }}-padding"

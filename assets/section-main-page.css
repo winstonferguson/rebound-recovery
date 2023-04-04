@@ -21,3 +21,14 @@
   width: 52.5rem;
   height: 52.5rem;
 }
+
+.rr-page-intro .main-page-title {
+  color: rgb(34, 35, 78);
+  margin: 0 auto 1rem auto;
+  max-width: var(--page-width);
+  text-align: center;
+}
+
+.rr-page-intro .center {
+  font-size: 1.25em;
+}
