@@ -1,0 +1,42 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+.h0,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  letter-spacing: calc(var(--font-heading-scale) * 0.03rem);
+}
+
+
+
+@media only screen and (min-width: 750px){
+.h0 {
+    font-size: calc(var(--font-heading-scale) * 4.5rem);
+}
+}
+
+.header__menu-item {
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 990px) {
+  .header--middle-left {
+    grid-template-columns: auto 1fr;
+  }
+
+  .header__inline-menu {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .page-width--narrow {
+    max-width: 90rem;
+  }
+}
+  
