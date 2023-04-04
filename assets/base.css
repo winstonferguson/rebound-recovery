@@ -2359,7 +2359,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
   .header--middle-left {
     grid-template-areas: 'heading navigation icons';
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: auto 1fr;
     column-gap: 2rem;
   }
 
@@ -2734,6 +2734,7 @@ details[open] > .header__submenu {
 @media screen and (min-width: 990px) {
   .header__inline-menu {
     display: block;
+    text-align: right;
   }
 
   .header--top-center .header__inline-menu {
@@ -2754,8 +2755,10 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
+  font-weight: 400;
   padding: 1.2rem;
   text-decoration: none;
+  text-transform: uppercase;
   color: rgba(var(--color-foreground), 0.75);
 }
 
