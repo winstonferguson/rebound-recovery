@@ -15,6 +15,12 @@
   }
 }
 
+@media screen and (min-width: 990px) {
+  .newsletter-form {
+    margin: 0;
+  }
+}
+
 .newsletter-form__field-wrapper {
   width: 100%;
 }

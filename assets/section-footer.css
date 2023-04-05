@@ -9,6 +9,7 @@
 
 .footer__content-top {
   padding-bottom: 5rem;
+  padding-top: 3rem;
   display: block;
 }
 
@@ -34,10 +35,14 @@
   }
 }
 
-@media screen and (min-width: 750px) {
-  .footer__content-top .grid {
-    row-gap: 6rem;
-    margin-bottom: 0;
+@media screen and (min-width: 990px) {
+  .footer__content-top {
+    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    padding-left: calc(25% + 6rem);
+    padding-right: 6rem;
   }
 }
 
@@ -124,7 +129,6 @@
   display: flex;
   align-items: flex-end;
   margin-top: 3rem;
-  gap: 1rem;
 }
 
 .footer-block--newsletter:only-child {
@@ -148,11 +152,13 @@
   margin-bottom: 2rem;
   margin-top: 0;
   font-size: calc(var(--font-heading-scale) * 1.6rem);
+  text-align: center;
 }
 
 @media screen and (min-width: 990px) {
   .footer-block__heading {
     font-size: calc(var(--font-heading-scale) * 1.8rem);
+    text-align: left;
   }
 }
 
@@ -216,19 +222,27 @@
   }
 }
 
+.footer-block--newsletter,
+.footer__rr-block--social {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  align-items: center;
+}
+
+@media screen and (min-width: 990px) {
+  .footer-block--newsletter {
+    align-items: flex-end;
+  }
+
+
+}
+
 @media screen and (max-width: 749px) {
   /*
     On a small screen we want all the items to be centered
     because they will be stacked.
    */
-  .footer-block--newsletter {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 100%;
-    align-items: center;
-    gap: 3rem;
-  }
-
   .footer__list-social.list-social,
   .footer__follow-on-shop,
   .footer-block__newsletter {
@@ -316,13 +330,17 @@
 }
 
 .footer-block__details-content {
-  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.footer-block__details-content a {
+  justify-content: center;
 }
 
 @media screen and (min-width: 750px) {
-  .footer-block__details-content {
+  /* .footer-block__details-content {
     margin-bottom: 0;
-  }
+  } */
 
   .footer-block__details-content > p,
   .footer-block__details-content > li {
@@ -336,6 +354,17 @@
   .footer-block__details-content > li:not(:last-child) {
     margin-right: 1.5rem;
   }
+}
+
+@media screen and (min-width: 990px) {
+  .footer-block__details-content {
+    text-align: left;
+  }
+  
+  .footer-block__details-content a {
+    justify-content: flex-start;
+  }
+
 }
 
 .footer-block__details-content .list-menu__item--link,
@@ -516,8 +545,57 @@
   }
 }
 
-.rr-footer-branding{
-  left: 0;
-  position: absolute;
-  top: 0;
+
+.footer__blocks-wrapper:first-of-type {
+  margin: 3rem 0;
+}
+
+@media screen and (max-width: 989px) {
+  .footer__blocks-wrapper:first-of-type {
+    border-bottom: 1px solid rgb(var(--color-foreground));
+    margin: 3rem 0;
+    padding-bottom: 4.5rem;
+  }
+}
+
+
+.footer__content-top > * {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.footer__rr-block--social {
+  border-top: 1px solid rgb(var(--color-foreground));
+  padding-top: 4rem;
+}
+
+.footer__rr-branding {
+  width: 53%;
+}
+
+.footer__rr-branding svg path {
+  width: 100%;
+}
+
+@media screen and (max-width: 989px) {
+  .footer__rr-block--social {
+    border-bottom: 1px solid rgb(var(--color-foreground));
+    padding-bottom: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .footer__rr-branding {
+    left: 0;
+    position: absolute;
+    top: -1px;
+    width: 25%;
+  }
+
+  .footer__rr-block--social {
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: end;
+  }
 }

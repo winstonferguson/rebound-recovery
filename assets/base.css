@@ -659,6 +659,7 @@ h6:empty {
 
 .link--text {
   color: rgb(var(--color-foreground));
+  text-transform: uppercase;
 }
 
 .link--text:hover {
@@ -2760,7 +2761,6 @@ details[open] > .header__submenu {
   font-weight: 400;
   padding: 1.2rem;
   text-decoration: none;
-  text-transform: uppercase;
   color: rgba(var(--color-foreground), 0.75);
 }
 
@@ -3251,7 +3251,7 @@ details-disclosure > details {
   padding-bottom: 60px;
 }
 
-.rr-page-intro .page-width--narrow{
+.rr-page-intro .page-width--narrow {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -3265,9 +3265,6 @@ details-disclosure > details {
   margin: 0 auto;
   max-width: var(--page-width);
   text-align: center;
-}
-
-.rr-page-intro .main-page-title {
 }
 
 .rr-page-intro .center {
