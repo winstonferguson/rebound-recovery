@@ -225,4 +225,26 @@
   .multicolumn-list__item--empty {
     display: list-item;
   }
+
+
+  .multicolumn .slider--desktop .slider__slide:first-child {
+    margin-left: 0;;
+  }
 }
+
+@media screen and (min-width: 750px) {
+  .multicolumn-list.grid.slider--desktop {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}
+
+.multicolumn .slider--mobile + .slider-buttons {
+  display: flex !important;
+} 
+
+.multicolumn .slider--mobile + .slider-buttons,
+.multicolumn .slider--desktop + .slider-buttons {
+  display: flex;
+}
+

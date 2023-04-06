@@ -35,7 +35,6 @@
     endif
 
     if section.blocks.size == 1 and section.blocks[0].type == 'brand_information' and brand_empty and has_social_icons == false and section.settings.newsletter_enable == false and section.settings.enable_follow_on_shop == false
-      assign only_empty_brand = true
     endif
   -%}
   {%- if section.blocks.size > 0

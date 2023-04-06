@@ -13,20 +13,26 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+
 {%- endstyle -%}
 
 {%- liquid
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
   assign show_mobile_slider = false
+  assign show_desktop_slider = false
   if section.settings.swipe_on_mobile and section.blocks.size > columns_mobile_int
     assign show_mobile_slider = true
   endif
+  if show_mobile_slider and section.settings.slide_on_desktop
+    assign show_desktop_slider = true
+  endif
 -%}
 
-<div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.border_top %} border-top{% endif %}{% if section.settings.border_bottom %} border-bottom{% endif %}">
   <div class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-cascade>
     {%- unless section.settings.title == blank -%}
-      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
+      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin{% if section.settings.heading_alignment != "inherit" %} justify-{{ section.settings.heading_alignment }} {{ section.settings.heading_alignment }}{% endif %}">
         <h2 class="title inline-richtext {{ section.settings.heading_size }}">
           {{ section.settings.title }}
         </h2>
@@ -39,7 +45,7 @@
     {%- endunless -%}
     <slider-component class="slider-mobile-gutter">
       <ul
-        class="multicolumn-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--mobile grid--peek{% endif %}"
+        class="multicolumn-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--mobile grid--peek{% endif %}{% if show_desktop_slider %}slider--tablet slider--desktop{% endif %}"
         id="Slider-{{ section.id }}"
         role="list"
       >
@@ -221,6 +227,31 @@
     },
     {
       "type": "select",
+      "id": "heading_alignment",
+      "options": [
+        {
+          "value": "inherit",
+          "label": "Inherit"
+        },
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+
+      ],
+      "default": "inherit",
+      "label": "Heading aligment"
+    },
+    {
+      "type": "select",
       "id": "image_width",
       "options": [
         {
@@ -344,6 +375,13 @@
       "label": "t:sections.all.colors.label"
     },
     {
+      "type": "checkbox",
+      "id": "slide_on_desktop",
+      "info": "Swipe on mobile must be enabled for slide on desktop to work",
+      "default": false,
+      "label": "Enable slide on desktop"
+    },
+    {
       "type": "header",
       "content": "t:sections.multicolumn.settings.header_mobile.content"
     },
@@ -392,6 +430,22 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Borders"
+    },
+    {
+      "type": "checkbox",
+      "id": "border_top",
+      "default": false,
+      "label": "Enable top border"
+    },
+    {
+      "type": "checkbox",
+      "id": "border_bottom",
+      "default": false,
+      "label": "Enable bottom border"
     }
   ],
   "blocks": [

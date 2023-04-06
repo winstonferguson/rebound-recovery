@@ -3246,6 +3246,26 @@ details-disclosure > details {
   }
 }
 
+.justify-center {
+  justify-content: center;
+}
+
+.justify-left {
+  justify-content: center;
+}
+
+.justify-right {
+  justify-content: center;
+}
+
+.border-top {
+  border-top: 1px solid rgb(var(--color-base-accent-2));
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgb(var(--color-base-accent-2));
+}
+
 .rr-page-intro {
   padding-top: 20px;
   padding-bottom: 60px;
