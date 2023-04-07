@@ -17,36 +17,38 @@
   -%}
 
   {%- style -%}
-    #shopify-section-{{ section.id }} {
-      grid-column: {{ grid_col }};
-      grid-row: {{ grid_row }};
-
-      {% case grid_col %}
-        {% when "1" %}
-          margin: 0 0 0 auto;
-          max-width: calc(var(--page-width) * 0.5 - 6rem);
-          padding-left: 60px;
-          padding-right: 30px;
-          width: 100%;
-        {% when "2" %}
-          margin: 0 auto 0 0;
-          max-width: calc(var(--page-width) * 0.5 - 6rem);
-          padding-left: 30px;
-          padding-right: 60px;
-          width: 100%;
-        {% else %}
-      {% endcase %}
-    }
-
-    {% if grid_col_divider %}
+    @media screen and (min-width: 750px) {
       #shopify-section-{{ section.id }} {
-        padding-right: 0;
+        grid-column: {{ grid_col }};
+        grid-row: {{ grid_row }};
+
+        {% case grid_col %}
+          {% when "1" %}
+            margin: 0 0 0 auto;
+            max-width: calc(var(--page-width) * 0.5 - 6rem);
+            padding-left: 60px;
+            padding-right: 30px;
+            width: 100%;
+          {% when "2" %}
+            margin: 0 auto 0 0;
+            max-width: calc(var(--page-width) * 0.5 - 6rem);
+            padding-left: 30px;
+            padding-right: 60px;
+            width: 100%;
+          {% else %}
+        {% endcase %}
       }
-      #shopify-section-{{ section.id }} .section-{{ section.id }}-padding > * {
-        border-right: 1px solid rgb(var(--color-base-accent-2));
-        padding-right: 30px;
-      }
-    {% endif %}
+
+      {% if grid_col_divider %}
+        #shopify-section-{{ section.id }} {
+          padding-right: 0;
+        }
+        #shopify-section-{{ section.id }} .section-{{ section.id }}-padding > * {
+          border-right: 1px solid rgb(var(--color-base-accent-2));
+          padding-right: 30px;
+        }
+      {% endif %}
+    }
 
   {%- endstyle -%}
 {% endif %}
