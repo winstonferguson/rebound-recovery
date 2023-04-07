@@ -7,7 +7,7 @@
           "type": "column",
           "settings": {
             "title": "Prepare",
-            "text": "<p>Two capsules before partying to boost your immune system</p>",
+            "text": "<p>Two capsules before partying to boost your immune system<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -16,7 +16,7 @@
           "type": "column",
           "settings": {
             "title": "Party",
-            "text": "<p>No instructions needed</p>",
+            "text": "<p>No instructions needed<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -25,7 +25,7 @@
           "type": "column",
           "settings": {
             "title": "Repair",
-            "text": "<p>Three capsules before bed to support your liver, brain, and sleep quality</p>",
+            "text": "<p>Three capsules before bed to support your liver, brain, and sleep quality<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -55,8 +55,9 @@
         "padding_bottom": 36,
         "border_top": true,
         "border_bottom": false,
-        "rr_grid_col": "1/-1",
-        "rr_grid_row": "auto"
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto",
+        "rr_grid_col_divider": false
       }
     },
     "d5434413-9171-4fe7-b0b7-fda6d06760a5": {
@@ -72,7 +73,7 @@
         "template--18615415472430__d5434413-9171-4fe7-b0b7-fda6d06760a5-16808661921787eaf8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Because dancing all night shouldn’t cost you tomorrow.</p><p>Rebound s developed by practicing Nutritional Therapists who know how to hit the dancefloor but be proactive about the party recovery.</p>",
+            "text": "<p>Because dancing all night shouldn’t cost you tomorrow.<\/p><p>Rebound s developed by practicing Nutritional Therapists who know how to hit the dancefloor but be proactive about the party recovery.<\/p>",
             "text_style": "body"
           }
         }
@@ -91,8 +92,10 @@
         "color_scheme": "background-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 60,
+        "padding_bottom": 32,
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto"
       }
     },
     "13e9a2f8-4341-4dd7-9f4f-ba70ad5ec5b5": {
@@ -108,7 +111,7 @@
         "template--18615415472430__13e9a2f8-4341-4dd7-9f4f-ba70ad5ec5b5-16808661921787eaf8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Rebound packs include over fifty 100% clean ingredients designed to restore the nutrients you lose when you drink alcohol, dance or party.</p>",
+            "text": "<p>Rebound packs include over fifty 100% clean ingredients designed to restore the nutrients you lose when you drink alcohol, dance or party.<\/p>",
             "text_style": "body"
           }
         }
@@ -127,8 +130,10 @@
         "color_scheme": "background-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 28,
+        "padding_bottom": 60,
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto"
       }
     },
     "c884e470-695e-45d9-860e-4bca5eb9fb62": {
@@ -138,7 +143,7 @@
           "type": "column",
           "settings": {
             "title": "Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.",
-            "text": "<p>Bill Dearingly</p><p>London, UK</p>",
+            "text": "<p>Bill Dearingly<\/p><p>London, UK<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -146,8 +151,8 @@
         "template--18615415472430__c884e470-695e-45d9-860e-4bca5eb9fb62-16807667218668abe4-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.",
+            "text": "<p>Name<\/p><p>Place<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -155,8 +160,8 @@
         "template--18615415472430__c884e470-695e-45d9-860e-4bca5eb9fb62-16807667218668abe4-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.",
+            "text": "<p>Name<\/p><p>Place<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -164,8 +169,8 @@
         "811a3185-1031-4854-ba93-473cb1557098": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.",
+            "text": "<p>Name<\/p><p>Place<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -173,8 +178,8 @@
         "1d31a708-8139-4c71-a7f5-dbcd438d6d18": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.",
+            "text": "<p>Name<\/p><p>Place<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -182,8 +187,8 @@
         "eda18fd9-2962-417b-9ec0-38d6552a8b07": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.",
+            "text": "<p>Name<\/p><p>Place<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -216,8 +221,9 @@
         "padding_bottom": 36,
         "border_top": false,
         "border_bottom": false,
-        "rr_grid_col": "1/-1",
-        "rr_grid_row": "auto"
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto",
+        "rr_grid_col_divider": false
       }
     }
   },

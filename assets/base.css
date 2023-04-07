@@ -3251,15 +3251,15 @@ details-disclosure > details {
 }
 
 .justify-center {
-  justify-content: center;
+  justify-content: center !important;
 }
 
 .justify-left {
-  justify-content: center;
+  justify-content: center !important;
 }
 
 .justify-right {
-  justify-content: center;
+  justify-content: center !important;
 }
 
 .border-top {
