@@ -62,6 +62,38 @@
         "rr_grid_row": "2"
       }
     },
+    "c053264e-234e-4ebd-8357-9fa9c442f1bf": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18657542897966__c053264e-234e-4ebd-8357-9fa9c442f1bf-1680882035825c68d1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Rebound magic formula - backed by nutrion research",
+            "heading_size": "h1"
+          }
+        },
+        "template--18657542897966__c053264e-234e-4ebd-8357-9fa9c442f1bf-1680882035825c68d1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Rebound contains 50 highest quality nutrients and botanicals your body needs to support liver detoxification, energy, mood, cognition, immunity and sleep.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18657542897966__c053264e-234e-4ebd-8357-9fa9c442f1bf-1680882035825c68d1-0",
+        "template--18657542897966__c053264e-234e-4ebd-8357-9fa9c442f1bf-1680882035825c68d1-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 32,
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto"
+      }
+    },
     "1d531449-c8d7-49a3-8931-b49e14f061f5": {
       "type": "rich-text",
       "blocks": {
@@ -99,6 +131,7 @@
     "main",
     "e70aa71c-c6af-455a-b770-87dcafb5f45d",
     "4349700d-5624-40b1-a1c2-deb38b3568aa",
+    "c053264e-234e-4ebd-8357-9fa9c442f1bf",
     "1d531449-c8d7-49a3-8931-b49e14f061f5"
   ]
 }
