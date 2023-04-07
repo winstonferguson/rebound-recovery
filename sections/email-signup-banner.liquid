@@ -26,6 +26,8 @@
   {%- endif -%}
 {%- endstyle -%}
 
+{% render "rr-grid-styles" %}
+
 <div
   id="Banner-{{ section.id }}"
   class="email-signup-banner banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.image_height == 'adapt-image' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}"
@@ -320,6 +322,50 @@
       "id": "show_text_below",
       "default": true,
       "label": "t:sections.email-signup-banner.settings.show_text_below.label"
+    },
+    {
+      "type": "header",
+      "content": "RR Desktop Layout"
+    },
+    {
+      "type": "select",
+      "id": "rr_grid_col",
+      "options": [
+        {
+          "value": "1/-1",
+          "label": "Span"
+        },
+        {
+          "value": "1",
+          "label": "One"
+        },
+        {
+          "value": "2",
+          "label": "Two"
+        }
+      ],
+      "default": "1/-1",
+      "label": "RR Grid Column Position"
+    },
+    {
+      "type": "select",
+      "id": "rr_grid_row",
+      "options": [
+        {
+          "value": "auto",
+          "label": "Auto"
+        },
+        {
+          "value": "2",
+          "label": "Top"
+        },
+        {
+          "value": "last",
+          "label": "Bottom"
+        }
+      ],
+      "default": "auto",
+      "label": "RR Grid Column Position"
     }
   ],
   "blocks": [

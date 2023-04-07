@@ -1,6 +1,8 @@
 {{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+  {% render "rr-grid-styles" %}
+
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -185,6 +187,50 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 52
+    },
+    {
+      "type": "header",
+      "content": "RR Desktop Layout"
+    },
+    {
+      "type": "select",
+      "id": "rr_grid_col",
+      "options": [
+        {
+          "value": "1/-1",
+          "label": "Span"
+        },
+        {
+          "value": "1",
+          "label": "One"
+        },
+        {
+          "value": "2",
+          "label": "Two"
+        }
+      ],
+      "default": "1/-1",
+      "label": "RR Grid Column Position"
+    },
+    {
+      "type": "select",
+      "id": "rr_grid_row",
+      "options": [
+        {
+          "value": "auto",
+          "label": "Auto"
+        },
+        {
+          "value": "2",
+          "label": "Top"
+        },
+        {
+          "value": "last",
+          "label": "Bottom"
+        }
+      ],
+      "default": "auto",
+      "label": "RR Grid Column Position"
     }
   ],
   "blocks": [

@@ -2,20 +2,20 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     }
-  }
 
-
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
 {%- endstyle -%}
+
+{% render "rr-grid-styles" %}
 
 {%- liquid
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
@@ -30,7 +30,10 @@
 -%}
 
 <div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.border_top %} border-top{% endif %}{% if section.settings.border_bottom %} border-bottom{% endif %}">
-  <div class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-cascade>
+  <div
+    class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    data-cascade
+  >
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin{% if section.settings.heading_alignment != "inherit" %} justify-{{ section.settings.heading_alignment }} {{ section.settings.heading_alignment }}{% endif %}">
         <h2 class="title inline-richtext {{ section.settings.heading_size }}">
@@ -193,10 +196,7 @@
   "class": "section",
   "tag": "section",
   "disabled_on": {
-    "groups": [
-      "header",
-      "footer"
-    ]
+    "groups": ["header", "footer"]
   },
   "settings": [
     {
@@ -245,7 +245,6 @@
           "value": "right",
           "label": "Right"
         }
-
       ],
       "default": "inherit",
       "label": "Heading aligment"
@@ -446,6 +445,50 @@
       "id": "border_bottom",
       "default": false,
       "label": "Enable bottom border"
+    },
+    {
+      "type": "header",
+      "content": "RR Desktop Layout"
+    },
+    {
+      "type": "select",
+      "id": "rr_grid_col",
+      "options": [
+        {
+          "value": "1/-1",
+          "label": "Span"
+        },
+        {
+          "value": "1",
+          "label": "One"
+        },
+        {
+          "value": "2",
+          "label": "Two"
+        }
+      ],
+      "default": "1/-1",
+      "label": "RR Grid Column Position"
+    },
+    {
+      "type": "select",
+      "id": "rr_grid_row",
+      "options": [
+        {
+          "value": "auto",
+          "label": "Auto"
+        },
+        {
+          "value": "2",
+          "label": "Top"
+        },
+        {
+          "value": "last",
+          "label": "Bottom"
+        }
+      ],
+      "default": "auto",
+      "label": "RR Grid Column Position"
     }
   ],
   "blocks": [

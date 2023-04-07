@@ -18,6 +18,8 @@
   }
 {%- endstyle -%}
 
+{% render "rr-grid-styles" %}
+
 <div class="color-{{ section.settings.color_scheme }} gradient isolate">
   <div class="page-width{% if section.settings.heading == blank %} no-heading{% endif %} section-{{ section.id }}-padding">
     <h2 class="collage-wrapper-title inline-richtext {{ section.settings.heading_size }}">
@@ -440,6 +442,50 @@
           "default": "Describe the video",
           "label": "t:sections.collage.blocks.video.settings.description.label",
           "info": "t:sections.collage.blocks.video.settings.description.info"
+        },
+        {
+          "type": "header",
+          "content": "RR Desktop Layout"
+        },
+        {
+          "type": "select",
+          "id": "rr_grid_col",
+          "options": [
+            {
+              "value": "1/-1",
+              "label": "Span"
+            },
+            {
+              "value": "1",
+              "label": "One"
+            },
+            {
+              "value": "2",
+              "label": "Two"
+            }
+          ],
+          "default": "1/-1",
+          "label": "RR Grid Column Position"
+        },
+        {
+          "type": "select",
+          "id": "rr_grid_row",
+          "options": [
+            {
+              "value": "auto",
+              "label": "Auto"
+            },
+            {
+              "value": "2",
+              "label": "Top"
+            },
+            {
+              "value": "last",
+              "label": "Bottom"
+            }
+          ],
+          "default": "auto",
+          "label": "RR Grid Column Position"
         }
       ]
     }

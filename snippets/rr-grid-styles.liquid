@@ -1,0 +1,29 @@
+{% comment %}
+  Renders a section's RR grid layout style settings. Requires Shopify Section object.
+
+  Usage:
+    {% render 'rr-grid-styles' %}
+{% endcomment %}
+
+{% if section %}
+  {%- style -%}
+    #shopify-section-{{ section.id }} {
+      grid-column: {{ section.settings.rr_grid_col }};
+      grid-row: {{ section.settings.rr_grid_row }};
+
+      {% case section.settings.rr_grid_col %}
+        {% when "1" %}
+          margin: 0 0 0 auto;
+          max-width: calc(var(--page-width) * 0.5 - 6rem);
+          padding-left: 60px;
+          width: 100%;
+        {% when "2" %}
+          margin: 0 auto 0 0;
+          max-width: calc(var(--page-width) * 0.5 - 6rem);
+          padding-right: 60px;
+          width: 100%;
+        {% else %}
+      {% endcase %}
+    }
+  {%- endstyle -%}
+{% endif %}
