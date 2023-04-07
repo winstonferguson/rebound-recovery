@@ -15,34 +15,133 @@
           "settings": {
             "heading": "What is Rebound?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>Rebound is a premium food supplement containing the highest quality ingredients for maximum absorption and effect. Rebound is made in the UK in a fullyregulated facility and all health claims have been approved by the European Food Safety Authority.  <\/p><p>Rebound is before and after party recovery support for adults in 5 easy to swallow capsules. It is a food supplement providing essential nutrients, amino acids and botanicals to support detoxification, energy, mood, cognition, immunity and sleep. <\/p>",
             "page": ""
           }
         },
         "template--18630831046958__60c97312-7fdf-49f5-aa75-2c4eb9aba02a-16806941894f3da67e-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "How does Rebound work?",
+            "icon": "none",
+            "row_content": "<p>Rebound contains 50 vitamins, minerals, amino acids and botanicals specifically designed to replenish the nutrients depleted by drinking alcohol, dancing for hours and going to bed later than usual as well as to support detoxification, immune and cognitive function and leads to a reduction in fatigue and mood balance.  It also contains 4 branded products that are clinically proven to support energy, cognitive function and immune and nervous system function.<\/p>",
             "page": ""
           }
         },
         "template--18630831046958__60c97312-7fdf-49f5-aa75-2c4eb9aba02a-16806941894f3da67e-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Is Rebound alcohol hangover pills\/ a hangover cure\/  hangover tablets?",
+            "icon": "none",
+            "row_content": "<p>Rebound is not a hangover prevention pill or hangover pill. It contains nutrients, amino acids and botanicals to support liver detoxification, immunity, energy, cognition, mood and sleep after partying and going to bed late.<\/p>",
             "page": ""
           }
         },
         "template--18630831046958__60c97312-7fdf-49f5-aa75-2c4eb9aba02a-16806941894f3da67e-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Can you advise how to prevent a hangover or best hangover supplements?",
+            "icon": "none",
+            "row_content": "<p>Drinking a glass of water with every alcoholic drink is absolutely key!  Supplements to prevent a hangover include replacing nutrients depleted by alcohol, boosting liver detoxification supplements for toxin breakdown and removal from the body as well as antioxidants is also important.  Rebound provides these nutrients but offers before and after party recovery and wellness support in the days that follow.<\/p>",
+            "page": ""
+          }
+        },
+        "798cba61-94fd-4bb3-8f7b-fcf3b2537daa": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is there such thing as an anti hangover pill?",
+            "icon": "none",
+            "row_content": "<p>Everyone is different and responds to supplementation differently depending on the nutritional needs of that person.  By replacing nutrients that are depleted by alcohol can enable the body to rebalance and repair more easily.  The extent to which someone feels the difference depends on their detoxification function, how much they need the nutrients, their ability to use the nutrients and how much and what they drink. <\/p>",
+            "page": ""
+          }
+        },
+        "52683fe1-efca-4185-96fd-a7a3cf73a8d7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is Rebound better than detox liver supplements?",
+            "icon": "none",
+            "row_content": "<p>Supplements to support detoxing the liver or supplements to prevent a hangover contain specific nutrients for the liver in order to break down toxins.  Rebound contains nutrients, amino acids and botanicals to not only support detoxification but also to boost immunity, cognition, mood and sleep quality so therefore providing 360 degree party recovery and wellness.<\/p>",
+            "page": ""
+          }
+        },
+        "47c46bc4-3481-46cd-8c69-6094b9b8fbd6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is Rebound good for post-rave recovery?",
+            "icon": "none",
+            "row_content": "<p>Rebound packs are food supplements containing nutrients, amino acids and botanicals that support your recovery and wellness after all types of partying.<\/p>",
+            "page": ""
+          }
+        },
+        "f835cba1-abbe-4ef6-ba67-23b06563a774": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can Rebound be added to water as a hangover cure drink?",
+            "icon": "none",
+            "row_content": "<p>Rebound is not a hangover drink. The best hangover drink is water!  Rebound should be taken with water in its provided capsule form.<\/p>",
+            "page": ""
+          }
+        },
+        "8f51c534-a15d-4b6b-a337-778139252e46": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are these supplements for hangover anxiety?",
+            "icon": "none",
+            "row_content": "<p>Rebound supports liver detoxification, immunity, cognition, energy, mood and sleep.  The packs include nutrients to calm down the nervous system and to support sleep so could help to reduce anxiety in the days after partying. <\/p>",
+            "page": ""
+          }
+        },
+        "c938328f-e54e-45b7-bf50-45573cd35687": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is Rebound as good as hydration pills?",
+            "icon": "none",
+            "row_content": "<p>Powders or pills for hydration include electrolytes such as magnesium, sodium and potassium and their concentrations are controlled by the kidneys and can help hydration if there is a therapeutic need.  Rebound does contain these nutrients to support the kidneys with toxin elimination and hydration but also includes many other nutrients to support detoxification, energy, mood, cognition and sleep.<\/p>",
+            "page": ""
+          }
+        },
+        "8d1a19f7-b986-4b9f-8753-a678fbebfc27": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do hydration pills work?",
+            "icon": "none",
+            "row_content": "<p>Hydration pills for a hangover contain electrolytes and can be effective if there is a therapeutic need.  The best hangover drink is water before, during and after the party!<\/p>",
+            "page": ""
+          }
+        },
+        "7433de8a-7ad0-47fb-b8d2-99593080480a": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is this a medicine or drug?",
+            "icon": "none",
+            "row_content": "<p>No. Rebound has no medicinal properties. It is a premium food supplement, containing nutrients, amino acids and herb botanicals to support recovery and wellbeing after partying and late nights.<\/p>",
+            "page": ""
+          }
+        },
+        "badd588e-3196-434c-946d-32897bbe96d7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does Rebound contain caffeine?",
+            "icon": "none",
+            "row_content": "<p>No. Rebound does not contain caffeine.<\/p>",
+            "page": ""
+          }
+        },
+        "227edda3-108b-4fc8-ac69-96e8ced13737": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is it possible to overdose on Rebound?",
+            "icon": "none",
+            "row_content": "<p>Rebound contains only vitamins, minerals and naturally occurring amino acids and botanicals. The recommended dose is 1 pack\/ night <\/p>",
+            "page": ""
+          }
+        },
+        "b0c2b052-101d-4d39-870f-bc8d0c239c71": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I take Rebound with medications?",
+            "icon": "none",
+            "row_content": "<p>Consult your healthcare practitioner or GP before taking alongside any medication.<\/p>",
             "page": ""
           }
         }
@@ -51,7 +150,18 @@
         "template--18630831046958__60c97312-7fdf-49f5-aa75-2c4eb9aba02a-16806941894f3da67e-0",
         "template--18630831046958__60c97312-7fdf-49f5-aa75-2c4eb9aba02a-16806941894f3da67e-1",
         "template--18630831046958__60c97312-7fdf-49f5-aa75-2c4eb9aba02a-16806941894f3da67e-2",
-        "template--18630831046958__60c97312-7fdf-49f5-aa75-2c4eb9aba02a-16806941894f3da67e-3"
+        "template--18630831046958__60c97312-7fdf-49f5-aa75-2c4eb9aba02a-16806941894f3da67e-3",
+        "798cba61-94fd-4bb3-8f7b-fcf3b2537daa",
+        "52683fe1-efca-4185-96fd-a7a3cf73a8d7",
+        "47c46bc4-3481-46cd-8c69-6094b9b8fbd6",
+        "f835cba1-abbe-4ef6-ba67-23b06563a774",
+        "8f51c534-a15d-4b6b-a337-778139252e46",
+        "c938328f-e54e-45b7-bf50-45573cd35687",
+        "8d1a19f7-b986-4b9f-8753-a678fbebfc27",
+        "7433de8a-7ad0-47fb-b8d2-99593080480a",
+        "badd588e-3196-434c-946d-32897bbe96d7",
+        "227edda3-108b-4fc8-ac69-96e8ced13737",
+        "b0c2b052-101d-4d39-870f-bc8d0c239c71"
       ],
       "settings": {
         "caption": "",
@@ -61,13 +171,14 @@
         "layout": "none",
         "color_scheme": "background-1",
         "container_color_scheme": "background-2",
-        "open_first_collapsible_row": false,
+        "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36,
         "rr_grid_col": "1",
-        "rr_grid_row": "2"
+        "rr_grid_row": "2",
+        "rr_grid_col_divider": true
       }
     },
     "cf86596a-a676-4caa-a180-2ab981673420": {
@@ -76,36 +187,45 @@
         "template--18630831046958__cf86596a-a676-4caa-a180-2ab981673420-16806941894f3da67e-0": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Do you have to take Rebound in two doses?",
+            "icon": "none",
+            "row_content": "<p>Yes ideally. <\/p><p>Take Prepare before first alcoholic drink or at the beginning of a party to support detoxification, energy and immunity.<\/p><p>Take Repair before bed to support detoxification, immunity, cognition, relaxation, mood and sleep.<\/p>",
             "page": ""
           }
         },
         "template--18630831046958__cf86596a-a676-4caa-a180-2ab981673420-16806941894f3da67e-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "What happens if I forget to take either Prepare or Repair?",
+            "icon": "none",
+            "row_content": "<p>Take Prepare when you remember during the party and take Repair before bed.<\/p><p>If you take Prepare but forget to take Repair, take Repair the following morning.<\/p>",
             "page": ""
           }
         },
         "template--18630831046958__cf86596a-a676-4caa-a180-2ab981673420-16806941894f3da67e-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "If I forget to take the pack entirely, is there anything I can do?",
+            "icon": "none",
+            "row_content": "<p>Yes!  Take the Prepare first thing next morningand Repair later in the day or before bed that night. <\/p>",
             "page": ""
           }
         },
         "template--18630831046958__cf86596a-a676-4caa-a180-2ab981673420-16806941894f3da67e-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Is it only for those who drink alcohol?",
+            "icon": "none",
+            "row_content": "<p>Rebound has been developed to aid detoxification, immunity, energy, cognition, mood and sleep. For those that don’t drink it still helps after party recovery helps the wind down and encourages more restful sleep whilst providing energy boosting support for the day ahead, with improved focus, mood and concentration.<\/p>",
+            "page": ""
+          }
+        },
+        "b0563870-ca50-4bbc-be2e-52dfd56991a9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How many packs per night?",
+            "icon": "none",
+            "row_content": "<p>The recommended dose is 1 pack\/ per night out in 2 doses; Prepare (2 capsules before first alcoholic drink) and Repair (3 capsules before bed).<\/p>",
             "page": ""
           }
         }
@@ -114,7 +234,8 @@
         "template--18630831046958__cf86596a-a676-4caa-a180-2ab981673420-16806941894f3da67e-0",
         "template--18630831046958__cf86596a-a676-4caa-a180-2ab981673420-16806941894f3da67e-1",
         "template--18630831046958__cf86596a-a676-4caa-a180-2ab981673420-16806941894f3da67e-2",
-        "template--18630831046958__cf86596a-a676-4caa-a180-2ab981673420-16806941894f3da67e-3"
+        "template--18630831046958__cf86596a-a676-4caa-a180-2ab981673420-16806941894f3da67e-3",
+        "b0563870-ca50-4bbc-be2e-52dfd56991a9"
       ],
       "custom_css": [
 
@@ -127,13 +248,14 @@
         "layout": "none",
         "color_scheme": "background-1",
         "container_color_scheme": "background-2",
-        "open_first_collapsible_row": false,
+        "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36,
         "rr_grid_col": "2",
-        "rr_grid_row": "2"
+        "rr_grid_row": "2",
+        "rr_grid_col_divider": false
       }
     },
     "1463aecb-ad5f-4209-a844-ab419be6992b": {
@@ -157,7 +279,7 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52,
-        "rr_grid_col": "1/-1",
+        "rr_grid_col": "1\/-1",
         "rr_grid_row": "auto"
       }
     }

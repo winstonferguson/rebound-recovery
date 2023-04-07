@@ -7,7 +7,7 @@
     grid-column: {{ section.settings.rr_grid_col }};
     grid-row: {{ section.settings.rr_grid_row }};
   }
-
+  
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -20,8 +20,6 @@
     }
   }
 {%- endstyle -%}
-
-{% render "rr-grid-styles" %}
 
 {%- liquid
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
@@ -274,50 +272,6 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    },
-    {
-      "type": "header",
-      "content": "RR Desktop Layout"
-    },
-    {
-      "type": "select",
-      "id": "rr_grid_col",
-      "options": [
-        {
-          "value": "1/-1",
-          "label": "Span"
-        },
-        {
-          "value": "1",
-          "label": "One"
-        },
-        {
-          "value": "2",
-          "label": "Two"
-        }
-      ],
-      "default": "1/-1",
-      "label": "RR Grid Column Position"
-    },
-    {
-      "type": "select",
-      "id": "rr_grid_row",
-      "options": [
-        {
-          "value": "auto",
-          "label": "Auto"
-        },
-        {
-          "value": "2",
-          "label": "Top"
-        },
-        {
-          "value": "last",
-          "label": "Bottom"
-        }
-      ],
-      "default": "auto",
-      "label": "RR Grid Column Position"
     },
     {
       "type": "header",

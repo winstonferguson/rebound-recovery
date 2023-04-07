@@ -3300,9 +3300,7 @@ details-disclosure > details {
   .rr-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-columns: minmax(0, 50%); */
     grid-template-rows: auto;
-    grid-column-gap: 60px;
   }
 
   .rr-grid .section {
