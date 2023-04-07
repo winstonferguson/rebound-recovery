@@ -157,7 +157,7 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52,
-        "rr_grid_col": "1\/-1",
+        "rr_grid_col": "1/-1",
         "rr_grid_row": "auto"
       }
     }
