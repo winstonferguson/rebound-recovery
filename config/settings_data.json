@@ -1,9 +1,9 @@
 {
   "current": {
-    "logo": "shopify://shop_images/reboound-text_logo.png",
+    "logo": "shopify:\/\/shop_images\/reboound-text_logo.png",
     "logo_width": 160,
     "colors_solid_button_labels": "#ffffff",
-    "colors_accent_1": "rgba(0,0,0,0)",
+    "colors_accent_1": "#e9531d",
     "gradient_accent_1": "",
     "colors_accent_2": "#22234e",
     "gradient_accent_2": "",
@@ -109,7 +109,7 @@
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
     "social_facebook_link": "",
-    "social_instagram_link": "https://www.instagram.com/gr_nutrition/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/gr_nutrition\/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",
@@ -125,6 +125,9 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "checkout_sidebar_background_color": "#f0f8ea",
+    "checkout_accent_color": "#22234e",
+    "checkout_button_color": "#e9531d",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
