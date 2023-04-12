@@ -10,6 +10,7 @@
     assign grid_col = section.settings.rr_grid_col | default: '1/-1'
     assign grid_row = section.settings.rr_grid_row | default: 'auto'
     assign grid_col_divider = false
+
     if grid_col == '1' and section.settings.rr_grid_col_divider
       assign grid_col_divider = true
     endif
@@ -26,28 +27,25 @@
         grid-row: {{ grid_row }};
       }
 
-      {% case grid_col %}
-        {% when "1" %}
-          #shopify-section-{{ section.id }} > div {
-            margin: 0 0 0 auto;
-            max-width: calc(var(--page-width) * 0.5 - 6rem); 
-            padding-left: 60px;
-            padding-right: 30px;
-            width: 100%;
-          }
-          
-        {% when "2" %}
-          #shopify-section-{{ section.id }} > div {
-            margin: 0 auto 0 0;
-            max-width: calc(var(--page-width) * 0.5 - 6rem); 
-            padding-left: 30px;
-            padding-right: 60px;
-            width: 100%;
-          }          
-        {% else %}
-      {% endcase %}
+      {% if grid_col == "1" %}
+        #shopify-section-{{ section.id }} > div {
+          margin: 0 0 0 auto;
+          max-width: calc(var(--page-width) * 0.5 - 6rem); 
+          padding-left: 60px;
+          padding-right: 30px;
+          width: 100%;
+        }
+      {% endif %}
 
-
+      {% if grid_col == "2" %}
+        #shopify-section-{{ section.id }} > div {
+          margin: 0 auto 0 0;
+          max-width: calc(var(--page-width) * 0.5 - 6rem); 
+          padding-left: 30px;
+          padding-right: 60px;
+          width: 100%;
+        }
+      {% endif %}
 
       {% if grid_col_divider %}
         #shopify-section-{{ section.id }} > div {
