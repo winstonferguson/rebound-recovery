@@ -1,0 +1,302 @@
+{{ 'section-rr-capsule-details.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  .rr-capsule-details__special-mention-content {
+    margin-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  .rr-capsule-details__image img {
+    margin-bottom: {{ section.settings.padding_top | times: 0.65 | round: 0 }}px;
+  }
+
+  {% if section.settings.bottom_border %}
+    .section-{{ section.id }}-padding {
+      border-bottom: 1px solid rgb(var(--color-base-accent-2));
+    }
+  {% endif %}  
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }    
+
+    .rr-capsule-details__block-wrapper,
+    .rr-capsule-details__image {
+      margin: 0 0 0 auto;
+      max-width: calc(var(--page-width) * 0.5 - 6rem); 
+      padding-left: 60px;
+      padding-right: 30px;
+    }
+  
+    .rr-capsule-details__image {
+      margin: 0 auto 0 0;
+      padding-left: 60px;
+      padding-right: 60px;
+      width: 100%;
+      text-align: right;
+    }
+
+    .rr-capsule-details__image img {
+      top: {{ section.settings.padding_top }}px;
+    }
+
+    .rr-capsule-details__special-mention-content {
+      margin-top:  {{ section.settings.padding_top }}px;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+
+  }
+{%- endstyle -%}
+
+<div class="isolate">
+  <div class="rr-capsule-details content-container color-{{ section.settings.color_scheme }} content-container--full-width section-{{ section.id }}-padding">
+    <div class="rr-capsule-details__wrapper">
+      <div class="rr-capsule-details__image page-width {{ section.settings.content_alignment }}">
+        {%- if section.settings.image != blank -%}
+          {{ section.settings.image | image_url: width: 350 | image_tag: loading: 'lazy' }}
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      </div>
+      <div class="rr-capsule-details__blocks rr-capsule-details__block-wrapper page-width {{ section.settings.content_alignment }}">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'heading' -%}
+              <h2
+                class="rr-capsule-details__heading rte inline-richtext {{ block.settings.heading_size }}"
+                {{ block.shopify_attributes }}
+              >
+                {{ block.settings.heading }}
+              </h2>
+            {%- when 'caption' -%}
+              <p
+                class="rr-capsule-details__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}"
+                {{ block.shopify_attributes }}
+              >
+                {{ block.settings.caption | escape }}
+              </p>
+            {%- when 'summary' -%}
+              <div class="rr-capsule-details__summary rte" {{ block.shopify_attributes }}>
+                {{ block.settings.summary }}
+              </div>
+            {%- when 'special_mention' -%}
+            </div>
+              <div
+                class="rr-capsule-details__special-mention"
+                {{ block.shopify_attributes }}
+              >
+                <details
+                  id="Details-{{ block.id }}-{{ section.id }}"
+                >
+                  <summary id="Summary-{{ block.id }}-{{ section.id }}" class="rr-capsule-details__special-mention-link">
+                    <div class="rr-capsule-details__block-wrapper page-width">
+                      <div class="button button--primary">
+                        <span>Special Mention</span>
+                        {% render 'icon-caret' %}
+                      </div>
+                    </div>
+                  </summary>
+                  <div
+                    class="rr-capsule-details__special-mention-content rte"
+                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                    role="region"
+                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                  >
+                    <div>
+                      <div class="rr-capsule-details__block-wrapper page-width">
+                        {{ block.settings.special_mention }}
+                      </div>
+                    </div>
+                  </div>
+                </details> 
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "RR Capsule Details",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": [
+      "header",
+      "footer"
+    ]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Capsule Image"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_border",
+      "default": false,
+      "label": "Enable bottom border"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "capsule_name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Capsule A",
+          "label": "Capsule name"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "t:sections.all.heading_size.options__1.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__2.label"
+            },
+            {
+              "value": "h0",
+              "label": "t:sections.all.heading_size.options__3.label"
+            },
+            {
+              "value": "hxl",
+              "label": "t:sections.all.heading_size.options__4.label"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.all.heading_size.label"
+        }
+      ]
+    },
+    {
+      "type": "caption",
+      "name": "Caption",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "caption",
+          "default": "One capsule in Prepare and Repair",
+          "label": "Caption"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "name": "Summary",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "summary",
+          "default": "<p>Share information about capsule ingredients.</p>",
+          "label": "Summary"
+        }
+      ]
+    },
+    {
+      "type": "special_mention",
+      "name": "Special Mention",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "special_mention",
+          "default": "<p>Provide detailed information and external links for products used in capsules.</p>",
+          "label": "Special mention"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "RR Capsule Details",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "caption"
+        },
+        {
+          "type": "summary"
+        },
+        {
+          "type": "special_mention"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
