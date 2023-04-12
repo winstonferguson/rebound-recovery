@@ -1355,6 +1355,7 @@ button.shopify-payment-button__button--unbranded,
   --border-opacity: calc(1 - var(--buttons-border-opacity));
   border-radius: var(--buttons-radius-outset);
   position: relative;
+  text-transform: uppercase;
 }
 
 .button,
@@ -2762,10 +2763,11 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
+  font-size: 1.6rem;
   font-weight: 400;
   padding: 1.2rem;
   text-decoration: none;
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground));
 }
 
 .header__menu-item:hover {
