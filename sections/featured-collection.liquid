@@ -15,8 +15,6 @@
 {%- endif -%}
 
 {%- style -%}
-  {% render "rr-grid-styles" %}
-
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -155,10 +153,7 @@
   "tag": "section",
   "class": "section",
   "disabled_on": {
-    "groups": [
-      "header",
-      "footer"
-    ]
+    "groups": ["header", "footer"]
   },
   "settings": [
     {
@@ -447,50 +442,6 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    },
-    {
-      "type": "header",
-      "content": "RR Desktop Layout"
-    },
-    {
-      "type": "select",
-      "id": "rr_grid_col",
-      "options": [
-        {
-          "value": "1/-1",
-          "label": "Span"
-        },
-        {
-          "value": "1",
-          "label": "One"
-        },
-        {
-          "value": "2",
-          "label": "Two"
-        }
-      ],
-      "default": "1/-1",
-      "label": "RR Grid Column Position"
-    },
-    {
-      "type": "select",
-      "id": "rr_grid_row",
-      "options": [
-        {
-          "value": "auto",
-          "label": "Auto"
-        },
-        {
-          "value": "2",
-          "label": "Top"
-        },
-        {
-          "value": "last",
-          "label": "Bottom"
-        }
-      ],
-      "default": "auto",
-      "label": "RR Grid Column Position"
     }
   ],
   "presets": [
