@@ -4,9 +4,11 @@
       <h1>{{ product.title | escape }}</h1>
     </h1>
     <div class="rte center">
-      {{ product.metafields.custom.teaser }}
+      {{ product.metafields.custom.teaser }}          
     </div>
+   
   </div>
+  {% render "product-badges", badges: product.metafields.custom.badges.value, border: "top" %}
 </div>
 <section
   id="MainProduct-{{ section.id }}"
@@ -64,6 +66,8 @@
   {%- endif -%}
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
+
+  
 
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
@@ -160,7 +164,7 @@
                 <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                   {{ product.description }}
                 </div>
-              {%- endif -%}
+              {%- endif -%}               
             {%- when 'sku' -%}
               <p
                 class="product__sku no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
