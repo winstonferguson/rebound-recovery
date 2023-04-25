@@ -1,26 +1,19 @@
 <style>
   .product__badges {
     border-{{ border }}: 1px solid rgb(var(--color-base-accent-2));
-    
-    margin-{{ border }}: 30px;
-    padding-{{ border }}: 30px;
-  }
-
-  .product__badges-wrapper {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;    
-    margin: 0 auto;
-    max-width: 600px;
+    margin-{{ border }}: 30px;  
   }
 
   .product__badges-badge {
-    display: flex;
+    display: inline-flex;
     gap: 10px;
     flex-direction: column;
     font-size: 12px;
+    height: 100%;
     line-height: 1.4;
+    margin-{{ border }}: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
     max-width: 120px;
     text-align: center;
   }
@@ -30,16 +23,34 @@
     margin: 0 auto;
   }
 
+  .product__badges-badge span {
+    max-width: 80px;
+  }
+
+  .product__badges-wrapper {   
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+  }
+
   @media screen and (min-width: 750px) {
+    .product__badges-badge {
+      margin-left: 0;
+      margin-right: 0;
+    } 
+
     .product__badges-wrapper {
       align-items: start;
+      display: flex;
       flex-direction: row;
-      gap: 0;
+      gap: 30px;
       justify-content: space-around;  
-    }
-
-    .product__badges-badge span {
-      max-width: 80px;
+    } 
+    
+    @media screen and (min-width: 1300px) {
+      .product__badges-wrapper {   
+        max-width: 100%;
+      }
     }
   }
 </style>

@@ -3285,6 +3285,8 @@ details-disclosure > details {
   gap: 10px;
   justify-content: center;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .rr-page-intro h1 {
