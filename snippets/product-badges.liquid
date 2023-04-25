@@ -7,8 +7,10 @@
   }
 
   .product__badges-wrapper {
+    align-items: center;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 30px;    
     margin: 0 auto;
     max-width: 600px;
   }
@@ -26,6 +28,19 @@
   .product__badges-badge img {
     border: none;
     margin: 0 auto;
+  }
+
+  @media screen and (min-width: 750px) {
+    .product__badges-wrapper {
+      align-items: start;
+      flex-direction: row;
+      gap: 0;
+      justify-content: space-around;  
+    }
+
+    .product__badges-badge span {
+      max-width: 80px;
+    }
   }
 </style>
 

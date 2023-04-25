@@ -13,7 +13,7 @@
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": true,
         "color_scheme": "background-1",
@@ -29,7 +29,7 @@
         "template--18657542897966__4349700d-5624-40b1-a1c2-deb38b3568aa-1680863742e9fcd1d5-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Who said you can’t do it all (and feel great the next day)? Now you can. </p><p>Rebound is a party recovery pack created by qualified nutritionists who know how to have fun. Because we believe blowing off steam  can actually be a healthy release if you look after your body properly — whether that’s a long boozy lunch, or a night on the dancefloor.</p>"
+            "text": "<h2>Who said you can’t do it all and feel great the next day? <\/h2><h2>Now you can<\/h2><p>Rebound is party recovery packs created by Registered Nutritional Therapists  who know how to have fun. We believe blowing off steam can actually be a healthy release if you look after your body properly — whether that’s a long boozy lunch, wedding, birthday party, festival or stag weekend.<\/p>"
           }
         },
         "bfad8591-4f5e-486c-b3c8-99690295acb0": {
@@ -42,7 +42,7 @@
         "5fb48338-8d12-4fb3-a323-285cf2e277c1": {
           "type": "text",
           "settings": {
-            "text": "<p>Like all good stories, Rebound was born out of personal experience. Our founder, Georgina Robertson, is a registered Nutritionist Therapist and member of BANT and CNM, and working mother of four, who firmly believes in the importance of having fun and balancing the rest of your life. And the best way to do that is be really proactive about your recovery.</p><p>She set out to develop a food supplement formula to provide everything your body needs before and after you drink or party, and leave you feeling great the next day. Rebound packs have now been used by customers for long lunches, dinnear parties, stag and hen parties, weddings, post rave recovery and festivals, with over 500 customers in the UK and rated XXx on TrustPilot. (link)</p>"
+            "text": "<p>Like all good stories, Rebound was born out of personal experience. Our Founder, Georgina Robertson, is a Registered Nutritional Therapist, member of BANT and CNHC, and working mother of four, who firmly believes in the importance of having fun but also being proactive about looking after herself and optimising recovery.<\/p>"
           }
         }
       },
@@ -69,14 +69,14 @@
         "template--18657542897966__c053264e-234e-4ebd-8357-9fa9c442f1bf-1680882035825c68d1-0": {
           "type": "heading",
           "settings": {
-            "heading": "The Rebound magic formula - backed by nutrion research",
+            "heading": "The Rebound magic formula - backed by nutritional research",
             "heading_size": "h1"
           }
         },
         "template--18657542897966__c053264e-234e-4ebd-8357-9fa9c442f1bf-1680882035825c68d1-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Rebound contains 50 highest quality nutrients and botanicals your body needs to support liver detoxification, energy, mood, cognition, immunity and sleep.</p>"
+            "text": "<p>Rebound contains 50 high quality nutrients and botanicals your body needs to support liver detoxification, energy, immunity, cognition, mood and sleep.<\/p>"
           }
         }
       },
@@ -91,7 +91,7 @@
         "full_width": true,
         "padding_top": 60,
         "padding_bottom": 32,
-        "rr_grid_col": "1/-1",
+        "rr_grid_col": "1\/-1",
         "rr_grid_row": "auto",
         "rr_grid_col_divider": false
       }
@@ -114,7 +114,7 @@
         "template--18657542897966__467cb9cd-a404-425a-877a-40994ce8bd6b-16809454669df08914-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Supports liver function, immunity, energy and cognition.</p>"
+            "text": "<p>Supports liver and immune function, cognition and boosts energy.<\/p>"
           }
         },
         "02c7b1c1-6e7e-4fb7-b198-f8f255c1518a": {
@@ -132,7 +132,7 @@
         "bc951e54-a08c-4ce4-8665-bc9a17334226": {
           "type": "text",
           "settings": {
-            "text": "<p>Supports detoxification, immune and nervous system function, mood and sleep.</p>"
+            "text": "<p>Supports liver and immune function, cognition, mood and sleep.<\/p>"
           }
         }
       },
@@ -162,7 +162,7 @@
         "template--18657542897966__ac355882-c485-499b-90e5-8533a7da7b71-16809454669df08914-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Rebound packs are:</p><p>Researched and developed by nutritional therapists with sixteen years of combined clinical experience and forty years of food supplement and natural health experience</p><p>100% clean,  active ingredients — that means no fillers / binders or anything to get in the way of your body absorbing the ingredients</p><p>Includes four branded products with clinically proven health claims:</p><ol><li><a href=\"https://www.purewayc.com/\" title=\"https://www.purewayc.com/\">Pureway</a></li><li><a href=\"https://setriaglutathione.com/en\" target=\"_blank\" title=\"https://setriaglutathione.com/en\">Setria </a></li><li><a href=\"https://www.seagreens.co.uk/KSM66 \" target=\"_blank\" title=\"https://www.seagreens.co.uk/KSM66 \">Seagreens</a> </li><li><a href=\"https://ksm66ashwagandhaa.com/ksm-66/what-is-ksm-66/\" target=\"_blank\" title=\"https://ksm66ashwagandhaa.com/ksm-66/what-is-ksm-66/\">Ashwagandha</a></li></ol><p>Full of liver loving botanicals across all the capsules to support detoxification and immune function.</p><p>The only formula to prepare the body before and repair the body after partying with the nutrients depleted by partying</p><p>Vegan, dairy free, soy free, Non-GMO</p><p>Manufactured in the UKYou can find full details of all Rebound ingredients in our store.</p>"
+            "text": "<p>Rebound packs in a nutshell:<\/p><ul><li>Researched and developed by Nutritional Therapists with sixteen years of combined clinical experience and forty years of food supplement and natural health experience<\/li><li>100% clean,  active ingredients — that means no fillers \/ binders or anything to get in the way of your body absorbing the ingredients<\/li><li>Include four branded products with clinically proven health claims:<\/li><\/ul><ol><li><a href=\"https:\/\/www.purewayc.com\/\" title=\"https:\/\/www.purewayc.com\/\">Pureway<\/a><\/li><li><a href=\"https:\/\/setriaglutathione.com\/en\" target=\"_blank\" title=\"https:\/\/setriaglutathione.com\/en\">Setria <\/a><\/li><li><a href=\"https:\/\/www.seagreens.co.uk\/KSM66 \" target=\"_blank\" title=\"https:\/\/www.seagreens.co.uk\/KSM66 \">Seagreens<\/a> <\/li><li><a href=\"https:\/\/ksm66ashwagandhaa.com\/ksm-66\/what-is-ksm-66\/\" target=\"_blank\" title=\"https:\/\/ksm66ashwagandhaa.com\/ksm-66\/what-is-ksm-66\/\">Ashwagandha<\/a><\/li><\/ol><ul><li>Full of liver loving botanicals across all the capsules to support detoxification and immune function.<\/li><li>Prepares the body before and repairs the body after with the nutrients depleted by partying<\/li><\/ul><p>Vegan, dairy free, soy free, No GMO<\/p><p>Manufactured in the UK.<\/p><p>You can find full details of all Rebound ingredients in our store.<\/p>"
           }
         }
       },
@@ -194,7 +194,7 @@
         "template--18657542897966__1d531449-c8d7-49a3-8931-b49e14f061f5-16808787643a068df6-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We’re on a mission to reshape drinking culture — partying with proactive recovery.</p><p>We want to change the way people look after their bodies when they party, and make your approach to drinking part of your health and wellness plan.</p><p>So say bye bye to hangovers, kiss farewell to come downs, Rebound is the bounce back recovery pack — for less than the price of a single drink.</p><p></p>"
+            "text": "<p>We’re on a mission to reshape drinking culture — partying with proactive recovery.<\/p><p>We want to change the way people look after their bodies when they party and make your approach to drinking part of your health and wellness plan.<\/p><p>So say bye bye to hangovers, kiss farewell to come downs, Rebound is the bounce back recovery pack — for less than the price of a single drink.<\/p><p><\/p>"
           }
         }
       },
@@ -209,7 +209,7 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52,
-        "rr_grid_col": "1/-1",
+        "rr_grid_col": "1\/-1",
         "rr_grid_row": "auto",
         "rr_grid_col_divider": false
       }

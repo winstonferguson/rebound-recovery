@@ -1,14 +1,64 @@
 {
   "sections": {
+    "d85fc367-db3e-4ff0-b350-70590ceca325": {
+      "type": "rr-feature",
+      "blocks": {
+        "6048c6e9-b65c-4ef0-8057-70d8fb1b9c98": {
+          "type": "headline",
+          "settings": {
+            "headline": "Party Recovery Packs Perfected by Nutritionists",
+            "heading_size": "h1"
+          }
+        },
+        "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-1": {
+          "type": "text",
+          "settings": {
+            "text": "Because dancing all night shouldn't cost you tomorrow!",
+            "text_style": "subtitle"
+          }
+        },
+        "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-2": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        }
+      },
+      "block_order": [
+        "6048c6e9-b65c-4ef0-8057-70d8fb1b9c98",
+        "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-1",
+        "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-2",
+        "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-3"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/rr-packs.png",
+        "product": "rebound-recovery-pack",
+        "color_scheme": "background-2",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "padding_top": 0,
+        "padding_bottom": 32
+      }
+    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
         "column1": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/prepare.svg",
+            "image": "shopify:\/\/shop_images\/prepare_b1ffb8ae-4977-4ef8-8056-8ec56a356402.svg",
             "title": "Prepare",
-            "text": "<p>Two capsules before partying to boost your immune system</p>",
+            "text": "<p>Two capsules before partying to support liver and immune function and boost energy.<\/p>",
+            "source": "",
             "link_label": "",
             "link": ""
           }
@@ -16,9 +66,10 @@
         "column2": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/rr-party.png",
+            "image": "shopify:\/\/shop_images\/party.svg",
             "title": "Party",
-            "text": "<p>No instructions needed</p>",
+            "text": "<p>No instructions needed!<\/p>",
+            "source": "",
             "link_label": "",
             "link": ""
           }
@@ -26,9 +77,10 @@
         "column3": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/repair.svg",
+            "image": "shopify:\/\/shop_images\/repair_7e88aae2-dc25-4fb8-98c1-cc5d3177597f.svg",
             "title": "Repair",
-            "text": "<p>Three capsules before bed to support your liver, brain, and sleep quality</p>",
+            "text": "<p>Three capsules before bed to support liver and immune function, cognition, mood and sleep quality<\/p>",
+            "source": "",
             "link_label": "",
             "link": ""
           }
@@ -40,11 +92,12 @@
         "column3"
       ],
       "settings": {
-        "title": "Rebound Magic Formula",
-        "heading_size": "h0",
+        "title": "How Rebound works?",
+        "heading_size": "h1",
         "heading_alignment": "center",
         "image_width": "third",
         "image_ratio": "adapt",
+        "image_size": "badge",
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
@@ -58,7 +111,7 @@
         "padding_bottom": 36,
         "border_top": true,
         "border_bottom": false,
-        "rr_grid_col": "1/-1",
+        "rr_grid_col": "1\/-1",
         "rr_grid_row": "auto",
         "rr_grid_col_divider": false
       }
@@ -69,14 +122,14 @@
         "template--18615415472430__d5434413-9171-4fe7-b0b7-fda6d06760a5-16808661921787eaf8-0": {
           "type": "heading",
           "settings": {
-            "heading": "Maximum fun, miraculous recovery",
+            "heading": "Maximum fun, Miraculous recovery",
             "heading_size": "h2"
           }
         },
         "template--18615415472430__d5434413-9171-4fe7-b0b7-fda6d06760a5-16808661921787eaf8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Because dancing all night shouldn’t cost you tomorrow.</p><p>Rebound s developed by practicing Nutritional Therapists who know how to hit the dancefloor but be proactive about the party recovery.</p>",
+            "text": "<p>Rebound is developed by practising Nutritional Therapists who know how to hit the dancefloor but be proactive about their recovery afterwards.<\/p>",
             "text_style": "body"
           }
         }
@@ -97,7 +150,7 @@
         "mobile_content_alignment": "left",
         "padding_top": 60,
         "padding_bottom": 32,
-        "rr_grid_col": "1/-1",
+        "rr_grid_col": "1\/-1",
         "rr_grid_row": "auto"
       }
     },
@@ -107,14 +160,14 @@
         "template--18615415472430__13e9a2f8-4341-4dd7-9f4f-ba70ad5ec5b5-16808661921787eaf8-0": {
           "type": "heading",
           "settings": {
-            "heading": "50 natural nutrients for the price of a single drink",
+            "heading": "50 natural nutrients for the price of one drink",
             "heading_size": "h2"
           }
         },
         "template--18615415472430__13e9a2f8-4341-4dd7-9f4f-ba70ad5ec5b5-16808661921787eaf8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Rebound packs include over fifty 100% clean ingredients designed to restore the nutrients you lose when you drink alcohol, dance or party.</p>",
+            "text": "<p>Rebound packs include over fifty 100% natural, clean ingredients designed to restore the nutrients you lose when you drink alcohol, dance or party all night.<\/p>",
             "text_style": "body"
           }
         }
@@ -135,7 +188,96 @@
         "mobile_content_alignment": "left",
         "padding_top": 28,
         "padding_bottom": 60,
-        "rr_grid_col": "1/-1",
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto"
+      }
+    },
+    "2271f9a4-6515-4702-b016-b0d102776af6": {
+      "type": "image-with-text",
+      "blocks": {
+        "aae50798-3fc5-4ddd-a2f3-41e440357310": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Magic  Formula",
+            "heading_size": "h1"
+          }
+        },
+        "template--18615415472430__2271f9a4-6515-4702-b016-b0d102776af6-16814695684f556a89-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Two capsules before you party for:<\/p>",
+            "text_style": "body"
+          }
+        },
+        "55dbc913-e5d5-4eed-893c-c49464c1234e": {
+          "type": "images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cognitive-function_0eadd525-c5b0-45eb-aaf7-53f85daa7f54.svg"
+          }
+        },
+        "2e7cf11b-43b0-4f26-80d3-896c73ad99f4": {
+          "type": "images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/liver-support_6edb6e12-5767-4669-a748-cde1e59591a6.svg"
+          }
+        },
+        "0a306a40-dd58-4708-96de-cccf672aa518": {
+          "type": "images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/energy.svg"
+          }
+        },
+        "edc4ddef-3869-43dd-8e24-3b84b63e3802": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Three capsules  before bed for:<\/p>",
+            "text_style": "body"
+          }
+        },
+        "d95fe6f4-e41c-47f3-81df-923b1edbb6a7": {
+          "type": "images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cognitive-function_0eadd525-c5b0-45eb-aaf7-53f85daa7f54.svg"
+          }
+        },
+        "8dd5a649-2992-4bfd-ae93-b8fd0280c589": {
+          "type": "images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/liver-support_6edb6e12-5767-4669-a748-cde1e59591a6.svg"
+          }
+        },
+        "bb2cc514-f082-46ef-93a0-e3e2e87d8c90": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn more",
+            "button_link": "shopify:\/\/pages\/welcome-to-the-rebound-party"
+          }
+        }
+      },
+      "block_order": [
+        "aae50798-3fc5-4ddd-a2f3-41e440357310",
+        "template--18615415472430__2271f9a4-6515-4702-b016-b0d102776af6-16814695684f556a89-1",
+        "55dbc913-e5d5-4eed-893c-c49464c1234e",
+        "2e7cf11b-43b0-4f26-80d3-896c73ad99f4",
+        "0a306a40-dd58-4708-96de-cccf672aa518",
+        "edc4ddef-3869-43dd-8e24-3b84b63e3802",
+        "d95fe6f4-e41c-47f3-81df-923b1edbb6a7",
+        "8dd5a649-2992-4bfd-ae93-b8fd0280c589",
+        "bb2cc514-f082-46ef-93a0-e3e2e87d8c90"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "rr_grid_col": "1\/-1",
         "rr_grid_row": "auto"
       }
     },
@@ -145,8 +287,9 @@
         "template--18615415472430__c884e470-695e-45d9-860e-4bca5eb9fb62-16807667218668abe4-0": {
           "type": "column",
           "settings": {
-            "title": "Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.",
-            "text": "<p>Bill Dearingly</p><p>London, UK</p>",
+            "title": "Amazing!",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "source": "<p>Bill Dearingly, London, UK<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -154,8 +297,9 @@
         "template--18615415472430__c884e470-695e-45d9-860e-4bca5eb9fb62-16807667218668abe4-1": {
           "type": "column",
           "settings": {
-            "title": "Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.",
-            "text": "<p>Name</p><p>Place</p>",
+            "title": "Miracle cure",
+            "text": "<p>Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.<\/p>",
+            "source": "<p>Name, Place<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -163,8 +307,9 @@
         "template--18615415472430__c884e470-695e-45d9-860e-4bca5eb9fb62-16807667218668abe4-2": {
           "type": "column",
           "settings": {
-            "title": "Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.",
-            "text": "<p>Name</p><p>Place</p>",
+            "title": "Danced til the morning",
+            "text": "<p>Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.<\/p>",
+            "source": "<p>Name, Place<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -172,8 +317,9 @@
         "811a3185-1031-4854-ba93-473cb1557098": {
           "type": "column",
           "settings": {
-            "title": "Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.",
-            "text": "<p>Name</p><p>Place</p>",
+            "title": "Soul warming",
+            "text": "<p>Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.<\/p>",
+            "source": "<p>Name, Place<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -181,8 +327,9 @@
         "1d31a708-8139-4c71-a7f5-dbcd438d6d18": {
           "type": "column",
           "settings": {
-            "title": "Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.",
-            "text": "<p>Name</p><p>Place</p>",
+            "title": "Got a promotion",
+            "text": "<p>Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.<\/p>",
+            "source": "<p>Nam, Place<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -190,8 +337,9 @@
         "eda18fd9-2962-417b-9ec0-38d6552a8b07": {
           "type": "column",
           "settings": {
-            "title": "Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.",
-            "text": "<p>Name</p><p>Place</p>",
+            "title": "Won the lottery",
+            "text": "<p>Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.<\/p>",
+            "source": "<p>Name, Place<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -207,10 +355,11 @@
       ],
       "settings": {
         "title": "Testimonials",
-        "heading_size": "h0",
+        "heading_size": "h1",
         "heading_alignment": "center",
         "image_width": "full",
         "image_ratio": "adapt",
+        "image_size": "auto",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "none",
@@ -224,16 +373,18 @@
         "padding_bottom": 36,
         "border_top": false,
         "border_bottom": false,
-        "rr_grid_col": "1/-1",
+        "rr_grid_col": "1\/-1",
         "rr_grid_row": "auto",
         "rr_grid_col_divider": false
       }
     }
   },
   "order": [
+    "d85fc367-db3e-4ff0-b350-70590ceca325",
     "multicolumn",
     "d5434413-9171-4fe7-b0b7-fda6d06760a5",
     "13e9a2f8-4341-4dd7-9f4f-ba70ad5ec5b5",
+    "2271f9a4-6515-4702-b016-b0d102776af6",
     "c884e470-695e-45d9-860e-4bca5eb9fb62"
   ]
 }

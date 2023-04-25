@@ -74,6 +74,24 @@
               <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
                 {{ block.settings.text }}
               </div>
+            {%- when 'images' -%}
+
+              <div class="" {{ block.shopify_attributes }} style="display: inline-block;">
+                {%- if  block.settings.image != blank -%}
+                  {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+                  {%- capture sizes -%}
+                    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                    (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                  {%- endcapture -%}
+                  {{
+                    block.settings.image
+                    | image_url: width: 80
+                    | image_tag: loading: 'lazy', sizes: sizes, widths: widths
+                  }}
+                {%- else -%}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {%- endif -%}
+              </div>
             {%- when 'button' -%}
               {%- if block.settings.button_label != blank -%}
                 <a
@@ -456,7 +474,7 @@
     {
       "type": "text",
       "name": "t:sections.image-with-text.blocks.text.name",
-      "limit": 1,
+      "limit": 3,
       "settings": [
         {
           "type": "richtext",
@@ -479,6 +497,18 @@
           ],
           "default": "body",
           "label": "t:sections.image-with-text.blocks.text.settings.text_style.label"
+        }
+      ]
+    },
+    {
+      "type": "images",
+      "name": "Images",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "image"
         }
       ]
     },
