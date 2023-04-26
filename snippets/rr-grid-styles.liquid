@@ -21,7 +21,7 @@
       background-color: rgb(var(--color-base-{{ section.settings.color_scheme }}));
     }
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 960px) {
       #shopify-section-{{ section.id }} {
         grid-column: {{ grid_col }};
         grid-row: {{ grid_row }};
@@ -31,7 +31,6 @@
         #shopify-section-{{ section.id }} > div {
           margin: 0 0 0 auto;
           max-width: calc(var(--page-width) * 0.5 - 6rem); 
-          padding-left: 60px;
           padding-right: 30px;
           width: 100%;
         }
@@ -42,21 +41,42 @@
           margin: 0 auto 0 0;
           max-width: calc(var(--page-width) * 0.5 - 6rem); 
           padding-left: 30px;
-          padding-right: 60px;
           width: 100%;
         }
       {% endif %}
+    }
+    @media screen and (min-width: 1300px) {
+      {% if grid_col == "1" %}
+        #shopify-section-{{ section.id }} > div {
+          padding-left: 60px;
+        }
+      {% endif %}
 
-      {% if grid_col_divider %}
+      {% if grid_col == "2" %}
+        #shopify-section-{{ section.id }} > div {
+          padding-right: 60px;
+        }
+      {% endif %}
+
+    }
+
+    {% if grid_col_divider %}
+      #shopify-section-{{ section.id }} .section-{{ section.id }}-padding > * {
+          border-bottom: 1px solid rgb(var(--color-base-accent-2));
+          padding-bottom: 60px;
+        }
+
+      @media screen and (min-width: 960px) {
         #shopify-section-{{ section.id }} > div {
           padding-right: 0;
         }
 
         #shopify-section-{{ section.id }} .section-{{ section.id }}-padding > * {
+          border-bottom: none;
           border-right: 1px solid rgb(var(--color-base-accent-2));
           padding-right: 30px;
         }
-      {% endif %}
-    }
+      }
+    {% endif %}
   {%- endstyle -%}
 {% endif %}

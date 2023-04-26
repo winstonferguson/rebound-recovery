@@ -12,6 +12,15 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .rr-capsule-details__special-mention-content img {
+    border: none;
+    margin-top: 20px;
+  }
+
+  .rr-capsule-details__special-mention-content p {
+    overflow: hidden;
+  }
+
   .rr-capsule-details__image img {
     margin-bottom: {{ section.settings.padding_top | times: 0.65 | round: 0 }}px;
   }
@@ -271,7 +280,7 @@
       "limit": 1,
       "settings": [
         {
-          "type": "richtext",
+          "type": "html",
           "id": "special_mention",
           "default": "<p>Provide detailed information and external links for products used in capsules.</p>",
           "label": "Special mention"
