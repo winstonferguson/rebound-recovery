@@ -68,7 +68,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/party.svg",
             "title": "Party",
-            "text": "<p>No instructions needed!<\/p>",
+            "text": "<p>No instructions needed! <\/p><p>Drinking water goes without saying<\/p>",
             "source": "",
             "link_label": "",
             "link": ""

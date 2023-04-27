@@ -63,10 +63,9 @@
             "heading_1": "Vegan",
             "icon_2": "none",
             "image_2": "shopify:\/\/shop_images\/uk.svg",
-            "heading_2": "UK made",
+            "heading_2": "Made in the UK in an HACCP approved facility",
             "icon_3": "none",
-            "image_3": "shopify:\/\/shop_images\/certified_e38befc9-6f25-48c5-9d29-c3a3d1c98505.svg",
-            "heading_3": "HACCP certified facility"
+            "heading_3": ""
           }
         },
         "collapsible-row-1": {
@@ -159,7 +158,7 @@
         "template--18615416127790__af2cd3e1-2acb-4974-a899-d48fa3e9a333-168129101820da4d57-3"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/missing-pill.png",
+        "image": "shopify:\/\/shop_images\/black_pill_shadow_c8946acd-2f75-4452-966e-e930f1004f4e.png",
         "color_scheme": "background-2",
         "padding_top": 60,
         "padding_bottom": 60,
@@ -202,7 +201,7 @@
         "template--18615416127790__3a26edab-17c3-4494-af01-a3094a836c77-1681303427653c0183-3"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/missing-pill.png",
+        "image": "shopify:\/\/shop_images\/yellow_pill_shadow.png",
         "color_scheme": "background-2",
         "padding_top": 60,
         "padding_bottom": 60,
@@ -245,7 +244,7 @@
         "template--18615416127790__634cb886-1647-49f7-8fc4-d7c584c9bfaa-1681303427653c0183-3"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/missing-pill.png",
+        "image": "shopify:\/\/shop_images\/white_pill_shadow_15d54b98-d501-45e0-8a10-607facb5a2f5.png",
         "color_scheme": "background-2",
         "padding_top": 60,
         "padding_bottom": 60,
