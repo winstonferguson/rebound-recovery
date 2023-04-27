@@ -22,7 +22,21 @@
 
   .rr-feature__image img {
     height: auto;
+    margin: 0 auto;
+    max-height: 70vh;
     max-width: 100% !important;
+    width: auto;
+  }
+
+  .rr-feature__cta {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .rr-feature__cta .button {
+    margin-top: 15px;
   }
   
 
@@ -34,19 +48,34 @@
     
     .rr-feature__blocks {
       max-width: 680px;
-    }  
+    } 
+    
+    .rr-feature__cta {
+      flex-direction: row;
+      justify-content: center;
+    }
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1300px) {
     .rr-feature__headline,
     .rr-feature__text {
       text-align: left;
     }
     .rr-feature__wrapper {
       align-items: center;
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 30px;
       flex-direction: row-reverse;
+    }
+
+    .rr-feature__cta {
+      justify-content: start;
+    }
+
+    .rr-feature__image {
+      grid-column: 2;
+      grid-row: 1;
     }
 
     .rr-feature__image img {
@@ -54,20 +83,19 @@
       max-width: 720px !important;
     }
 
+    .rr-feature__blocks {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
     .rr-feature__blocks .product-form__submit {
       width: auto;
     }
   }
 
-
-
-  
-  
-
   .rr-feature__blocks .product-form__submit {
     background: rgb(var(--color-base-accent-1));
     color: #fff;
-    margin-top: 15px;
   }
 
   .rr-feature__blocks .product-form__submit:after {
@@ -118,20 +146,24 @@
                 assign product_form_id = 'product-form-' | append: section.id
               
               -%}
-              <product-info
-                id="ProductInfo-{{ section.id }}"
-                class="product__info-container"
-                data-section="{{ section.id }}"
-                data-url="{{ product.url }}"
-              >
-                {%- render 'buy-buttons',
-                  block: block,
-                  buy_now: true,
-                  product: product,
-                  product_form_id: product_form_id,
-                  section_id: section.id
-                -%}
-              </product-info>
+              <div class="rr-feature__cta">
+                <product-info
+                  id="ProductInfo-{{ section.id }}"
+                  class="product__info-container"
+                  data-section="{{ section.id }}"
+                  data-url="{{ product.url }}"
+                >
+                  {%- render 'buy-buttons',
+                    block: block,
+                    buy_now: true,
+                    product: product,
+                    product_form_id: product_form_id,
+                    section_id: section.id
+                  -%}
+                  
+                </product-info>
+                <a href="{{ product.url }}" class="button button--secondary" >Learn More</a>
+              </div>              
             {%- endcase -%}
           {%- endfor -%}
           {% render "product-badges", badges: section.settings.product.metafields.custom.badges.value, border: "top" %}

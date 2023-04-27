@@ -10,6 +10,36 @@
     block: block
   %}
 {% endcomment %}
+
+{%- style -%}
+  {% if block.settings.enable_top_border %}
+    .icon-with-text {
+      border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
+      padding-top: 1.5rem;
+    }
+
+  {% endif %}
+  {% if block.settings.enable_bottom_border %}
+    .icon-with-text {
+      border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+      padding-bottom: 1.5rem;
+    }
+  {% endif %}
+  {% if block.settings.enable_larger_icons %}
+    .icon-with-text .icon,
+    .icon-with-text img {
+      height: calc(var(--icon-size) * 2);
+      width: calc(var(--icon-size) * 2);
+    }
+  {% endif %}
+  {% if block.settings.enable_small_text %}
+    .icon-with-text .h4 {
+      font-weight: 400;
+      font-size: 12px;
+    }
+  {% endif %}
+{%- endstyle -%}
+
 {%- liquid
   assign heading_1_empty = false
   assign heading_2_empty = false

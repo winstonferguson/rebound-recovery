@@ -125,6 +125,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/rebound_recovery_-_text_logo.svg",
     "checkout_sidebar_background_color": "#f0f8ea",
     "checkout_accent_color": "#22234e",
     "checkout_button_color": "#e9531d",

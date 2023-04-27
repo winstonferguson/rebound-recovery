@@ -55,7 +55,7 @@
         "column1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/prepare_b1ffb8ae-4977-4ef8-8056-8ec56a356402.svg",
+            "image": "shopify:\/\/shop_images\/prepare.svg",
             "title": "Prepare",
             "text": "<p>Two capsules before partying to support liver and immune function and boost energy.<\/p>",
             "source": "",
@@ -160,14 +160,14 @@
         "template--18615415472430__13e9a2f8-4341-4dd7-9f4f-ba70ad5ec5b5-16808661921787eaf8-0": {
           "type": "heading",
           "settings": {
-            "heading": "50 natural nutrients for the price of one drink",
+            "heading": "50 nutrients for the price of one drink",
             "heading_size": "h2"
           }
         },
         "template--18615415472430__13e9a2f8-4341-4dd7-9f4f-ba70ad5ec5b5-16808661921787eaf8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Rebound packs include over fifty 100% natural, clean ingredients designed to restore the nutrients you lose when you drink alcohol, dance or party all night.<\/p>",
+            "text": "<p>These nutrients are 100% natural and clean (this means no fillers or binders) and designed to restore the goodies you lose when you drink alcohol, dance or party all night.<\/p>",
             "text_style": "body"
           }
         }
@@ -246,6 +246,12 @@
             "image": "shopify:\/\/shop_images\/liver-support_6edb6e12-5767-4669-a748-cde1e59591a6.svg"
           }
         },
+        "eb410917-a7d2-48e4-badd-d88970338a35": {
+          "type": "images",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sleep.svg"
+          }
+        },
         "bb2cc514-f082-46ef-93a0-e3e2e87d8c90": {
           "type": "button",
           "settings": {
@@ -263,6 +269,7 @@
         "edc4ddef-3869-43dd-8e24-3b84b63e3802",
         "d95fe6f4-e41c-47f3-81df-923b1edbb6a7",
         "8dd5a649-2992-4bfd-ae93-b8fd0280c589",
+        "eb410917-a7d2-48e4-badd-d88970338a35",
         "bb2cc514-f082-46ef-93a0-e3e2e87d8c90"
       ],
       "settings": {
@@ -287,9 +294,9 @@
         "template--18615415472430__c884e470-695e-45d9-860e-4bca5eb9fb62-16807667218668abe4-0": {
           "type": "column",
           "settings": {
-            "title": "Amazing!",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "source": "<p>Bill Dearingly, London, UK<\/p>",
+            "title": "",
+            "text": "<p>\"Rebounded into the week unscathed after a heavy 3 days – where have you been Rebound?! \"<\/p>",
+            "source": "<p>Serena<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -297,9 +304,9 @@
         "template--18615415472430__c884e470-695e-45d9-860e-4bca5eb9fb62-16807667218668abe4-1": {
           "type": "column",
           "settings": {
-            "title": "Miracle cure",
-            "text": "<p>Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.<\/p>",
-            "source": "<p>Name, Place<\/p>",
+            "title": "",
+            "text": "<p>\"I’ve got my armour now thank you Rebound - Can’t wait to feel as good at the next festival.\"<\/p>",
+            "source": "<p>Rosie<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -307,9 +314,9 @@
         "template--18615415472430__c884e470-695e-45d9-860e-4bca5eb9fb62-16807667218668abe4-2": {
           "type": "column",
           "settings": {
-            "title": "Danced til the morning",
-            "text": "<p>Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.<\/p>",
-            "source": "<p>Name, Place<\/p>",
+            "title": "",
+            "text": "<p>\"These Rebound packs are magic. Felt top notch\"<\/p>",
+            "source": "<p>Tarqua<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -317,9 +324,9 @@
         "811a3185-1031-4854-ba93-473cb1557098": {
           "type": "column",
           "settings": {
-            "title": "Soul warming",
-            "text": "<p>Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.<\/p>",
-            "source": "<p>Name, Place<\/p>",
+            "title": "",
+            "text": "<p>\"Very impressed by the methodical way Rebound has been put together and it has seriously helped my crew through some heavy partying at a festival. Felt fresher than we deserved to!\"<\/p>",
+            "source": "<p>Simon<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -327,9 +334,9 @@
         "1d31a708-8139-4c71-a7f5-dbcd438d6d18": {
           "type": "column",
           "settings": {
-            "title": "Got a promotion",
-            "text": "<p>Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.<\/p>",
-            "source": "<p>Nam, Place<\/p>",
+            "title": "",
+            "text": "<p>\"The Rebound Revelation – how did we live without it before?\"<\/p>",
+            "source": "<p>Pippa<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -337,9 +344,9 @@
         "eda18fd9-2962-417b-9ec0-38d6552a8b07": {
           "type": "column",
           "settings": {
-            "title": "Won the lottery",
-            "text": "<p>Sed pretium a lectus sit amet pellentesque. Duis posuere nunc neque, et mattis arcu luctus et. Morbi sed ipsum et purus bibendum tincidunt.<\/p>",
-            "source": "<p>Name, Place<\/p>",
+            "title": "",
+            "text": "<p>\"Wallet, keys, Rebound pack….enough said, just ever so slightly life changing after a late night.\"<\/p>",
+            "source": "<p>Seb<\/p>",
             "link_label": "",
             "link": ""
           }
