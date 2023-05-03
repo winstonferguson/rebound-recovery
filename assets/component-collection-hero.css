@@ -37,7 +37,11 @@
 }
 
 .collection-hero__title {
-  margin: 2.5rem 0;
+  /* margin: 2.5rem 0; */
+  color: rgb(34, 35, 78);
+  margin: 0 auto 2.5rem auto;
+  max-width: var(--page-width);
+  text-align: center;
 }
 
 .collection-hero__title + .collection-hero__description {

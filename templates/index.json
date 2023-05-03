@@ -26,7 +26,7 @@
         "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-3": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": false
+            "add_to_cart_text": "Shop now"
           }
         }
       },
@@ -37,7 +37,7 @@
         "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-3"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/rr-packs.png",
+        "image": "shopify:\/\/shop_images\/rebound-pack-sized.png",
         "product": "rebound-recovery-pack",
         "color_scheme": "background-2",
         "media_size": "medium",
@@ -68,7 +68,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/party.svg",
             "title": "Party",
-            "text": "<p>No instructions needed! <\/p><p>Drinking water goes without saying<\/p>",
+            "text": "<p>No instructions needed...<\/p><p>BUT some water would be awesome!<\/p>",
             "source": "",
             "link_label": "",
             "link": ""
