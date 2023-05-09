@@ -2484,6 +2484,13 @@ product-info .loading-overlay:not(.hidden) ~ *,
     justify-self: center;
     text-align: center;
   }
+
+  .header__heading-logo-wrapper--absolute {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: auto;
+  }
 }
 
 /* Header icons */

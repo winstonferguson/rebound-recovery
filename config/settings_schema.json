@@ -26,6 +26,12 @@
         "label": "t:settings_schema.logo.settings.logo_width.label"
       },
       {
+        "type": "checkbox",
+        "id": "logo_absolute",
+        "label": "Attach logo to the top left corner of screen",
+        "default": false
+      },
+      {
         "type": "image_picker",
         "id": "favicon",
         "label": "t:settings_schema.logo.settings.favicon.label",

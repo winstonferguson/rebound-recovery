@@ -53,8 +53,10 @@
       text-align: center;
     }
 
+    {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
+
     .rr-capsule-details__image img {
-      top: calc({{ section.settings.padding_top }}px + 20px);
+      top: {{ logo_height | plus: 10 }}px;
     }
 
     .rr-capsule-details__special-mention-content {
