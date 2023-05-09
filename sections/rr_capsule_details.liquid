@@ -1,4 +1,5 @@
 {{ 'section-rr-capsule-details.css' | asset_url | stylesheet_tag }}
+{%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -23,6 +24,8 @@
 
   .rr-capsule-details__image img {
     margin-bottom: {{ section.settings.padding_top | times: 0.65 | round: 0 }}px;
+    max-width: 60%;
+    height: auto;
   }
 
   {% if section.settings.bottom_border %}
@@ -53,8 +56,6 @@
       text-align: center;
     }
 
-    {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
-
     .rr-capsule-details__image img {
       top: {{ logo_height | plus: 10 }}px;
     }
@@ -73,7 +74,16 @@
     <div class="rr-capsule-details__wrapper">
       <div class="rr-capsule-details__image page-width {{ section.settings.content_alignment }}">
         {%- if section.settings.image != blank -%}
-          {{ section.settings.image | image_url: width: 260 | image_tag: loading: 'lazy' }}
+          {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+          {%- capture sizes -%}
+            (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+            (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+          {%- endcapture -%}
+          {{
+            section.settings.image
+            | image_url: width: 1500
+            | image_tag: loading: 'lazy', sizes: sizes, widths: widths
+          }}
         {%- else -%}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}

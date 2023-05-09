@@ -6,12 +6,29 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  /* .image-with-text__content span {
+    font-size: 12px;
+    max-width: 100px;
+  } */
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  @media screen and (min-width: 990px) {
+    /* .image-with-text__content {
+      display: block;
+      text-align: {{ section.settings.desktop_content_alignment }};
+    } */
+    
+  }
+
+
+
+  
 {%- endstyle -%}
 
 {% render "rr-grid-styles" %}
@@ -75,8 +92,7 @@
                 {{ block.settings.text }}
               </div>
             {%- when 'images' -%}
-
-              <div class="" {{ block.shopify_attributes }} style="display: inline-block;">
+              <div class="" {{ block.shopify_attributes }} style="display: inline-block; margin: 15px">
                 {%- if  block.settings.image != blank -%}
                   {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
                   {%- capture sizes -%}
@@ -91,20 +107,24 @@
                 {%- else -%}
                   {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                 {%- endif -%}
+                <br>
+                <span>{{ block.settings.image.alt }}</span>
               </div>
             {%- when 'button' -%}
               {%- if block.settings.button_label != blank -%}
-                <a
-                  {% if block.settings.button_link == blank %}
-                    role="link" aria-disabled="true"
-                  {% else %}
-                    href="{{ block.settings.button_link }}"
-                  {% endif %}
-                  class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
-                  {{ block.shopify_attributes }}
-                >
-                  {{ block.settings.button_label | escape }}
-                </a>
+                <div class="" {{ block.shopify_attributes }}>
+                  <a
+                    {% if block.settings.button_link == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.button_link }}"
+                    {% endif %}
+                    class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{ block.settings.button_label | escape }}
+                  </a>
+                </div>
               {%- endif -%}
           {%- endcase -%}
         {%- endfor -%}

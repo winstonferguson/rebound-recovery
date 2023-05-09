@@ -13,16 +13,23 @@
     }
   }
 
-  .rich-text__image,
-  .rich-text__image img {
+  .section-{{ section.id }}-padding .rich-text__image,
+  .section-{{ section.id }}-padding .rich-text__image img {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    max-width: 260px;
+    max-width: {{ section.settings.image_width_mobile }}%;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding .rich-text__image,
+    .section-{{ section.id }}-padding .rich-text__image img {
+      max-width: {{ section.settings.image_width_desktop }}%;
+    }
   }
 {%- endstyle -%}
 
-{% render "rr-grid-styles" %}
+{% render 'rr-grid-styles' %}
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
   <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
@@ -50,15 +57,16 @@
               </div>
             {%- when 'image' -%}
               <div class="rich-text__image" {{ block.shopify_attributes }}>
-                {%- if  block.settings.image != blank -%}
+                {%- if block.settings.image != blank -%}
                   {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
                   {%- capture sizes -%}
                     (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
                     (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
                   {%- endcapture -%}
+
                   {{
                     block.settings.image
-                    | image_url: width: 300
+                    | image_url: width: 1500
                     | image_tag: loading: 'lazy', sizes: sizes, widths: widths
                   }}
                 {%- else -%}
@@ -108,10 +116,7 @@
   "tag": "section",
   "class": "section",
   "disabled_on": {
-    "groups": [
-      "header",
-      "footer"
-    ]
+    "groups": ["header", "footer"]
   },
   "settings": [
     {
@@ -262,6 +267,32 @@
       "id": "rr_grid_col_divider",
       "default": false,
       "label": "Enable column divider"
+    },
+    {
+      "type": "checkbox",
+      "id": "rr_grid_col_sticky",
+      "default": false,
+      "label": "Make column stick"
+    },
+    {
+      "type": "range",
+      "id": "image_width_mobile",
+      "min": 50,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Image size on mobile",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "image_width_desktop",
+      "min": 50,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Image size on desktop",
+      "default": 100
     }
   ],
   "blocks": [

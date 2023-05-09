@@ -78,5 +78,14 @@
         }
       }
     {% endif %}
+
+    {% if section.settings.rr_grid_col_sticky %}
+      @media screen and (min-width: 960px) {
+        #shopify-section-{{ section.id }} > div {
+          position: sticky;
+          top: 0;
+        }
+      }
+    {% endif %}
   {%- endstyle -%}
 {% endif %}

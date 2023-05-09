@@ -14,6 +14,13 @@
       }
     }
 
+    @media screen and (min-width: 990px) {
+      #shopify-section-{{ section.id }} .multicolumn-list {
+        margin: 0 auto;
+        max-width: {{ section.settings.max_width }}px;
+      }
+    }
+
     .background-none .multicolumn-card__image-wrapper + .multicolumn-card__info {
       padding-top: 1.5rem;
     }
@@ -22,14 +29,14 @@
       color: rgb(var(--color-base-accent-2));
     }
 
-    .media {
+    #shopify-section-{{ section.id }} .media {
       height: 80px !important;
       margin: 0 auto;
       padding-bottom: 0 !important;
       width: 80px !important;      
     }
 
-    .media img {
+    #shopify-section-{{ section.id }} .media img {
       height: 80px !important;
       margin: 0 auto;
       width: 80px !important;
@@ -542,6 +549,15 @@
       "id": "rr_grid_col_divider",
       "default": false,
       "label": "Enable column divider"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 2000,
+      "step": 50,
+      "default": 2000,
+      "label": "Max width on desktop"
     }
   ],
   "blocks": [
