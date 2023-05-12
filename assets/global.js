@@ -6,6 +6,8 @@ function getFocusableElements(container) {
   );
 }
 
+if(document.querySelector('.header--alpha')) document.querySelector('.header--alpha').style.marginBottom = '-' + document.querySelector('.header--alpha').clientHeight + 'px';
+
 document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
   summary.setAttribute('role', 'button');
   summary.setAttribute('aria-expanded', summary.parentNode.hasAttribute('open'));

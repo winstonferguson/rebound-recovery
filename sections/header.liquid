@@ -30,8 +30,14 @@
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
-{%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
-
+{% liquid
+  assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio
+  assign alpha_header = nil 
+  assign sticky_header_type = section.settings.sticky_header_type 
+  if section.settings.home_header_alpha and template.name == "index"
+    assign alpha_header = true
+  endif
+%}
 <style>
   header-drawer {
     justify-self: start;
@@ -39,7 +45,7 @@
   }
 
 
-  {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
+  {%- if sticky_header_type == 'reduce-logo-size' -%}
     .scrolled-past-header .header__heading-logo-wrapper {
       width: 75%;
     }
@@ -92,6 +98,21 @@
     }
   }
 </style>
+
+{%- if alpha_header %}
+  {%- style -%}
+  .header--alpha {
+    background-color: transparent;
+    margin-bottom: -82px;
+  }
+
+  .header--alpha img.header__heading-logo {filter: invert(1) grayscale(1) contrast(2)}
+  {%- endstyle -%}
+
+  {%- assign sticky_header_type = 'none' -%}
+
+  
+{%- endif -%}
 
 {%- style -%}
   .header {
@@ -155,7 +176,7 @@
   endfor
 -%}
 
-<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+<{% if sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}{% if alpha_header %} header--alpha color-inverse{% endif %}">
   {%- liquid
     assign social_links = false
     assign localization_forms = false
@@ -317,7 +338,7 @@
       </a>
     </div>
   </header>
-</{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
+</{% if sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
 {%- if settings.cart_type == "notification" -%}
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}
@@ -670,6 +691,16 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Rebound Recovery"
+    },
+    {
+      "type": "checkbox",
+      "id": "home_header_alpha",
+      "default": false,
+      "label": "Transparent header on homepage"
     }
   ],
   "blocks": [
