@@ -23,6 +23,31 @@
   {%- endstyle -%}
 {%- endif -%}
 
+{%- if section.settings.rr_image_sizing -%}
+  {%- style -%}
+    #Banner-{{ section.id }},
+    #Banner-{{ section.id }} > div,
+    #Banner-{{ section.id }}::after {
+      min-height: {{ section.settings.rr_image_sizing_mobile }}vh;
+      max-height: {{ section.settings.rr_image_sizing_mobile }}vh;
+    }
+
+    #Banner-{{ section.id }} .media > img {
+      min-height: {{ section.settings.rr_image_sizing_desktop }};
+      object-position: {{ section.settings.rr_image_sizing_position }} center;
+    }
+
+    @media screen and (min-width: 960px) {
+      #Banner-{{ section.id }},
+      #Banner-{{ section.id }} > div,
+      #Banner-{{ section.id }}::after {
+        min-height: {{ section.settings.rr_image_sizing_desktop }}vh;
+        max-height: {{ section.settings.rr_image_sizing_desktop }}vh;
+      }
+    }
+  {%- endstyle -%}
+{%- endif -%}
+
 {%- style -%}
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
@@ -416,6 +441,56 @@
       "id": "rr_grid_col_sticky",
       "default": false,
       "label": "Make column stick"
+    },
+    {
+      "type": "header",
+      "content": "RR Image Sizing"
+    },
+    {
+      "type": "checkbox",
+      "id": "rr_image_sizing",
+      "default": false,
+      "label": "Enable image sizing"
+    },
+    {
+      "type": "range",
+      "id": "rr_image_sizing_mobile",
+      "min": 30,
+      "max": 100,
+      "step": 5,
+      "unit": "vh",
+      "label": "Mobile image height",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "rr_image_sizing_desktop",
+      "min": 30,
+      "max": 100,
+      "step": 5,
+      "unit": "vh",
+      "label": "Desktop image height",
+      "default": 80
+    },
+    {
+      "type": "select",
+      "id": "rr_image_sizing_position",
+      "options": [
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "top",
+          "label": "Top"
+        }
+      ],
+      "default": "center",
+      "label": "Align image vertical postion"
     }
   ],
   "blocks": [
