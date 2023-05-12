@@ -15,7 +15,7 @@
           "settings": {
             "heading": "What is Rebound?",
             "icon": "none",
-            "row_content": "<p>Rebound is a premium food supplement containing the highest quality ingredients for maximum absorption and effect. Rebound is made in the UK in a fully regulated facility and all health claims have been approved by the European Food Safety Authority.  <\/p><p>Rebound is before and after party recovery support for adults in 5 easy to swallow capsules. It is a food supplement providing essential nutrients, amino acids and botanicals to support detoxification, energy, mood, cognition, immunity and sleep. <\/p>",
+            "row_content": "<p>Rebound is a premium food supplement containing the highest quality ingredients for maximum absorption and effect. Rebound is made in the UK in a fully regulated facility and all health claims have been approved by the European Food Safety Authority.  <\/p><p>Rebound is before and after party recovery support for adults in 5 easy to swallow capsules. It is a food supplement providing essential nutrients, amino acids and botanicals to support detoxification, energy, cognition, immunity, mood and sleep. <\/p>",
             "page": ""
           }
         },
@@ -258,6 +258,29 @@
         "rr_grid_col_divider": false
       }
     },
+    "1feed263-c9d5-4657-a84b-c960d6ee6aa4": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/PHOTO-2023-05-09-15-24-36_02a120fb-8ef2-489a-99c4-1b5586a7546c.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto",
+        "rr_grid_col_sticky": false,
+        "rr_image_sizing": true,
+        "rr_image_sizing_mobile": 80,
+        "rr_image_sizing_desktop": 80,
+        "rr_image_sizing_position": "center"
+      }
+    },
     "d620288d-afd4-495a-9b22-7d51b4a59b4b": {
       "type": "social-links",
       "settings": {
@@ -277,6 +300,7 @@
     "main",
     "60c97312-7fdf-49f5-aa75-2c4eb9aba02a",
     "cf86596a-a676-4caa-a180-2ab981673420",
+    "1feed263-c9d5-4657-a84b-c960d6ee6aa4",
     "d620288d-afd4-495a-9b22-7d51b4a59b4b"
   ]
 }

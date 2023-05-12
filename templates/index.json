@@ -1,5 +1,40 @@
 {
   "sections": {
+    "ded5afd5-f4da-46d8-bee6-4db309670aea": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18615415472430__ded5afd5-f4da-46d8-bee6-4db309670aea-168388821027bba7b9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Because dancing all night shouldn't cost you tomorrow!",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--18615415472430__ded5afd5-f4da-46d8-bee6-4db309670aea-168388821027bba7b9-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/landing.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto",
+        "rr_grid_col_sticky": false,
+        "rr_image_sizing": true,
+        "rr_image_sizing_mobile": 80,
+        "rr_image_sizing_desktop": 80,
+        "rr_image_sizing_position": "top"
+      }
+    },
     "d85fc367-db3e-4ff0-b350-70590ceca325": {
       "type": "rr-feature",
       "blocks": {
@@ -13,7 +48,7 @@
         "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-1": {
           "type": "text",
           "settings": {
-            "text": "Because dancing all night shouldn't cost you tomorrow!",
+            "text": "Because dancing all night shouldn't cost you tomorrow",
             "text_style": "subtitle"
           }
         },
@@ -45,7 +80,7 @@
         "media_fit": "contain",
         "media_position": "left",
         "image_zoom": "lightbox",
-        "padding_top": 16,
+        "padding_top": 60,
         "padding_bottom": 32
       }
     },
@@ -57,7 +92,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/prepare.svg",
             "title": "Prepare",
-            "text": "<p>Two capsules before partying to support liver and immune function and boost energy.<\/p>",
+            "text": "<p>Two capsules before partying to support liver and immune function and boost energy<\/p>",
             "source": "",
             "link_label": "",
             "link": ""
@@ -68,7 +103,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/party.svg",
             "title": "Party",
-            "text": "<p>No instructions needed...<\/p><p>BUT some water would be awesome!<\/p>",
+            "text": "<p>No instructions needed!<\/p>",
             "source": "",
             "link_label": "",
             "link": ""
@@ -79,7 +114,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/repair_7e88aae2-dc25-4fb8-98c1-cc5d3177597f.svg",
             "title": "Repair",
-            "text": "<p>Three capsules before bed to support liver and immune function, cognition, mood and sleep quality<\/p>",
+            "text": "<p>Three capsules before bed to support liver and immune function, cognition, mood and sleep<\/p>",
             "source": "",
             "link_label": "",
             "link": ""
@@ -130,7 +165,7 @@
         "template--18615415472430__d5434413-9171-4fe7-b0b7-fda6d06760a5-16808661921787eaf8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Rebound is developed by practising Nutritional Therapists who know how to hit the dancefloor but be proactive about their recovery afterwards.<\/p>",
+            "text": "<p>Rebound is developed by practising Nutritional Therapists who know how to hit the dance floor but be proactive about recovering afterwards.<\/p>",
             "text_style": "body"
           }
         }
@@ -140,7 +175,7 @@
         "template--18615415472430__d5434413-9171-4fe7-b0b7-fda6d06760a5-16808661921787eaf8-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/PHOTO-2023-05-09-15-24-36.jpg",
+        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-05-10_at_17.11.26-4.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -169,7 +204,7 @@
         "template--18615415472430__13e9a2f8-4341-4dd7-9f4f-ba70ad5ec5b5-16808661921787eaf8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>These nutrients are 100% natural and clean (this means no fillers or binders) and designed to restore the goodies you lose when you drink alcohol, dance or party all night.<\/p>",
+            "text": "<p>These nutrients are 100% natural and clean and designed to replenish what you deplete when you party hard, dance all night and go to bed late.<\/p>",
             "text_style": "body"
           }
         }
@@ -179,7 +214,7 @@
         "template--18615415472430__13e9a2f8-4341-4dd7-9f4f-ba70ad5ec5b5-16808661921787eaf8-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/helena-yankovska-7EbGkOm8pWM-unsplash.jpg",
+        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-05-11_at_10.15.02-2.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -230,13 +265,13 @@
         "327b87e4-c2c6-4034-8cb8-456cf95bcaea": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/prepare_pills_1ed3a5ae-cd7f-406b-ac56-f3720a0e3a6e.png"
+            "image": "shopify:\/\/shop_images\/prepare_pills.png"
           }
         },
         "202b9327-4972-40f5-9e31-ba334371e959": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Two capsules before you party for:<\/strong>",
+            "heading": "<strong>Two capsules before you party<\/strong>",
             "heading_size": "h2"
           }
         }
@@ -263,17 +298,6 @@
     "0632ee8b-fb7b-40f6-8165-20d9bca2cc9e": {
       "type": "multicolumn",
       "blocks": {
-        "template--18615415472430__0632ee8b-fb7b-40f6-8165-20d9bca2cc9e-1683659034ed5fea26-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/immunity_bbabca4e-585a-4b24-afba-1b0cce6e5650.svg",
-            "title": "",
-            "text": "<p>Immunity support<\/p>",
-            "source": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "template--18615415472430__0632ee8b-fb7b-40f6-8165-20d9bca2cc9e-1683659034ed5fea26-1": {
           "type": "column",
           "settings": {
@@ -285,12 +309,23 @@
             "link": ""
           }
         },
+        "template--18615415472430__0632ee8b-fb7b-40f6-8165-20d9bca2cc9e-1683659034ed5fea26-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/immunity_bbabca4e-585a-4b24-afba-1b0cce6e5650.svg",
+            "title": "",
+            "text": "<p>Immunity<\/p>",
+            "source": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "template--18615415472430__0632ee8b-fb7b-40f6-8165-20d9bca2cc9e-1683659034ed5fea26-2": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/energy.svg",
             "title": "",
-            "text": "<p>Mood and energy<\/p>",
+            "text": "<p>Energy<\/p>",
             "source": "",
             "link_label": "",
             "link": ""
@@ -298,8 +333,8 @@
         }
       },
       "block_order": [
-        "template--18615415472430__0632ee8b-fb7b-40f6-8165-20d9bca2cc9e-1683659034ed5fea26-0",
         "template--18615415472430__0632ee8b-fb7b-40f6-8165-20d9bca2cc9e-1683659034ed5fea26-1",
+        "template--18615415472430__0632ee8b-fb7b-40f6-8165-20d9bca2cc9e-1683659034ed5fea26-0",
         "template--18615415472430__0632ee8b-fb7b-40f6-8165-20d9bca2cc9e-1683659034ed5fea26-2"
       ],
       "settings": {
@@ -334,13 +369,13 @@
         "7b2c29b9-b67c-4bf1-bf87-0a6d226e00a6": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/repair_pills.png"
+            "image": "shopify:\/\/shop_images\/repair_pills_68ece394-0dde-4893-832e-d45447574c90.png"
           }
         },
         "04068b35-fbfb-419c-81f7-3be5db3859c4": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Three capsules before bed for:<\/strong>",
+            "heading": "<strong>Three capsules before bed<\/strong>",
             "heading_size": "h2"
           }
         }
@@ -394,7 +429,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/sleep.svg",
             "title": "",
-            "text": "<p>Sleep quality<\/p>",
+            "text": "<p>Mood and sleep<\/p>",
             "source": "",
             "link_label": "",
             "link": ""
@@ -465,7 +500,6 @@
         "0a306a40-dd58-4708-96de-cccf672aa518": {
           "type": "images",
           "settings": {
-            "image": "shopify:\/\/shop_images\/energy_077c9858-9d92-4721-9a2b-1830473563a9.svg"
           }
         },
         "edc4ddef-3869-43dd-8e24-3b84b63e3802": {
@@ -527,6 +561,29 @@
         "padding_bottom": 60,
         "rr_grid_col": "1\/-1",
         "rr_grid_row": "auto"
+      }
+    },
+    "c9874964-a587-453d-a346-a02016f0fea7": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DSC7663.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false,
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto",
+        "rr_grid_col_sticky": false,
+        "rr_image_sizing": true,
+        "rr_image_sizing_mobile": 60,
+        "rr_image_sizing_desktop": 80,
+        "rr_image_sizing_position": "bottom"
       }
     },
     "c884e470-695e-45d9-860e-4bca5eb9fb62": {
@@ -617,7 +674,7 @@
         "slide_on_desktop": true,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 36,
+        "padding_top": 60,
         "padding_bottom": 36,
         "border_top": false,
         "border_bottom": false,
@@ -629,6 +686,7 @@
     }
   },
   "order": [
+    "ded5afd5-f4da-46d8-bee6-4db309670aea",
     "d85fc367-db3e-4ff0-b350-70590ceca325",
     "multicolumn",
     "d5434413-9171-4fe7-b0b7-fda6d06760a5",
@@ -639,6 +697,7 @@
     "e37b57cc-a46b-444b-9be0-80604be38856",
     "0b23ee19-b884-4acd-87cc-6a9907c5ad6f",
     "2271f9a4-6515-4702-b016-b0d102776af6",
+    "c9874964-a587-453d-a346-a02016f0fea7",
     "c884e470-695e-45d9-860e-4bca5eb9fb62"
   ]
 }

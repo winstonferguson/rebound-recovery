@@ -1,6 +1,6 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/rebound-full-logo.svg",
+    "logo": "shopify://shop_images/rebound-full-logo.svg",
     "logo_width": 180,
     "logo_absolute": true,
     "colors_solid_button_labels": "#ffffff",
@@ -110,9 +110,9 @@
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
     "social_facebook_link": "",
-    "social_instagram_link": "https:\/\/www.instagram.com\/reboundrecovery.co",
+    "social_instagram_link": "https://www.instagram.com/reboundrecovery.co",
     "social_youtube_link": "",
-    "social_tiktok_link": "https:\/\/www.tiktok.com\/@reboundrecovery.co",
+    "social_tiktok_link": "https://www.tiktok.com/@reboundrecovery.co",
     "social_twitter_link": "",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
@@ -126,7 +126,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/rebound_recovery_-_text_logo.svg",
+    "checkout_logo_image": "shopify://shop_images/rebound_recovery_-_text_logo.svg",
     "checkout_sidebar_background_color": "#f0f8ea",
     "checkout_accent_color": "#22234e",
     "checkout_button_color": "#e9531d",

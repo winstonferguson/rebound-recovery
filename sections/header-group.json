@@ -4,20 +4,19 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "disabled": true,
       "blocks": {
-        "announcement-bar-0": {
+        "eabe449b-1ae1-4a13-a95e-9b5832a43bab": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "Orders placed during the pre launch period will be posted on 30 May",
             "text_alignment": "center",
-            "color_scheme": "background-1",
+            "color_scheme": "accent-1",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "eabe449b-1ae1-4a13-a95e-9b5832a43bab"
       ],
       "settings": {
       }
@@ -36,7 +35,8 @@
         "mobile_logo_position": "center",
         "margin_bottom": 0,
         "padding_top": 12,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "home_header_alpha": true
       }
     }
   },
