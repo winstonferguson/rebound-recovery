@@ -1,0 +1,47 @@
+{%- style -%}
+  .rr-select .icon-caret {
+    max-width: 1.6rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+{%- endstyle -%}
+
+<quantity-input class="quantity rr-select">
+  <select
+    class="quantity__input"
+    type="number"
+    name="quantity"
+    id="Quantity-{{ section.id }}"
+    form="{{ product_form_id }}"
+    data-min="{{ selling_min_qty }}"
+  >
+    {%- for q in selling_quantities -%}
+      {%- assign qty = q | times: 1 -%}
+      {%- if product.selected_or_first_available_variant.inventory_management == 'shopify' -%}
+        {%- if qty < product.selected_or_first_available_variant.inventory_quantity -%}
+          <option 
+            value="{{ qty }}" 
+            {%- if qty == selling_min_qty -%}
+              selected
+            {%- endif -%}
+          >  
+            {{ qty }} packs
+          </option>
+        {%- endif -%}
+      {%- else %}
+      <option 
+        value="{{ qty }}" 
+        {%- if qty == selling_min_qty -%}
+          selected
+        {%- endif -%}
+      >  
+        {{ qty }} packs
+      </option>
+      {%- endif -%}
+    {%- endfor -%}
+  </select>
+  {% render 'icon-caret' %}
+</quantity-input>

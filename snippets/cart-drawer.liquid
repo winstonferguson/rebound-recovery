@@ -270,17 +270,28 @@
 
                         <td class="cart-item__quantity" role="cell" headers="CartDrawer-ColumnQuantity">
                           <div class="cart-item__quantity-wrapper">
+                        
+                            {% liquid
+                              assign product = item.product
+                              assign selling_quantities = nil
+                              assign selling_min_qty = nil
+                            
+                              if product.metafields.custom.selling_quantities != blank
+                                assign selling_quantities = product.metafields.custom.selling_quantities | remove: "[" | remove: "]" | split: ','
+                                assign selling_min_qty =  selling_quantities | first | times: 1
+                              endif  
+                            %}  
+
+
+
+
                             <quantity-input class="quantity cart-quantity">
-                              <button class="quantity__button no-js-hidden" name="minus" type="button">
-                                <span class="visually-hidden">
-                                  {{- 'products.product.quantity.decrease' | t: product: item.product.title | escape -}}
-                                </span>
-                                {% render 'icon-minus' %}
-                              </button>
+                             
                               <input
                                 class="quantity__input"
                                 type="number"
                                 data-quantity-variant-id="{{ item.variant.id }}"
+                                disabled=true
                                 name="updates[]"
                                 value="{{ item.quantity }}"
                                 {% # theme-check-disable %}
@@ -295,12 +306,7 @@
                                 id="Drawer-quantity-{{ item.index | plus: 1 }}"
                                 data-index="{{ item.index | plus: 1 }}"
                               >
-                              <button class="quantity__button no-js-hidden" name="plus" type="button">
-                                <span class="visually-hidden">
-                                  {{- 'products.product.quantity.increase' | t: product: item.product.title | escape -}}
-                                </span>
-                                {% render 'icon-plus' %}
-                              </button>
+                              
                             </quantity-input>
 
                             <cart-remove-button

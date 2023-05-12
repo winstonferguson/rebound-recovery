@@ -32,13 +32,9 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-  }
-
-  .rr-feature__cta .button {
-    margin-top: 15px;
-  }
-  
+    gap: 30px;
+    margin-top: 20px;
+  }  
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
@@ -51,8 +47,10 @@
     } 
     
     .rr-feature__cta {
+      align-items: center;
       flex-direction: row;
       justify-content: center;
+      margin-top: 10px;
     }
   }
 
@@ -122,9 +120,16 @@
   }
 </style>
 
-{%- liquid
+{% liquid
   assign product = section.settings.product
--%}
+  assign selling_quantities = nil
+  assign selling_min_qty = nil
+
+  if product.metafields.custom.selling_quantities != blank
+    assign selling_quantities = product.metafields.custom.selling_quantities | remove: "[" | remove: "]" | split: ','
+    assign selling_min_qty =  selling_quantities | first | times: 1
+  endif  
+%}  
 
 <div class="rr-feature color-{{ section.settings.color_scheme }}  section-{{ section.id }}-padding isolate">
   <div class="rr-feature__wrapper page-width content-container content-container--full-width">
@@ -158,22 +163,29 @@
               
               -%}
               <div class="rr-feature__cta">
-                <product-info
+                {% comment %} <product-info
                   id="ProductInfo-{{ section.id }}"
                   class="product__info-container"
                   data-section="{{ section.id }}"
                   data-url="{{ product.url }}"
                 >
-                  {%- render 'buy-buttons',
-                    block: block,
-                    buy_now: true,
-                    product: product,
-                    product_form_id: product_form_id,
-                    section_id: section.id
-                  -%}
                   
-                </product-info>
-                <a href="{{ product.url }}" class="button button--secondary" >Learn More</a>
+                                   
+                </product-info> {% endcomment %}
+                {%- render 'rr-minimum-qty-selector',
+                  product: product,
+                  product_form_id: product_form_id,
+                  section: section, 
+                  selling_min_qty: selling_min_qty,
+                  selling_quantities: selling_quantities
+                -%}
+                {%- render 'buy-buttons',
+                  block: block,
+                  buy_now: true,
+                  product: product,
+                  product_form_id: product_form_id,
+                  section_id: section.id
+                -%} 
               </div>              
             {%- endcase -%}
           {%- endfor -%}

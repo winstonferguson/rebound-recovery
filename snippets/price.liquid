@@ -6,6 +6,7 @@
   - use_variant: {Boolean} Renders selected or first variant price instead of overall product pricing (optional)
   - show_badges: {Boolean} Renders 'Sale' and 'Sold Out' tags if the product matches the condition (optional)
   - price_class: {String} Adds a price class to the price element (optional)
+  - selling_min_qty: {Number} Multiplies the price by the selling_min_qty and includes minimum selling quantity descriptor (optional)
 
   Usage:
   {% render 'price', product: product %}
@@ -19,6 +20,10 @@
 
   assign compare_at_price = target.compare_at_price
   assign price = target.price | default: 1999
+  if selling_min_qty
+    assign compare_at_price = compare_at_price | times: selling_min_qty
+    assign price = price | times: selling_min_qty
+  endif
   assign available = target.available | default: false
   assign money_price = price | money
   if settings.currency_code_enabled
@@ -47,7 +52,12 @@
     <div class="price__regular">
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       <span class="price-item price-item--regular">
-        <strong>{{ money_price }}</strong>
+        <strong>
+          {{ money_price }}
+          {%- if selling_min_qty -%}
+             for {{ selling_min_qty }} packs
+          {%- endif -%}
+        </strong>
       </span>
     </div>
     <div class="price__sale">
@@ -57,8 +67,14 @@
           <s class="price-item price-item--regular">
             {% if settings.currency_code_enabled %}
               {{ compare_at_price | money_with_currency }}
+              {%- if selling_min_qty -%}
+                for {{ selling_min_qty }} packs
+             {%- endif -%}
             {% else %}
               {{ compare_at_price | money }}
+              {%- if selling_min_qty -%}
+                for {{ selling_min_qty }} packs
+             {%- endif -%}
             {% endif %}
           </s>
         </span>
@@ -66,6 +82,9 @@
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
       <span class="price-item price-item--sale price-item--last">
         {{ money_price }}
+        {%- if selling_min_qty -%}
+          for {{ selling_min_qty }} packs
+       {%- endif -%}
       </span>
     </div>
     <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">

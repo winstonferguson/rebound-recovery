@@ -1599,3 +1599,12 @@ a.product__text {
     border: none;
   }
 }
+
+.rr-select .icon-caret {
+  max-width: 1.6rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
