@@ -17,12 +17,15 @@
     id="Quantity-{{ section.id }}"
     form="{{ product_form_id }}"
     data-min="{{ selling_min_qty }}"
+    data-multipack-prices='{{ multipack_prices }}'
+    data-base-price="{{ product.price |  money_with_currency }}"
   >
     {%- for q in selling_quantities -%}
       {%- assign qty = q | times: 1 -%}
       {%- if product.selected_or_first_available_variant.inventory_management == 'shopify' -%}
         {%- if qty < product.selected_or_first_available_variant.inventory_quantity -%}
           <option 
+            data-multipack-index="{{ forloop.index }}"
             value="{{ qty }}" 
             {%- if qty == selling_min_qty -%}
               selected
@@ -45,3 +48,6 @@
   </select>
   {% render 'icon-caret' %}
 </quantity-input>
+{%- if template.name == "product" -%}
+  <p class="caption">{{ product.metafields.custom.quantity_note }}</p>
+{%- endif -%}

@@ -34,7 +34,7 @@
   assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio
   assign alpha_header = nil 
   assign sticky_header_type = section.settings.sticky_header_type 
-  if section.settings.home_header_alpha and template.name == "index"
+  if settings.home_header_alpha and template.name == "index"
     assign alpha_header = true
   endif
 %}
@@ -691,16 +691,6 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
-    },
-    {
-      "type": "header",
-      "content": "Rebound Recovery"
-    },
-    {
-      "type": "checkbox",
-      "id": "home_header_alpha",
-      "default": false,
-      "label": "Transparent header on homepage"
     }
   ],
   "blocks": [

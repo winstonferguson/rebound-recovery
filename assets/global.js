@@ -6,6 +6,23 @@ function getFocusableElements(container) {
   );
 }
 
+const input = document.querySelector('quantity-input.rr-select select');
+const priceTag = document.querySelector('span.price-item');
+const multipackPrices = JSON.parse(input.dataset.multipackPrices);
+const basePrice =  input.dataset.basePrice;
+
+console.log(input);
+
+input.addEventListener('change', (event) => {
+  index = multipackPrices.findIndex(p => p.quantity == event.target.value);
+  priceTag.innerHTML = `<strong>${basePrice.charAt(0)}${multipackPrices[index].price.amount} ${multipackPrices[index].price.currency_code} for ${event.target.value} packs</strong>`;
+})
+
+window.addEventListener('load', () => {
+  let index = multipackPrices.findIndex(p => p.quantity == input.value);
+  priceTag.innerHTML = `<strong>${basePrice.charAt(0)}${multipackPrices[index].price.amount} ${multipackPrices[index].price.currency_code} for ${multipackPrices[index].quantity} packs</strong>`;
+});
+
 if(document.querySelector('.header--alpha')) document.querySelector('.header--alpha').style.marginBottom = '-' + document.querySelector('.header--alpha').clientHeight + 'px';
 
 document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {

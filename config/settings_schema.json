@@ -4,8 +4,19 @@
     "theme_name": "Rebound Recovery",
     "theme_version": "0.0.0",
     "theme_author": "Winston Ferguson",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
+  },
+  {
+    "name": "Rebound Recovery",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "home_header_alpha",
+        "default": false,
+        "label": "Transparent header on homepage"
+      }
+    ]
   },
   {
     "name": "t:settings_schema.logo.name",

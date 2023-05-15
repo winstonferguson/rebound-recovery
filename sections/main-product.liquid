@@ -74,12 +74,15 @@
     to ensure values are processed as integers, we need to times by 1
   {% endcomment %}
   {% liquid
-    assign selling_quantities = nil
-    assign selling_min_qty = nil
+    assign multipack = product.metafields.custom.only_multipack
+    assign multipack_min = nil
+    assign multipack_prices = nil
+    assign multipack_quantities = nil
 
-    if product.metafields.custom.selling_quantities != blank
-      assign selling_quantities = product.metafields.custom.selling_quantities | remove: "[" | remove: "]" | split: ','
-      assign selling_min_qty =  selling_quantities | first | times: 1
+    if multipack
+      assign multipack_quantities = product.metafields.custom.multipack_order.value | map: 'quantity' 
+      assign multipack_min_qty =  multipack_quantities | first | times: 1
+      assign multipack_prices = product.metafields.custom.multipack_order.value | json     
     endif  
   %}  
 
@@ -107,8 +110,8 @@
                   use_variant: true,
                   show_badges: true,
                   price_class: 'price--large',
-                  selling_min_qty: selling_min_qty,
-                -%}
+                  selling_min_qty: multipack_min_qty,
+                -%}                
               </div>
               {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
                 <div class="product__tax caption rte">
@@ -218,7 +221,7 @@
                 {% comment %} TODO: enable theme-check once `item_count_for_variant` is accepted as valid filter {% endcomment %}
                 {% # theme-check-disable %}
                 {%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}
-                {%- assign selling_quantities = product.metafields.custom.selling_quantities | remove: "[" | remove: "]" | split: ',' -%}
+                
                 {% # theme-check-enable %}
                 <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
                   {{ 'products.product.quantity.label' | t }}
@@ -239,13 +242,14 @@
                     <span>({{- 'products.product.quantity.in_cart_html' | t: quantity: cart_qty -}})</span>
                   </span>
                 </label>
-                {%- if selling_quantities -%}
-                  {%- render 'rr-minimum-qty-selector',
+                {%- if multipack -%}
+                  {%- render 'rr-multipack-qty-selector',
                     product: product,
                     product_form_id: product_form_id,
                     section: section, 
-                    selling_min_qty: selling_min_qty,
-                    selling_quantities: selling_quantities
+                    selling_min_qty: multipack_min_qty,
+                    selling_quantities: multipack_quantities
+                    multipack_prices: multipack_prices
                   -%}
                 {%- else -%}
                   <quantity-input class="quantity">

@@ -6,13 +6,21 @@
         "template--18615415472430__ded5afd5-f4da-46d8-bee6-4db309670aea-168388821027bba7b9-0": {
           "type": "heading",
           "settings": {
-            "heading": "Because dancing all night shouldn't cost you tomorrow!",
+            "heading": "Party Recovery Packs Perfected by Nutritionists",
             "heading_size": "h1"
+          }
+        },
+        "c4fab70c-97f0-4b9b-a3f3-4dd40d54de2c": {
+          "type": "text",
+          "settings": {
+            "text": "Because dancing all night shouldn't cost you tomorrow!",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "template--18615415472430__ded5afd5-f4da-46d8-bee6-4db309670aea-168388821027bba7b9-0"
+        "template--18615415472430__ded5afd5-f4da-46d8-bee6-4db309670aea-168388821027bba7b9-0",
+        "c4fab70c-97f0-4b9b-a3f3-4dd40d54de2c"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/landing.jpg",
@@ -30,8 +38,8 @@
         "rr_grid_row": "auto",
         "rr_grid_col_sticky": false,
         "rr_image_sizing": true,
-        "rr_image_sizing_mobile": 80,
-        "rr_image_sizing_desktop": 80,
+        "rr_image_sizing_mobile": 70,
+        "rr_image_sizing_desktop": 70,
         "rr_image_sizing_position": "top"
       }
     },
@@ -41,14 +49,14 @@
         "6048c6e9-b65c-4ef0-8057-70d8fb1b9c98": {
           "type": "headline",
           "settings": {
-            "headline": "Party Recovery Packs Perfected by Nutritionists",
+            "headline": "Backed by Nutritional Science",
             "heading_size": "h1"
           }
         },
         "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-1": {
           "type": "text",
           "settings": {
-            "text": "Because dancing all night shouldn't cost you tomorrow",
+            "text": "Rebound contains over 50 high quality nutrients, amino acids and botanicals to support liver detoxification, energy, immunity, cognition, mood and sleep.",
             "text_style": "subtitle"
           }
         },
@@ -61,7 +69,7 @@
         "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-3": {
           "type": "buy_buttons",
           "settings": {
-            "add_to_cart_text": "Shop now"
+            "add_to_cart_text": "Buy now"
           }
         }
       },
@@ -165,7 +173,7 @@
         "template--18615415472430__d5434413-9171-4fe7-b0b7-fda6d06760a5-16808661921787eaf8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Rebound is developed by practising Nutritional Therapists who know how to hit the dance floor but be proactive about recovering afterwards.<\/p>",
+            "text": "<p>Rebound is developed by practising Nutritional Therapists who know how to hit the dance floor but be proactive about recovering well.<\/p>",
             "text_style": "body"
           }
         }
@@ -188,7 +196,8 @@
         "padding_top": 60,
         "padding_bottom": 32,
         "rr_grid_col": "1\/-1",
-        "rr_grid_row": "auto"
+        "rr_grid_row": "auto",
+        "rr_image_sizing_full_width_mobile": true
       }
     },
     "13e9a2f8-4341-4dd7-9f4f-ba70ad5ec5b5": {
@@ -204,7 +213,7 @@
         "template--18615415472430__13e9a2f8-4341-4dd7-9f4f-ba70ad5ec5b5-16808661921787eaf8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>These nutrients are 100% natural and clean and designed to replenish what you deplete when you party hard, dance all night and go to bed late.<\/p>",
+            "text": "<p>100% natural and clean and designed to replenish the nutrients you deplete when you party hard and dance late.<\/p>",
             "text_style": "body"
           }
         }
@@ -214,7 +223,7 @@
         "template--18615415472430__13e9a2f8-4341-4dd7-9f4f-ba70ad5ec5b5-16808661921787eaf8-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-05-11_at_10.15.02-2.jpg",
+        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-05-15_at_09.55.36.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -227,7 +236,8 @@
         "padding_top": 28,
         "padding_bottom": 60,
         "rr_grid_col": "1\/-1",
-        "rr_grid_row": "auto"
+        "rr_grid_row": "auto",
+        "rr_image_sizing_full_width_mobile": true
       }
     },
     "7ea41a8d-a645-4d08-9e10-237f9a5ea43c": {
@@ -560,7 +570,8 @@
         "padding_top": 60,
         "padding_bottom": 60,
         "rr_grid_col": "1\/-1",
-        "rr_grid_row": "auto"
+        "rr_grid_row": "auto",
+        "rr_image_sizing_full_width_mobile": true
       }
     },
     "c9874964-a587-453d-a346-a02016f0fea7": {
