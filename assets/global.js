@@ -6,23 +6,6 @@ function getFocusableElements(container) {
   );
 }
 
-const input = document.querySelector('quantity-input.rr-select select');
-const priceTag = document.querySelector('span.price-item');
-const multipackPrices = JSON.parse(input.dataset.multipackPrices);
-const basePrice =  input.dataset.basePrice;
-
-console.log(input);
-
-input.addEventListener('change', (event) => {
-  index = multipackPrices.findIndex(p => p.quantity == event.target.value);
-  priceTag.innerHTML = `<strong>${basePrice.charAt(0)}${multipackPrices[index].price.amount} ${multipackPrices[index].price.currency_code} for ${event.target.value} packs</strong>`;
-})
-
-window.addEventListener('load', () => {
-  let index = multipackPrices.findIndex(p => p.quantity == input.value);
-  priceTag.innerHTML = `<strong>${basePrice.charAt(0)}${multipackPrices[index].price.amount} ${multipackPrices[index].price.currency_code} for ${multipackPrices[index].quantity} packs</strong>`;
-});
-
 if(document.querySelector('.header--alpha')) document.querySelector('.header--alpha').style.marginBottom = '-' + document.querySelector('.header--alpha').clientHeight + 'px';
 
 document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
@@ -214,6 +197,65 @@ class QuantityInput extends HTMLElement {
 }
 
 customElements.define('quantity-input', QuantityInput);
+
+class MultipackInput extends HTMLElement {
+  constructor() {
+    super();
+    this.input = this.querySelector('select');
+    this.priceDisplay = document.querySelector('span.price-item');
+    this.multipackPrices = this.loadMultipackPrices();
+    this.currencySymbol = this.dataset.basePrice.charAt(0);
+    this.quantity = this.input.value;
+    console.log(this);
+
+    this.changeEvent = new Event('change', { bubbles: true });
+    this.input.addEventListener('change', this.onInputChange.bind(this));
+    this.updatePriceDisplay();
+  }
+
+  loadMultipackPrices() {
+    // multipack prices are a custom product metafield with a list of values based on a custom shop metaobject 
+    //// this metaobject has an integer field for quantity and a money field for price
+    // they are loaded as a stringified JSON object in the data-multipack-prices attribute
+    let multipackPrices = JSON.parse(this.dataset.multipackPrices);
+    // Shopify is serving prices with a trailing .0 for whole numbers
+    // we want .00 for consistency
+    // loop through to replace the .0 with .00
+    for (let i = 0; i < multipackPrices.length; i++) {
+      // let's not break things for an aesthetic zero
+      if (typeof String.prototype.endsWith === 'function') {
+        // get the price
+        let price = multipackPrices[i].price.amount;
+        // check the price
+        if (price.endsWith(".0")) {
+          // update the price
+          price = price.replace(".0", ".00");
+          // update the price in the object
+          multipackPrices[i].price.amount = price;
+        }
+      } 
+    }
+    return multipackPrices;
+  }
+
+  price() {
+    const i = this.multipackPrices.findIndex(p => p.quantity == this.quantity);
+    return this.multipackPrices[i].price;
+  }
+
+  onInputChange(event) {
+    this.quantity = event.target.value;
+    // update the displayed price
+    this.updatePriceDisplay();
+  }
+
+  updatePriceDisplay() {
+    const price = this.price();
+    this.priceDisplay.innerHTML = `<strong>${this.currencySymbol}${price.amount} ${price.currency_code} for ${this.quantity} packs</strong>`;
+  }
+}
+
+customElements.define('multipack-input', MultipackInput);
 
 function debounce(fn, wait) {
   let t;

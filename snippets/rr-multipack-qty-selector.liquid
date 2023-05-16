@@ -1,4 +1,9 @@
 {%- style -%}
+  .rr-select select.quantity__input {
+    -moz-appearance: none;
+    appearance: none;
+  }
+
   .rr-select .icon-caret {
     max-width: 1.6rem;
     position: absolute;
@@ -9,7 +14,11 @@
   }
 {%- endstyle -%}
 
-<quantity-input class="quantity rr-select">
+<multipack-input 
+  class="quantity rr-select"
+  data-base-price="{{ product.price |  money_with_currency }}"
+  data-multipack-prices='{{ multipack_prices }}'
+>
   <select
     class="quantity__input"
     type="number"
@@ -17,8 +26,6 @@
     id="Quantity-{{ section.id }}"
     form="{{ product_form_id }}"
     data-min="{{ selling_min_qty }}"
-    data-multipack-prices='{{ multipack_prices }}'
-    data-base-price="{{ product.price |  money_with_currency }}"
   >
     {%- for q in selling_quantities -%}
       {%- assign qty = q | times: 1 -%}
@@ -47,7 +54,7 @@
     {%- endfor -%}
   </select>
   {% render 'icon-caret' %}
-</quantity-input>
+</multipack-input>
 {%- if template.name == "product" -%}
   <p class="caption">{{ product.metafields.custom.quantity_note }}</p>
 {%- endif -%}

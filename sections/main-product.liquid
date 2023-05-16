@@ -121,6 +121,9 @@
                   {%- if shop.shipping_policy.body != blank -%}
                     {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
                   {%- endif -%}
+                  {%- if product.metafields.custom.rrp_note -%}
+                    <br>{{ product.metafields.custom.rrp_note }}
+                  {%- endif -%}
                 </div>
               {%- endif -%}
               <div {{ block.shopify_attributes }}>
