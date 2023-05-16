@@ -261,7 +261,7 @@
     "1feed263-c9d5-4657-a84b-c960d6ee6aa4": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/PHOTO-2023-05-09-15-24-36_02a120fb-8ef2-489a-99c4-1b5586a7546c.jpg",
+        "image": "shopify:\/\/shop_images\/DSC7663.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -277,8 +277,9 @@
         "rr_grid_col_sticky": false,
         "rr_image_sizing": true,
         "rr_image_sizing_mobile": 80,
-        "rr_image_sizing_desktop": 80,
-        "rr_image_sizing_position": "center"
+        "rr_image_sizing_desktop": 90,
+        "rr_image_sizing_position": "bottom",
+        "add_image_caption": "Happy real life Rebound customers"
       }
     },
     "d620288d-afd4-495a-9b22-7d51b4a59b4b": {

@@ -22,7 +22,6 @@
     }
   {%- endstyle -%}
 {%- endif -%}
-
 {%- if section.settings.rr_image_sizing -%}
   {%- style -%}
     #Banner-{{ section.id }},
@@ -179,6 +178,14 @@
     </div>
   </div>
 </div>
+{%- if section.settings.add_image_caption -%}
+  <div 
+    class="banner__caption caption"
+    style="text-align: {{ section.settings.desktop_content_alignment }};"
+  >
+    {{ section.settings.add_image_caption }}
+  </div>
+{%- endif -%}
 
 {% schema %}
 {
@@ -491,6 +498,11 @@
       ],
       "default": "center",
       "label": "Align image vertical postion"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "add_image_caption",
+      "label": "Image caption"
     }
   ],
   "blocks": [

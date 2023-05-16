@@ -8,7 +8,7 @@
         "eabe449b-1ae1-4a13-a95e-9b5832a43bab": {
           "type": "announcement",
           "settings": {
-            "text": "Orders placed during the pre launch period will be posted on 30 May",
+            "text": "PRE-LAUNCH 33% off until 29 May! Orders will be shipped on 30 May",
             "text_alignment": "center",
             "color_scheme": "accent-2",
             "link": ""
@@ -35,8 +35,7 @@
         "mobile_logo_position": "center",
         "margin_bottom": 0,
         "padding_top": 12,
-        "padding_bottom": 12,
-        "home_header_alpha": true
+        "padding_bottom": 12
       }
     }
   },
