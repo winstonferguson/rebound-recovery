@@ -30,9 +30,10 @@
   {% style %}
     @media screen and (max-width: 749px) {
       .section-{{ section.id }}-padding .image-with-text__media {
-        min-width: 100vw;
-        margin-left: -1.5rem;
+        margin-left: 50%;
         margin-top: -{{ section.settings.padding_top }}px;
+        transform: translateX(-50%);
+        width: 100vw;
       }
     }
   {% endstyle %}

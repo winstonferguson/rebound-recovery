@@ -726,6 +726,26 @@
         "rr_grid_col_divider": false,
         "max_width": 2000
       }
+    },
+    "b9a1dbd8-20f1-4915-94fa-2f00b8b5caf1": {
+      "type": "rich-text",
+      "custom_css": [
+        ".isolate {border-top: 1px solid #22234e;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 0,
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto",
+        "rr_grid_col_divider": false,
+        "rr_grid_col_sticky": false,
+        "image_width_mobile": 100,
+        "image_width_desktop": 100
+      }
     }
   },
   "order": [
@@ -742,6 +762,7 @@
     "0b23ee19-b884-4acd-87cc-6a9907c5ad6f",
     "2271f9a4-6515-4702-b016-b0d102776af6",
     "c9874964-a587-453d-a346-a02016f0fea7",
-    "c884e470-695e-45d9-860e-4bca5eb9fb62"
+    "c884e470-695e-45d9-860e-4bca5eb9fb62",
+    "b9a1dbd8-20f1-4915-94fa-2f00b8b5caf1"
   ]
 }

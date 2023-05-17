@@ -21,7 +21,9 @@
         "padding_bottom": 60,
         "rr_grid_col": "2",
         "rr_grid_row": "2",
-        "rr_grid_col_sticky": true
+        "rr_grid_col_sticky": true,
+        "rr_mobile_padding_top": 0,
+        "rr_mobile_padding_bottom": 0
       }
     },
     "4349700d-5624-40b1-a1c2-deb38b3568aa": {
@@ -158,7 +160,7 @@
         "template--18657542897966__ac355882-c485-499b-90e5-8533a7da7b71-16809454669df08914-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Why choose Rebound Packs?<\/strong><\/p><p><\/p><ul><li><strong>Nutritionist Backed <\/strong>- Researched and developed by Nutritional Therapists with 56 years of combined clinical, food supplement and natural health experience<\/li><\/ul><p><\/p><ul><li><strong>100% natural, clean and active ingredients<\/strong> - that means no fillers \/ binders or anything to get in the way of your body absorbing the ingredients<\/li><\/ul><p><\/p><ul><li><strong>Four branded products<\/strong> with clinically proven health claims:<\/li><\/ul><ol><li><a href=\"https:\/\/www.purewayc.com\/\" title=\"https:\/\/www.purewayc.com\/\">Pureway<\/a><\/li><li><a href=\"https:\/\/setriaglutathione.com\/en\" target=\"_blank\" title=\"https:\/\/setriaglutathione.com\/en\">Setria <\/a><\/li><li><a href=\"https:\/\/www.seagreens.co.uk\/KSM66 \" target=\"_blank\" title=\"https:\/\/www.seagreens.co.uk\/KSM66 \">Seagreens<\/a> <\/li><li><a href=\"https:\/\/ksm66ashwagandhaa.com\/ksm-66\/what-is-ksm-66\/\" target=\"_blank\" title=\"https:\/\/ksm66ashwagandhaa.com\/ksm-66\/what-is-ksm-66\/\">Ashwagandha<\/a><\/li><\/ol><p><\/p><ul><li><strong>Botanical blends<\/strong> - Each capsule is full of its own liver loving botanicals to support detoxification and immune function.<\/li><\/ul><p><\/p><ul><li><strong>Multiple system<\/strong> - before and after party support for liver, immune and cognitive function, energy production, mood and sleep.<\/li><\/ul><p><\/p><ul><li><strong>Vegan, dairy free, soy free, No GMO<\/strong><\/li><li><strong>Manufactured in the UK <\/strong><\/li><\/ul><p>You can find full details of all Rebound ingredients in <a href=\"\/products\/rebound-recovery-pack\" title=\"Rebound Party Recovery Pack\">our store<\/a>.<\/p>"
+            "text": "<p><strong>Why choose Rebound Packs?<\/strong><\/p><p><\/p><ul><li><strong>Nutritionist Backed <\/strong>- Researched and developed by Nutritional Therapists with 56 years of combined clinical, food supplement and natural health experience.<\/li><\/ul><p><\/p><ul><li><strong>100% natural, clean and active ingredients<\/strong> - that means no fillers \/ binders or anything to get in the way of your body absorbing the ingredients.<\/li><\/ul><p><\/p><ul><li><strong>Four branded products<\/strong> with clinically proven health claims:<\/li><\/ul><ol><li><a href=\"https:\/\/www.purewayc.com\/\" title=\"https:\/\/www.purewayc.com\/\">Pureway<\/a><\/li><li><a href=\"https:\/\/setriaglutathione.com\/en\" target=\"_blank\" title=\"https:\/\/setriaglutathione.com\/en\">Setria <\/a><\/li><li><a href=\"https:\/\/www.seagreens.co.uk\/KSM66 \" target=\"_blank\" title=\"https:\/\/www.seagreens.co.uk\/KSM66 \">Seagreens<\/a> <\/li><li><a href=\"https:\/\/ksm66ashwagandhaa.com\/ksm-66\/what-is-ksm-66\/\" target=\"_blank\" title=\"https:\/\/ksm66ashwagandhaa.com\/ksm-66\/what-is-ksm-66\/\">Ashwagandha<\/a><\/li><\/ol><p><\/p><ul><li><strong>Botanical blends<\/strong> - Each capsule is full of its own liver loving botanicals to support detoxification and immune function.<\/li><\/ul><p><\/p><ul><li><strong>Multiple system<\/strong> - before and after party support for liver, immune and cognitive function, energy production, mood and sleep.<\/li><\/ul><p><\/p><ul><li><strong>Vegan, dairy free, soy free, No GMO<\/strong><\/li><li><strong>Manufactured in the UK <\/strong><\/li><\/ul><p>You can find full details of all Rebound ingredients in <a href=\"\/products\/rebound-recovery-pack\" title=\"Rebound Party Recovery Pack\">our store<\/a>.<\/p>"
           }
         }
       },
@@ -230,7 +232,7 @@
         "template--18657542897966__fa7e0ca8-518b-45fb-8164-83df24b3bde7-16836474546465805f-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We’re on a mission to reshape drinking culture — partying with proactive recovery.<\/p><p>We want to change the way people look after their bodies when they party and make your approach to drinking part of your health and wellness plan.<\/p><p>So say bye bye to the morning after the night before, kiss farewell to downers, Rebound is the bounce back recovery pack — for less than the price of a single drink.<\/p><p><\/p>",
+            "text": "<p>We’re on a mission to reshape drinking culture — partying with proactive recovery.<\/p><p>We want to change the way people look after their bodies when they party and make your approach to partying part of your health and wellness plan.<\/p><p>So say bye bye to the morning after the night before, kiss farewell to downers, Rebound is the bounce back recovery pack — for less than the price of a single drink!<\/p><p><\/p>",
             "text_style": "body"
           }
         }
@@ -256,6 +258,26 @@
         "rr_grid_row": "auto",
         "rr_image_sizing_full_width_mobile": true
       }
+    },
+    "f39423ee-9088-4b5b-86b5-145796228c67": {
+      "type": "rich-text",
+      "custom_css": [
+        ".isolate {border-top: 1px solid #22234e;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 28,
+        "padding_bottom": 0,
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto",
+        "rr_grid_col_divider": false,
+        "rr_grid_col_sticky": false,
+        "image_width_mobile": 100,
+        "image_width_desktop": 100
+      }
     }
   },
   "order": [
@@ -266,6 +288,7 @@
     "467cb9cd-a404-425a-877a-40994ce8bd6b",
     "ac355882-c485-499b-90e5-8533a7da7b71",
     "1d531449-c8d7-49a3-8931-b49e14f061f5",
-    "fa7e0ca8-518b-45fb-8164-83df24b3bde7"
+    "fa7e0ca8-518b-45fb-8164-83df24b3bde7",
+    "f39423ee-9088-4b5b-86b5-145796228c67"
   ]
 }

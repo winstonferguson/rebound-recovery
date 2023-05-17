@@ -132,7 +132,6 @@
 {% liquid
   assign product = section.settings.product
   assign multipack = product.metafields.custom.only_multipack
-  assign multipack_min = nil
   assign multipack_prices = nil
   assign multipack_quantities = nil
 
@@ -172,7 +171,7 @@
               {%- liquid
                 assign product = section.settings.product
                 assign product_form_id = 'product-form-' | append: section.id
-              
+                assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id
               -%}
               {%- render 'price',
                 product: product,
@@ -181,26 +180,53 @@
                 price_class: 'price--small',
                 selling_min_qty: multipack_min_qty,
               -%}
-              
               <div class="rr-feature__cta">
-                {% comment %} <product-info
-                  id="ProductInfo-{{ section.id }}"
-                  class="product__info-container"
-                  data-section="{{ section.id }}"
-                  data-url="{{ product.url }}"
-                >
-                  
-                                   
-                </product-info> {% endcomment %}
-                 
-                {%- render 'rr-multipack-qty-selector',
-                  product: product,
-                  product_form_id: product_form_id,
-                  section: section, 
-                  selling_min_qty: multipack_min_qty,
-                  selling_quantities: multipack_quantities,
-                  multipack_prices: multipack_prices
-                -%}
+                
+                {%- if multipack -%}                 
+                  {%- render 'rr-multipack-qty-selector',
+                    product: product,
+                    product_form_id: product_form_id,
+                    section: section, 
+                    selling_min_qty: multipack_min_qty,
+                    selling_quantities: multipack_quantities,
+                    multipack_prices: multipack_prices
+                  -%}
+
+                {%- else -%}
+
+                  <quantity-input class="quantity">
+                    <button class="quantity__button no-js-hidden" name="minus" type="button">
+                      <span class="visually-hidden">
+                        {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
+                      </span>
+                      {% render 'icon-minus' %}
+                    </button>
+                    <input
+                      class="quantity__input"
+                      type="number"
+                      name="quantity"
+                      id="Quantity-{{ section.id }}"
+                      data-cart-quantity="{{ cart_qty }}"
+                      data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+                      min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+                      {% if product.selected_or_first_available_variant.quantity_rule.max != null %}
+                        data-max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
+                        max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
+                      {% endif %}
+                      step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
+                      value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+                      form="{{ product_form_id }}"
+                    />
+                    <button class="quantity__button no-js-hidden" name="plus" type="button">
+                      <span class="visually-hidden">
+                        {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
+                      </span>
+                      {% render 'icon-plus' %}
+                    </button>
+                  </quantity-input>
+
+                {%- endif -%}
+
                 {%- render 'buy-buttons',
                   block: block,
                   buy_now: true,
@@ -208,7 +234,8 @@
                   product_form_id: product_form_id,
                   section_id: section.id
                 -%} 
-              </div>              
+
+              </div>             
             {%- endcase -%}
           {%- endfor -%}
           {% render "product-badges", badges: section.settings.product.metafields.custom.badges.value, border: "top" %}
@@ -294,7 +321,7 @@
 
 {% schema %}
 {
-  "name": "RR Feature",
+  "name": "Rebound Product Feature",
   "tag": "section",
   "class": "section section-featured-product",
   "disabled_on": {

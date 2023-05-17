@@ -21,10 +21,31 @@
         "rr_grid_col": "1\/-1",
         "rr_grid_row": "auto"
       }
+    },
+    "1f6f8bf8-aa05-4d71-9558-c8a18340f4db": {
+      "type": "rich-text",
+      "custom_css": [
+        ".isolate {border-top: 1px solid #22234e;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 28,
+        "padding_bottom": 0,
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto",
+        "rr_grid_col_divider": false,
+        "rr_grid_col_sticky": false,
+        "image_width_mobile": 100,
+        "image_width_desktop": 100
+      }
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "1f6f8bf8-aa05-4d71-9558-c8a18340f4db"
   ]
 }
