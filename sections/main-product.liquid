@@ -214,6 +214,10 @@
                   </div>
                 </details>
               </div>
+            {%- when 'file_download' -%}
+              <div class="product__accordion accordion quick-add-hidden product__file-download" {{ block.shopify_attributes }}>
+                <a href="{{ block.settings.url }}" class="h4 accordion__title inline-richtext" download>{{ block.settings.heading }}{% render 'icon-plus' %}</a>         
+              </div>
             {%- when 'quantity_selector' -%}
               <div
                 id="Quantity-Form-{{ section.id }}"
@@ -637,6 +641,22 @@
           ],
           "default": "body",
           "label": "t:sections.main-product.blocks.text.settings.text_style.label"
+        }
+      ]
+    },
+    {
+      "type": "file_download",
+      "name": "Downloadable content",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Link text"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "File url"
         }
       ]
     },

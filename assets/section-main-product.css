@@ -1608,3 +1608,17 @@ a.product__text {
   transform: translateY(-50%);
   z-index: -1;
 }
+
+.product__file-download a {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  padding: 1.5rem 0;
+  text-decoration: none;      
+}
+
+.product__file-download .icon-plus {
+  height: 1.2rem;
+  margin-right: 1.4rem;
+}
