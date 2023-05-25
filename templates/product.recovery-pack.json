@@ -73,7 +73,7 @@
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "none",
-            "content": "<p>Shipping<\/p><p>We offer a standard 2-3 day delivery and also next day delivery in the UK.  <br\/><\/p><p>Free standard delivery is available for all orders over £100.<\/p><p>Shipping only within the UK for the moment.<\/p><p>Returns<\/p><p>If for any reason you are unhappy with Rebound packs, simply return unused packs in their original condition within 30 days of purchase to receive a refund.<\/p><p>To start a return within 30 days of purchase, contact georgie@reboundrecovery.co with your confirmation email or proof of purchase. Please note that returns will need to be sent to the following address: Rebound Recovery Ltd, Soho Works, 2 Television Centre, 101 Wood Lane, London W12 7FA.  Your item must be sent back unused and in the same condition that you received it.<\/p><p>Refunds<\/p><p>Once we receive your return, we will email you to confirm receipt of your returned item.  If your return is approved, your refund will be processed, and a credit will automatically be applied to your original method of payment. <br\/><\/p>",
+            "content": "<p>Shipping<\/p><p>We offer a standard 2-3 day delivery.<\/p><p>Next day delivery is also available for orders placed before 12pm.<\/p><p>Free standard delivery is available for all orders over £100.<\/p><p>Shipping only within the UK for the moment.<\/p><p>Returns<\/p><p>If for any reason you are unhappy with Rebound packs, simply return unused packs in their original condition within 30 days of purchase to receive a refund.<\/p><p>To start a return within 30 days of purchase, contact georgie@reboundrecovery.co with your confirmation email or proof of purchase. Please note that returns will need to be sent to the following address: Rebound Recovery Ltd, Soho Works, 2 Television Centre, 101 Wood Lane, London W12 7FA.  Your item must be sent back unused and in the same condition that you received it.<\/p><p>Refunds<\/p><p>Once we receive your return, we will email you to confirm receipt of your returned item.  If your return is approved, your refund will be processed, and a credit will automatically be applied to your original method of payment. <br\/><\/p>",
             "page": ""
           }
         },
@@ -86,11 +86,21 @@
             "page": ""
           }
         },
-        "bfbfc462-48f2-402d-81d3-25659638ca02": {
-          "type": "file_download",
+        "a2cd930a-57a8-4363-8fb4-ad467610d2f0": {
+          "type": "collapsible_tab",
           "settings": {
             "heading": "Ingredients",
-            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0722\/4272\/5166\/files\/Rebound_Recovery_Pack_Ingredients.pdf"
+            "icon": "none",
+            "content": "<p><strong>Capsule A <\/strong><\/p><p>L-Theanine, N-Acetyl-L-Cysteine, Quercetin, Magnesium (Citrate), Vitamin E (D-Alpha Tocopherol), Calcium (Citrate), Lecithin (Sunflower), Glutamic Acid, L-Cysteine, L-Glutamine, L-Glycine, L-Lysine, L-Methionine, Taurine, B5 Pantothenic Acid (D-Calcium Pantothenate), Vitamin B3 (Niacinamide) , Vitamin B6 (Pyridoxyl-5-Phosphate), Zinc (Picolinate), L-Carnitine, Vitamin B1 (Thiamine Mononitrate), Vitamin B2 (Riboflavin), Iron (Bisglycinate), Manganese, (Citrate), Copper (Citrate), Vitamin A (Palmitate), Vitamin A (Beta Carotene), Folate (Calcium-L-Methylfolate), Biotin, Vitamin B12 (Methylcobalamin), Molybdenum (Sodium Molybdate), Chromium (Picolinate), Botanical  Blend: Seagreens® Wrack Blend (<em>Ascophyllum nodosum <\/em>and <em>Fucus vesiculosus<\/em>), Turmeric Extract Powder (95% Curcuminoids) <em>(Curcuma longa)<\/em>, Milk Thistle Seed <em>(Silybum marianum)<\/em>, Dandelion Root <em>(Taraxacum officinale)<\/em>, Red Beetroot <em>(Beta vulgaris)<\/em>, Grape Seed <em>(Vitis vinifera)<\/em><\/p><p>Capsule Shell (Hydroxypropyl Methylcellulose, Black Iron Oxide)<\/p><p><strong>Capsule B<\/strong><\/p><p>PureWay-C®** providing 150mg Vitamin C (Ascorbic Acid), Setria® Glutathione (reduced form)***, R-Alpha Lipoic Aci,  Co Q10 (Ubiquinol), Citrus Bioflavonoids, Choline (Bitrate), Selenium (Selenomethionine), Botanical Blend: Turmeric Extract (95% Curcuminoids) <em>(Curcuma longa), <\/em>Matcha Green Tea  <em>(Camellia sinensis)<\/em>, Seagreens® Wrack Blend <em>(Ascophyllum nodosum, Fucus vesiculosus), <\/em>Artichoke Leaf <em>(Cynara scolymus)<\/em>, Milk Thistle Seed <em>(Silybum marianum)<\/em><\/p><p>Capsule Shell (Hydroxypropyl Methylcellulose)<\/p><p><strong>Capsule C<\/strong><\/p><p>L-Theanine, L-5-Hydroxytryptophan <em>(Griffonia simplicifolia)<\/em>, Magnesium (Bisglycinate), Botanical Blend, KSM-66® Ashwagandha Root Extract 12:1, (5% Withanolides<em>) (Withania somnifera)<\/em>, Hops <em>(Humulus lupulus), <\/em>Reishi Mushroom <em>(Ganoderma lingzhi), <\/em>Lemon Balm <em>(Melissa officinalis)<\/em><\/p><p>Capsule Shell (Hydroxypropyl Methylcellulose)<\/p><p><\/p><p>*Nutrient Reference Value<\/p><p>**PureWay-C® and PureWay-C® logo are trademarks of One Innovation Labs, LLC. in the U.S. and\/or other countries.<\/p><p>***Setria® is a registered trademark of KYOWA HAKKO BIO CO., LTD.<\/p>",
+            "page": ""
+          }
+        },
+        "bfbfc462-48f2-402d-81d3-25659638ca02": {
+          "type": "file_download",
+          "disabled": true,
+          "settings": {
+            "heading": "Ingredients",
+            "url": "https:\/\/reboundrecovery.co\/cdn\/shop\/files\/Rebound_Recovery_Pack_Ingredients.pdf"
           }
         },
         "share": {
@@ -112,6 +122,7 @@
         "9c7cdb43-4d69-471a-a83c-f4c080e547a4",
         "collapsible-row-1",
         "collapsible-row-3",
+        "a2cd930a-57a8-4363-8fb4-ad467610d2f0",
         "bfbfc462-48f2-402d-81d3-25659638ca02",
         "share"
       ],
@@ -126,7 +137,7 @@
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 64,
+        "padding_top": 32,
         "padding_bottom": 32
       }
     },

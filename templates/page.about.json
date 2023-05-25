@@ -3,8 +3,8 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "padding_top": 20,
-        "padding_bottom": 60
+        "padding_top": 16,
+        "padding_bottom": 32
       }
     },
     "e70aa71c-c6af-455a-b770-87dcafb5f45d": {
