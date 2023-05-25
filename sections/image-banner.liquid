@@ -32,7 +32,7 @@
     }
 
     #Banner-{{ section.id }} .media > img {
-      min-height: {{ section.settings.rr_image_sizing_desktop }};
+      min-height: {{ section.settings.rr_image_sizing_desktop }}vh;
       object-position: {{ section.settings.rr_image_sizing_position }} center;
     }
 
@@ -77,6 +77,8 @@
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {%- liquid
         assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
+        assign image_loading = 'lazy'
+        
         if section.settings.image_2 != blank
           assign image_class = 'banner__media-image-half'
         endif
@@ -87,12 +89,16 @@
         else
           assign sizes = full_width
         endif
+
+        if section.settings.rr_lazy_image == false
+          assign image_loading = 'eager'
+        endif
       -%}
       {{
         section.settings.image
         | image_url: width: 3840
         | image_tag:
-          loading: 'lazy',
+          loading: image_loading,
           width: section.settings.image.width,
           height: image_height,
           class: image_class,
@@ -124,7 +130,7 @@
         section.settings.image_2
         | image_url: width: 3840
         | image_tag:
-          loading: 'lazy',
+          loading: image_loading,
           width: section.settings.image_2.width,
           height: image_height_2,
           class: image_class_2,
@@ -452,6 +458,12 @@
     {
       "type": "header",
       "content": "RR Image Sizing"
+    },
+    {
+      "type": "checkbox",
+      "id": "rr_lazy_image",
+      "default": true,
+      "label": "Enable lazy loading of images"
     },
     {
       "type": "checkbox",

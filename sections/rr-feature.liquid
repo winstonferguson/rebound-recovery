@@ -131,9 +131,14 @@
 
 {% liquid
   assign product = section.settings.product
+  assign image_loading = 'lazy'
   assign multipack = product.metafields.custom.only_multipack
   assign multipack_prices = nil
-  assign multipack_quantities = nil
+  assign multipack_quantities = nil  
+        
+  if section.settings.rr_lazy_image == false
+    assign image_loading = 'eager'
+  endif
 
   if multipack
     assign multipack_quantities = product.metafields.custom.multipack_order.value | map: 'quantity' 
@@ -146,7 +151,7 @@
   <div class="rr-feature__wrapper page-width content-container content-container--full-width">
     <div class="rr-feature__image  {{ section.settings.content_alignment }}">
       {%- if section.settings.image != blank -%}
-        {{ section.settings.image | image_url: width: 800 | image_tag: loading: 'lazy' }}
+        {{ section.settings.image | image_url: width: 800 | image_tag: loading: image_loading }}
       {%- else -%}
         {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
       {%- endif -%}
@@ -330,6 +335,12 @@
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.image-banner.settings.image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "rr_lazy_image",
+      "default": true,
+      "label": "Enable lazy loading of images"
     },
     {
       "type": "product",
