@@ -1622,3 +1622,10 @@ a.product__text {
   height: 1.2rem;
   margin-right: 1.4rem;
 }
+
+@media screen and (max-width: 749px) {
+  .product__badges,
+  .product__teaser {
+    display: none;
+  }
+}

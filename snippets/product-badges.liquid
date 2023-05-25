@@ -11,7 +11,7 @@
     font-size: 12px;
     height: 100%;
     line-height: 1.4;
-    margin-{{ border }}: 45px;
+    margin-{{ border }}: 30px;
     margin-left: 20px;
     margin-right: 20px;
     max-width: 120px;
@@ -24,7 +24,7 @@
   }
 
   .product__badges-badge span {
-    max-width: 100px;
+    max-width: 120px;
   }
 
   .product__badges-wrapper {   
@@ -54,7 +54,7 @@
     <div class="product__badges-wrapper">
       {%- for badge in badges %}
         <div class="product__badges-badge">
-          {{ badge | image_url: width: 80 | image_tag }}
+          {{ badge | image_url: width: 60 | image_tag }}
           <span>{{ badge | map: "alt" | first }}</span>
         </div>
       {%- endfor %}
