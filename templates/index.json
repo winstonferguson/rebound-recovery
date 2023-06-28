@@ -37,6 +37,7 @@
         "rr_grid_col": "1\/-1",
         "rr_grid_row": "auto",
         "rr_grid_col_sticky": false,
+        "rr_lazy_image": false,
         "rr_image_sizing": true,
         "rr_image_sizing_mobile": 70,
         "rr_image_sizing_desktop": 75,
@@ -61,13 +62,6 @@
             "text_style": "subtitle"
           }
         },
-        "ac3284a7-c657-4db9-8d8c-0b25b112b1a9": {
-          "type": "text",
-          "settings": {
-            "text": "<strong>PRE-LAUNCH 33% off until 29 May - don't miss out!<\/strong>",
-            "text_style": "body"
-          }
-        },
         "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-3": {
           "type": "buy_buttons",
           "settings": {
@@ -78,11 +72,11 @@
       "block_order": [
         "6048c6e9-b65c-4ef0-8057-70d8fb1b9c98",
         "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-1",
-        "ac3284a7-c657-4db9-8d8c-0b25b112b1a9",
         "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-3"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Rebound-Packaging-Mockup_Tilt.png",
+        "rr_lazy_image": false,
         "product": "rebound-recovery-pack",
         "color_scheme": "background-2",
         "media_size": "medium",
@@ -232,7 +226,7 @@
         "template--18615415472430__13e9a2f8-4341-4dd7-9f4f-ba70ad5ec5b5-16808661921787eaf8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>100% natural and clean and designed to replenish the nutrients you deplete when you party, dance  and go to bed late.<\/p>",
+            "text": "<p>100% natural and clean and designed to replenish the nutrients you deplete when you party, dance  hard and go to bed late.<\/p>",
             "text_style": "body"
           }
         }
@@ -622,6 +616,7 @@
         "rr_grid_col": "1\/-1",
         "rr_grid_row": "auto",
         "rr_grid_col_sticky": false,
+        "rr_lazy_image": true,
         "rr_image_sizing": true,
         "rr_image_sizing_mobile": 60,
         "rr_image_sizing_desktop": 80,

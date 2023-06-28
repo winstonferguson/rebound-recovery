@@ -3325,3 +3325,11 @@ strong {
   letter-spacing: (var(--font-heading-scale) * 0.03rem);
 }
 
+.rr_cart_note {
+  font-weight: 900;
+}
+
+.rr_cart_note.button.button--full-width.button--secondary {
+  cursor: not-allowed;  
+  font-weight: 400;
+}
