@@ -242,6 +242,10 @@
                   assign show_qty = false
                 endif
 
+                if settings.hide_qty_input 
+                  assign show_qty = false
+                endif
+
                 if cart.item_count > 0 and product_in_cart == false
                   assign show_qty = false
                 endif

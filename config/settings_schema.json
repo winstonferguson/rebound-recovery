@@ -15,6 +15,12 @@
         "id": "home_header_alpha",
         "default": false,
         "label": "Transparent header on homepage"
+      },
+      {
+        "type": "checkbox",
+        "id": "hide_qty_input",
+        "default": false,
+        "label": "Hide quantity input for products"
       }
     ]
   },
