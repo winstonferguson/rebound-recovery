@@ -275,7 +275,7 @@
                           endif
                         %}
                        
-                        <td class="cart-item__quantity{%if free_item %} cart_item--free {% endif %}" role="cell" headers="CartDrawer-ColumnQuantity">
+                        <td class="cart-item__quantity{% if free_item %} cart_item--free {% endif %}" role="cell" headers="CartDrawer-ColumnQuantity">
                           <div class="cart-item__quantity-wrapper">
                             {%- unless free_item -%}
                               {%- if item.product.metafields.custom.only_multipack %}

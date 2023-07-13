@@ -59,10 +59,10 @@
             "enable_larger_icons": true,
             "enable_small_text": true,
             "icon_1": "none",
-            "image_1": "shopify:\/\/shop_images\/vegan_08ce16f3-68fe-40bc-9e09-e6a0f2aca7f4.svg",
+            "image_1": "shopify://shop_images/vegan_08ce16f3-68fe-40bc-9e09-e6a0f2aca7f4.svg",
             "heading_1": "Vegan",
             "icon_2": "none",
-            "image_2": "shopify:\/\/shop_images\/uk.svg",
+            "image_2": "shopify://shop_images/uk.svg",
             "heading_2": "Made in the UK in an HACCP approved facility",
             "icon_3": "none",
             "heading_3": ""
@@ -83,7 +83,7 @@
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
-            "content": "<p>Do not exceed the recommended intake unless directed by a healthcare professional.<\/p><p>Food supplements are not a substitute for a varied diet. <\/p><p>If pregnant\/breastfeeding, taking medication, or have a medical condition, consult a healthcare practitioner before use.<\/p><p>Store in a cool, dry place, out of reach of children.<\/p>",
+            "content": "<p>Do not exceed the recommended intake unless directed by a healthcare professional.</p><p>Food supplements are not a substitute for a varied diet. </p><p>If pregnant/breastfeeding, taking medication, or have a medical condition, consult a healthcare practitioner before use.</p><p>Store in a cool, dry place, out of reach of children.</p>",
             "page": ""
           }
         },
@@ -125,6 +125,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",

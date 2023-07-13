@@ -58,8 +58,15 @@
         "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-1": {
           "type": "text",
           "settings": {
-            "text": "Rebound contains over 50 high quality nutrients, amino acids and botanicals to support liver detoxification, energy, immunity, cognition, mood and sleep.",
+            "text": "Rebound contains over 50 high quality nutrients, amino acids and botanicals to support liver detoxification, energy, immunity, cognition, mood and sleep.         <a href=\"\/products\/rebound-party-recovery-pack-sample\">Try a free sample<\/a>",
             "text_style": "subtitle"
+          }
+        },
+        "2524c427-9585-46a0-a564-a9fb97d2a8bb": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>More packs, bigger the discount.<\/strong>",
+            "text_style": "price"
           }
         },
         "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-3": {
@@ -72,6 +79,7 @@
       "block_order": [
         "6048c6e9-b65c-4ef0-8057-70d8fb1b9c98",
         "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-1",
+        "2524c427-9585-46a0-a564-a9fb97d2a8bb",
         "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-3"
       ],
       "settings": {

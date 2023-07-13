@@ -266,6 +266,7 @@ html.no-js .no-js-hidden {
   .header.page-width {
     padding-left: 3.2rem;
     padding-right: 3.2rem;
+    position: relative;
   }
 
   .page-width--narrow {
@@ -1030,6 +1031,10 @@ summary::-webkit-details-marker {
   line-height: calc(1 + 0.8 / var(--font-body-scale));
   letter-spacing: 0.06rem;
   color: rgba(var(--color-foreground), 0.7);
+}
+
+.subtitle a {
+  color: rgba(var(--color-foreground));
 }
 
 .subtitle--small {
