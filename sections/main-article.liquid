@@ -7,7 +7,7 @@
         <div class="page-width page-width--narrow">
           {% render block %}
         </div>
-      {%- when 'featured_image' -%}
+      {% comment %} {%- when 'featured_image' -%}
         {%- if article.image -%}
           <div class="article-template__hero-container" {{ block.shopify_attributes }}>
             <div
@@ -37,10 +37,10 @@
               >
             </div>
           </div>
-        {%- endif -%}
+        {%- endif -%} {% endcomment %}
 
       {%- when 'title' -%}
-        <header class="page-width page-width--narrow" {{ block.shopify_attributes }}>
+        <header class="color-background-2 rr-page-intro" {{ block.shopify_attributes }}>
           <h1 class="article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
           {%- if block.settings.blog_show_date -%}
             <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">

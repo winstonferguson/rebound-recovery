@@ -6,10 +6,16 @@
 }
 
 .blog-articles .card-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
   width: 100%;
 }
 
 @media screen and (min-width: 750px) {
+  .blog-articles .card-wrapper {
+    width: 80%;
+  }
+
   .blog-articles {
     grid-template-columns: 1fr 1fr;
     column-gap: var(--grid-desktop-horizontal-spacing);

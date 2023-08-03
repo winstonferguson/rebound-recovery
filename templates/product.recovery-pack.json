@@ -38,6 +38,16 @@
           "settings": {
           }
         },
+        "7003b2a2-9f3d-45c4-9935-55f729e50afb": {
+          "type": "shopify:\/\/apps\/paywhirl\/blocks\/paywhirl-plan-selector\/41e95d60-82cf-46e8-84de-618d7e4c37b7",
+          "settings": {
+            "font_scale": 100,
+            "theme": "classic",
+            "selling_plans_first": false,
+            "theme_color": "#334fb4",
+            "product": "{{product}}"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -73,7 +83,7 @@
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "none",
-            "content": "<p>Shipping<\/p><p>We offer 1st Class tracked delivery Monday to Saturday with Royal Mail and Free 2nd Class tracked delivery with Royal Mail.  Orders placed before 12pm will be sent out same day.<\/p><p>Please note that our courier will endeavour to meet delivery time aims but they are not guaranteed.<\/p><p>Shipping only within the UK for the moment.<\/p><p>Returns<\/p><p>If for any reason you are unhappy with Rebound packs, simply return unused packs in their original condition within 30 days of purchase to receive a refund.<\/p><p>To start a return within 30 days of purchase, contact georgie@reboundrecovery.co with your confirmation email or proof of purchase. Please note that returns will need to be sent to the following address: Rebound Recovery Ltd, Soho Works, 2 Television Centre, 101 Wood Lane, London W12 7FA.  Your item must be sent back unused and in the same condition that you received it.<\/p><p>Refunds<\/p><p>Once we receive your return, we will email you to confirm receipt of your returned item.  If your return is approved, your refund will be processed, and a credit will automatically be applied to your original method of payment. <br\/><\/p>",
+            "content": "<p>Shipping<\/p><p>We offer free 48 hour tracked, 24 hour tracked and special delivery all with Royal Mail (deliveries Mon-Sat only).  <\/p><p>Orders placed before 1:30pm on weekdays will be sent out same day.<\/p><p>Please note that Royal Mail will endeavour to meet delivery time aims but they are not guaranteed.<\/p><p>Shipping only within the UK for the moment.<\/p><p>Returns<\/p><p>If for any reason you are unhappy with Rebound packs, simply return unused packs in their original condition within 30 days of purchase to receive a refund.<\/p><p>To start a return within 30 days of purchase, contact georgie@reboundrecovery.co with your confirmation email or proof of purchase. Please note that returns will need to be sent to the following address: Rebound Recovery Ltd, Soho Works, 2 Television Centre, 101 Wood Lane, London W12 7FA.  Your item must be sent back unused and in the same condition that you received it.<\/p><p>Refunds<\/p><p>Once we receive your return, we will email you to confirm receipt of your returned item.  If your return is approved, your refund will be processed, and a credit will automatically be applied to your original method of payment. <br\/><\/p>",
             "page": ""
           }
         },
@@ -117,6 +127,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "7003b2a2-9f3d-45c4-9935-55f729e50afb",
         "buy_buttons",
         "description",
         "9c7cdb43-4d69-471a-a83c-f4c080e547a4",

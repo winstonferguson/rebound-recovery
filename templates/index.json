@@ -58,7 +58,7 @@
         "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-1": {
           "type": "text",
           "settings": {
-            "text": "Rebound contains over 50 high quality nutrients, amino acids and botanicals to support liver detoxification, energy, immunity, cognition, mood and sleep.         <a href=\"\/products\/rebound-party-recovery-pack-sample\">Try a free sample<\/a>",
+            "text": "Rebound contains over 50 high quality nutrients, amino acids and botanicals to support liver detoxification, energy, immunity, cognition, mood and sleep.",
             "text_style": "subtitle"
           }
         },
@@ -610,7 +610,7 @@
     "c9874964-a587-453d-a346-a02016f0fea7": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/PHOTO-2023-05-09-15-24-36_02a120fb-8ef2-489a-99c4-1b5586a7546c.jpg",
+        "image": "shopify:\/\/shop_images\/rr-festival.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
