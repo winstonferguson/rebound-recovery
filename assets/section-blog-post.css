@@ -104,7 +104,8 @@
 .article-template__content h3,
 .article-template__content h4,
 .article-template__content h5,
-.article-template__content h6 {
+.article-template__content h6,
+.article-template__content ul {
   margin: 0 auto;
   max-width: 650px;
   text-align: left;
