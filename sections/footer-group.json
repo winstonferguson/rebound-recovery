@@ -19,7 +19,7 @@
       "settings": {
         "color_scheme": "inverse",
         "newsletter_enable": true,
-        "newsletter_heading": "Join our mailing list",
+        "newsletter_heading": "Subscribe to our blog",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,

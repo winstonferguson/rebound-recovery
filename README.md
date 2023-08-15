@@ -1,17 +1,42 @@
 # Rebound Recovery 
 
-Shopify theme built off Dawn theme as per Shopify recommendation: https://github.com/Shopify/dawn.
+Shopify theme built off Dawn reference theme: https://github.com/Shopify/dawn.
 
-* **Web-native in its purest form:** Themes run on the [evergreen web](https://www.w3.org/2001/tag/doc/evergreen-web/). We leverage the latest web browsers to their fullest, while maintaining support for the older ones through progressive enhancement—not polyfills.
-* **Lean, fast, and reliable:** Functionality and design defaults to “no” until it meets this requirement. Code ships on quality. Themes must be built with purpose. They shouldn’t support each and every feature in Shopify.
-* **JavaScript not required, fails gracefully:** We extract every bit of speed and functionality out of HTTP, semantic HTML, and CSS before writing our first line of JavaScript. JavaScript can only be used to progressively enhance features.
-* **Server-rendered:** HTML must be rendered by Shopify servers using Liquid. Business logic and platform primitives such as translations and money formatting don’t belong on the client. Async and on-demand rendering of parts of the page is OK, but we do it sparingly as a progressive enhancement.
-* **Functional, not pixel-perfect:** The Web doesn’t require each page to be rendered pixel-perfect by each browser engine. Using semantic markup, progressive enhancement, and clever design, we ensure that themes remain functional regardless of the browser.
+## Customizations 
 
-[Styles](#Styles) | [Sections](#sections) | [Blocks](#blocks)
+Theme specific files are prepended with "rr-" to avoild name clashes.
 
-## Styles
+### Settings
 
-## Sections
+### Styles 
 
-## Blocks
+Overrides take place in the original declaration locations. 
+
+Theme specific sections have specific stylesheets.
+
+### Sections
+
+Header
+
+Has been revised to facilitate full image landings on the homepage.
+
+rr_capsule_details
+
+Section designed for capsules, adhering to the Figma design specifications. This segment is utilized on product pages.
+
+rr-feature
+
+This section is rendered beneath the landing image on the homepage, integrating a product form with badges and images.
+
+### Snippets
+
+rr-grid-styles
+
+Displays the style settings for a section's RR grid layout. RR grid layout settings enable a multi-column layout that can include sections within each column.
+
+
+rr-multipack-qty-selector
+
+If multipacks is activated through Product metadata, this code snippet manages the quantity input. 
+
+Note: multipack ordering was originally developed to streamline batch orders while ensuring accurate inventory management (as opposed to using variants for product bundles). However, this feature is now obsolete, as the store utilizes an app to synchronize inventories across variants.
