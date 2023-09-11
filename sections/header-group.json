@@ -5,17 +5,28 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "c3d44f17-07ac-4f5f-b4a1-5ac418e30839": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "“Absolute game changer....\" rated 4.8 on Trustpilot.",
+            "text_alignment": "center",
+            "color_scheme": "inverse",
+            "link": "https:\/\/uk.trustpilot.com\/review\/reboundrecovery.co"
+          }
+        },
         "eabe449b-1ae1-4a13-a95e-9b5832a43bab": {
           "type": "announcement",
           "settings": {
-            "text": "Get party ready with FREE SHIPPING on all orders",
+            "text": "FREE SHIPPING on all orders  - RATED 4.8 on TRUSTPILOT",
             "text_alignment": "center",
             "color_scheme": "accent-2",
-            "link": ""
+            "link": "https:\/\/uk.trustpilot.com\/review\/reboundrecovery.co"
           }
         }
       },
       "block_order": [
+        "c3d44f17-07ac-4f5f-b4a1-5ac418e30839",
         "eabe449b-1ae1-4a13-a95e-9b5832a43bab"
       ],
       "settings": {

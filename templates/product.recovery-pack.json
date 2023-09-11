@@ -90,9 +90,9 @@
         "collapsible-row-3": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Care Instructions",
+            "heading": "Instructions",
             "icon": "none",
-            "content": "<p>Do not exceed the recommended intake unless directed by a healthcare professional.<\/p><p>Food supplements are not a substitute for a varied diet.<br\/><br\/>If pregnant\/breastfeeding, taking medication, or have a medical condition, consult a healthcare practitioner before use.<\/p><p>Store in a cool, dry place, out of reach of children.<\/p>",
+            "content": "<p>Do not exceed the recommended intake unless directed by a healthcare professional.  <\/p><p>It is recommended to continue to take 1 pack\/ day\/ adult for the same number of days after as you party e.g. after a 3 day festival, stag\/ hen party or wedding celebration, continue with the recommended daily intake for 3 days after.<\/p><p>Food supplements are not a substitute for a varied diet.<br\/><br\/>If pregnant\/breastfeeding, taking medication, or have a medical condition, consult a healthcare practitioner before use.<\/p><p>Store in a cool, dry place, out of reach of children.<\/p>",
             "page": ""
           }
         },
@@ -170,6 +170,60 @@
         "rr_grid_col_sticky": false,
         "image_width_mobile": 100,
         "image_width_desktop": 100
+      }
+    },
+    "08f9c56e-1caa-417a-bbfa-716a68ce7560": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18909169615150__08f9c56e-1caa-417a-bbfa-716a68ce7560-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rated 4.8 on Trustpilot",
+            "heading_size": "h1"
+          }
+        },
+        "template--18909169615150__08f9c56e-1caa-417a-bbfa-716a68ce7560-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“Absolute game changer.  Where has Rebound been all my life?  Strongly recommend for anyone wanting to bounce back from a fun night” - Stevie<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--18909169615150__08f9c56e-1caa-417a-bbfa-716a68ce7560-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read the reviews",
+            "button_link": "https:\/\/uk.trustpilot.com\/review\/reboundrecovery.co"
+          }
+        }
+      },
+      "block_order": [
+        "template--18909169615150__08f9c56e-1caa-417a-bbfa-716a68ce7560-heading-1",
+        "template--18909169615150__08f9c56e-1caa-417a-bbfa-716a68ce7560-text-1",
+        "template--18909169615150__08f9c56e-1caa-417a-bbfa-716a68ce7560-button-1"
+      ],
+      "custom_css": [
+        "img {object-fit: contain; padding: 40px 20px 20px 20px;}",
+        ".button {color: #fff;}",
+        ".image-with-text__media--small {height: 120px; margin-bottom: -20px;}",
+        "@media screen and (min-width: 750px) {img {padding: 0 20%; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Primary_logo_-_tricolor_white_text-RGB_1.svg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto",
+        "rr_image_sizing_full_width_mobile": true
       }
     },
     "af2cd3e1-2acb-4974-a899-d48fa3e9a333": {
@@ -324,6 +378,7 @@
   "order": [
     "main",
     "9b1272e8-4bfe-48df-8e56-b73ab55de632",
+    "08f9c56e-1caa-417a-bbfa-716a68ce7560",
     "af2cd3e1-2acb-4974-a899-d48fa3e9a333",
     "3a26edab-17c3-4494-af01-a3094a836c77",
     "634cb886-1647-49f7-8fc4-d7c584c9bfaa",

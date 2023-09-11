@@ -41,6 +41,11 @@
     text-align: center;
   }
 
+  .product__variant-savings-note {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -101,6 +106,10 @@
 
     .rr-feature__blocks .product-form__submit {
       width: auto;
+    }
+
+    .product__variant-savings-note {
+      text-align: left;
     }
  
   }
@@ -190,8 +199,15 @@
                   show_badges: true,
                   price_class: 'price--small',
                   selling_min_qty: multipack_min_qty,
-                -%}
-                </div>
+                -%}  
+
+                <div class="product__variant-savings-note">
+                  {%- if product.selected_or_first_available_variant.metafields.custom.savings_note -%}
+                      {{ product.selected_or_first_available_variant.metafields.custom.savings_note }}
+                  {%- endif -%}
+                </div> 
+              </div>
+              
               <div class="rr-feature__cta">     
                 {%- if multipack -%}                 
                   {%- render 'rr-multipack-qty-selector',
@@ -247,8 +263,7 @@
                   product_form_id: product_form_id,
                   section_id: section.id
                 -%} 
-
-              </div>             
+              </div>            
             {%- endcase -%}
           {%- endfor -%}
           {% render "product-badges", badges: section.settings.product.metafields.custom.badges.value, border: "top" %}

@@ -138,7 +138,13 @@
                   {%- endif -%}
                   {%- if product.metafields.custom.rrp_note -%}
                     <br>{{ product.metafields.custom.rrp_note }}
-                  {%- endif -%}
+                    <br>
+                    <span class="product__variant-savings-note">
+                      {%- if product.selected_or_first_available_variant.metafields.custom.savings_note -%}
+                          {{ product.selected_or_first_available_variant.metafields.custom.savings_note }}
+                      {%- endif -%}
+                    </span>
+                  {%- endif -%}                  
                 </div>
               {%- endif -%}
               <div {{ block.shopify_attributes }}>

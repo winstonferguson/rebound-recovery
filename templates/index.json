@@ -115,7 +115,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/party.svg",
             "title": "Party",
-            "text": "<p>No instructions needed!<\/p>",
+            "text": "<p>No instructions needed (but stay hydrated!)<\/p>",
             "source": "",
             "link_label": "",
             "link": ""
@@ -179,6 +179,60 @@
         "rr_grid_col_sticky": false,
         "image_width_mobile": 100,
         "image_width_desktop": 100
+      }
+    },
+    "416a7111-b50b-4fb3-a2df-e2fc8c0af4a9": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18615415472430__416a7111-b50b-4fb3-a2df-e2fc8c0af4a9-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rated 4.8 on Trustpilot",
+            "heading_size": "h1"
+          }
+        },
+        "template--18615415472430__416a7111-b50b-4fb3-a2df-e2fc8c0af4a9-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“Absolute game changer.  Where has Rebound been all my life?  Strongly recommend for anyone wanting to bounce back from a fun night” - Stevie<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--18615415472430__416a7111-b50b-4fb3-a2df-e2fc8c0af4a9-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read the reviews",
+            "button_link": "https:\/\/uk.trustpilot.com\/review\/reboundrecovery.co"
+          }
+        }
+      },
+      "block_order": [
+        "template--18615415472430__416a7111-b50b-4fb3-a2df-e2fc8c0af4a9-heading-1",
+        "template--18615415472430__416a7111-b50b-4fb3-a2df-e2fc8c0af4a9-text-1",
+        "template--18615415472430__416a7111-b50b-4fb3-a2df-e2fc8c0af4a9-button-1"
+      ],
+      "custom_css": [
+        "img {object-fit: contain; padding: 40px 20px 20px 20px;}",
+        ".button {color: #fff;}",
+        ".image-with-text__media--small {height: 120px; margin-bottom: -20px;}",
+        "@media screen and (min-width: 750px) {img {padding: 0 20%; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Primary_logo_-_tricolor_white_text-RGB_1.svg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto",
+        "rr_image_sizing_full_width_mobile": true
       }
     },
     "d5434413-9171-4fe7-b0b7-fda6d06760a5": {
@@ -512,7 +566,6 @@
     },
     "2271f9a4-6515-4702-b016-b0d102776af6": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "aae50798-3fc5-4ddd-a2f3-41e440357310": {
           "type": "heading",
@@ -590,6 +643,7 @@
         "eb410917-a7d2-48e4-badd-d88970338a35",
         "bb2cc514-f082-46ef-93a0-e3e2e87d8c90"
       ],
+      "disabled": true,
       "settings": {
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -756,6 +810,7 @@
     "d85fc367-db3e-4ff0-b350-70590ceca325",
     "multicolumn",
     "69973fc1-0014-46e6-8cec-537375b44f80",
+    "416a7111-b50b-4fb3-a2df-e2fc8c0af4a9",
     "d5434413-9171-4fe7-b0b7-fda6d06760a5",
     "13e9a2f8-4341-4dd7-9f4f-ba70ad5ec5b5",
     "7ea41a8d-a645-4d08-9e10-237f9a5ea43c",

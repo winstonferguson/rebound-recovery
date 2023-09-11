@@ -10,6 +10,18 @@
   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% endcomment %}
 {%- unless product.has_only_default_variant -%}
+  {% liquid 
+    assign meta_data = '{'
+    for variant in product.variants
+      assign meta_data = meta_data | append: '"' | append: variant.id | append: '"' | append: ':' | append: '"' | append: variant.metafields.custom.savings_note  | append: '"'
+      unless forloop.last
+        assign meta_data = meta_data | append: ', '
+      endunless   
+      if forloop.last
+        assign meta_data = meta_data | append: '}'
+      endif         
+    endfor
+  %}
   {%- if block.settings.picker_type == 'button' -%}
     <variant-radios
       id="variant-radios-{{ section.id }}"
@@ -29,6 +41,9 @@
       {%- endfor -%}
       <script type="application/json">
         {{ product.variants | json }}
+      </script>
+      <script id="VariantMetadata-{{ section.id }}" type="application/json">
+        {{ meta_data }}
       </script>
     </variant-radios>
   {%- else -%}
@@ -60,9 +75,11 @@
           </div>
         </div>
       {%- endfor -%}
-
       <script type="application/json">
         {{ product.variants | json }}
+      </script>
+      <script id="VariantMetadata-{{ section.id }}" type="application/json">
+        {{ meta_data }}
       </script>
     </variant-selects>
   {%- endif -%}

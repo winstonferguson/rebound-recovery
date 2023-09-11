@@ -887,6 +887,7 @@ class VariantSelects extends HTMLElement {
       this.updateVariantInput();
       this.renderProductInfo();
       this.updateShareUrl();
+      this.updateVariantMetadata();
     }
   }
 
@@ -900,6 +901,8 @@ class VariantSelects extends HTMLElement {
         return this.options[index] === option;
       }).includes(false);
     });
+
+    this.getVariantMetadata();
   }
 
   updateMedia() {
@@ -933,6 +936,10 @@ class VariantSelects extends HTMLElement {
       input.value = this.currentVariant.id;
       input.dispatchEvent(new Event('change', { bubbles: true }));
     });
+  }
+
+  updateVariantMetadata() {
+    document.querySelector(".product__variant-savings-note").innerHTML = this.variantMetadata[this.currentVariant.id];
   }
 
   updateVariantStatuses() {
@@ -1055,6 +1062,13 @@ class VariantSelects extends HTMLElement {
   getVariantData() {
     this.variantData = this.variantData || JSON.parse(this.querySelector('[type="application/json"]').textContent);
     return this.variantData;
+  }
+
+  getVariantMetadata() {
+    this.variantMetadata = this.variantMetadata || JSON.parse(this.querySelector(`#VariantMetadata-${this.dataset.section}[type="application/json"]`).textContent);
+    console.log(this.variantMetadata);
+    
+    return this.variantMetadata;
   }
 }
 

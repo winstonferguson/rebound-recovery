@@ -1629,3 +1629,7 @@ a.product__text {
     display: none;
   }
 }
+
+.product__variant-savings-note {
+  font-weight: 900;
+}
