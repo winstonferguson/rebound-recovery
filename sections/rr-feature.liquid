@@ -41,9 +41,12 @@
     text-align: center;
   }
 
-  .product__variant-savings-note {
-    font-size: 1.3rem;
+  .caption {
     text-align: center;
+  }
+
+  .product__variant-savings-note {
+    font-weight: 900;
   }
 
   @media screen and (min-width: 750px) {
@@ -108,7 +111,7 @@
       width: auto;
     }
 
-    .product__variant-savings-note {
+    .caption {
       text-align: left;
     }
  
@@ -201,9 +204,22 @@
                   selling_min_qty: multipack_min_qty,
                 -%}  
 
-                <div class="product__variant-savings-note">
+                <div class="product__tax caption rte">
+                  {%- if product.metafields.custom.shipping_policy -%}
+                    {{ product.metafields.custom.shipping_policy }}
+                    <br>
+                  {%- elsif shop.shipping_policy.body != blank -%}
+                    {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                    <br>
+                  {%- endif -%}
+                  {%- if product.metafields.custom.rrp_note -%}
+                      {{ product.metafields.custom.rrp_note }}
+                      <br>
+                  {%- endif -%} 
                   {%- if product.selected_or_first_available_variant.metafields.custom.savings_note -%}
+                    <span class="product__variant-savings-note">
                       {{ product.selected_or_first_available_variant.metafields.custom.savings_note }}
+                    </span>
                   {%- endif -%}
                 </div> 
               </div>
