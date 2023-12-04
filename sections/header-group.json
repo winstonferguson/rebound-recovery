@@ -5,20 +5,19 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "c3d44f17-07ac-4f5f-b4a1-5ac418e30839": {
+        "0c6df143-9f46-4d46-8561-04f99283f6c7": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "“Absolute game changer....\" rated 4.8 on Trustpilot.",
+            "text": "OUR BIGGEST DISCOUNT YET - 45% OFF with THANKYOU45 at checkout.",
             "text_alignment": "center",
-            "color_scheme": "inverse",
-            "link": "https:\/\/uk.trustpilot.com\/review\/reboundrecovery.co"
+            "color_scheme": "accent-1",
+            "link": ""
           }
         },
         "eabe449b-1ae1-4a13-a95e-9b5832a43bab": {
           "type": "announcement",
           "settings": {
-            "text": "FREE SHIPPING on all orders  - RATED 4.8 on TRUSTPILOT",
+            "text": "FREE SHIPPING on 6 PACKS OR MORE - RATED 4.8 on TRUSTPILOT",
             "text_alignment": "center",
             "color_scheme": "accent-2",
             "link": "https:\/\/uk.trustpilot.com\/review\/reboundrecovery.co"
@@ -26,7 +25,7 @@
         }
       },
       "block_order": [
-        "c3d44f17-07ac-4f5f-b4a1-5ac418e30839",
+        "0c6df143-9f46-4d46-8561-04f99283f6c7",
         "eabe449b-1ae1-4a13-a95e-9b5832a43bab"
       ],
       "settings": {

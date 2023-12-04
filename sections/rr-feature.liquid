@@ -205,13 +205,20 @@
                 -%}  
 
                 <div class="product__tax caption rte">
-                  {%- if product.metafields.custom.shipping_policy -%}
-                    {{ product.metafields.custom.shipping_policy }}
-                    <br>
-                  {%- elsif shop.shipping_policy.body != blank -%}
-                    {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                    <br>
-                  {%- endif -%}
+                  {% comment %}
+                    This has been disabled as the shipping policy is now featured above
+                    {%- if product.metafields.custom.shipping_policy -%}
+                      {{ product.metafields.custom.shipping_policy }}
+                      <br>
+                    {%- elsif shop.shipping_policy.body != blank -%}
+                      {%- if product.selected_or_first_available_variant.option1 != '3' -%}
+                        {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                      {%- else -%}
+                        Shipping calculated at checkout.
+                      {%- endif -%}                    
+                      <br>
+                    {%- endif -%}
+                  {% endcomment %}
                   {%- if product.metafields.custom.rrp_note -%}
                       {{ product.metafields.custom.rrp_note }}
                       <br>
@@ -224,7 +231,7 @@
                 </div> 
               </div>
               
-              <div class="rr-feature__cta">     
+              <div class="rr-feature__cta">   
                 {%- if multipack -%}                 
                   {%- render 'rr-multipack-qty-selector',
                     product: product,

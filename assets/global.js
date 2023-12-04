@@ -889,6 +889,13 @@ class VariantSelects extends HTMLElement {
       this.updateShareUrl();
       this.updateVariantMetadata();
     }
+
+    if (this.currentVariant.option1 !== '3') {
+      document.querySelector('#shippingPolicyNote').innerHTML = "Free 2-3 day shipping."
+    } else {
+      document.querySelector('#shippingPolicyNote').innerHTML = "Shipping calculated at checkout."
+    }
+;
   }
 
   updateOptions() {
@@ -1066,8 +1073,6 @@ class VariantSelects extends HTMLElement {
 
   getVariantMetadata() {
     this.variantMetadata = this.variantMetadata || JSON.parse(this.querySelector(`#VariantMetadata-${this.dataset.section}[type="application/json"]`).textContent);
-    console.log(this.variantMetadata);
-    
     return this.variantMetadata;
   }
 }
