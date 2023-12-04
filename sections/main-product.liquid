@@ -117,6 +117,9 @@
             {%- when '@app' -%}
               {% render block %}
             {%- when 'price' -%}
+              {%- if product.metafields.custom.banner -%}
+                <strong>{{ product.metafields.custom.banner }}</strong><br>
+              {%- endif -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
                   product: product,
@@ -134,7 +137,13 @@
                   {%- if product.metafields.custom.shipping_policy -%}
                     {{ product.metafields.custom.shipping_policy }}
                   {%- elsif shop.shipping_policy.body != blank -%}
-                    {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                    <span id="shippingPolicyNote">
+                      {%- if product.selected_or_first_available_variant.option1 != '3' -%}
+                        {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                      {%- else -%}
+                        Shipping calculated at checkout.
+                      {%- endif -%} 
+                    </span>
                   {%- endif -%}
                   {%- if product.metafields.custom.rrp_note -%}
                     <br>{{ product.metafields.custom.rrp_note }}
