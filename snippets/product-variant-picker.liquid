@@ -13,7 +13,7 @@
   {% liquid 
     assign meta_data = '{'
     for variant in product.variants
-      assign meta_data = meta_data | append: '"' | append: variant.id | append: '"' | append: ':' | append: '"' | append: variant.metafields.custom.savings_note  | append: '"'
+      assign meta_data = meta_data | append: '"' | append: variant.id | append: '"' | append: ':' | append: '"' | append: variant.metafields.custom.savings_note | append: '"'
       unless forloop.last
         assign meta_data = meta_data | append: ', '
       endunless   

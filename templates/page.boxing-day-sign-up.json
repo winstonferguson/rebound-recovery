@@ -7,26 +7,52 @@
         "padding_bottom": 60
       }
     },
-    "1702896851322a5809": {
-      "type": "apps",
+    "8d16e015-4404-4214-8853-f61491e7bd26": {
+      "type": "rr-email-signup-banner",
       "blocks": {
-        "c654255c-64fb-4a18-8ec5-b7a9b733f7d3": {
-          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+        "template--21842449432878__8d16e015-4404-4214-8853-f61491e7bd26-heading-1": {
+          "type": "heading",
           "settings": {
-            "formId": "WzRutS"
+            "heading": "Join & Buy to Get 30% Off For Life",
+            "heading_size": "h1"
+          }
+        },
+        "template--21842449432878__8d16e015-4404-4214-8853-f61491e7bd26-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>You need to make a purchase by January 31st, 2024 to activate this promotion.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--21842449432878__8d16e015-4404-4214-8853-f61491e7bd26-email_form-1": {
+          "type": "email_form",
+          "settings": {
           }
         }
       },
       "block_order": [
-        "c654255c-64fb-4a18-8ec5-b7a9b733f7d3"
+        "template--21842449432878__8d16e015-4404-4214-8853-f61491e7bd26-heading-1",
+        "template--21842449432878__8d16e015-4404-4214-8853-f61491e7bd26-paragraph-1",
+        "template--21842449432878__8d16e015-4404-4214-8853-f61491e7bd26-email_form-1"
       ],
       "settings": {
-        "include_margins": true
+        "customer_tag": "30 for life",
+        "image_overlay_opacity": 0,
+        "show_background_image": true,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "show_text_below": true,
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto"
       }
     }
   },
   "order": [
     "main",
-    "1702896851322a5809"
+    "8d16e015-4404-4214-8853-f61491e7bd26"
   ]
 }
