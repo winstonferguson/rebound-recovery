@@ -8,7 +8,7 @@
         "0c6df143-9f46-4d46-8561-04f99283f6c7": {
           "type": "announcement",
           "settings": {
-            "text": "OUR BIGGEST DISCOUNT YET - 45% OFF with THANKYOU45 at checkout.",
+            "text": "45% OFF with THANKYOU45 at checkout. We're rated 4.8 on TRUSTPILOT!",
             "text_alignment": "center",
             "color_scheme": "accent-1",
             "link": ""
@@ -16,6 +16,7 @@
         },
         "eabe449b-1ae1-4a13-a95e-9b5832a43bab": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "FREE SHIPPING on 6 PACKS OR MORE - RATED 4.8 on TRUSTPILOT",
             "text_alignment": "center",

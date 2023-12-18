@@ -103,15 +103,11 @@
   {%- style -%}
   .header--alpha {
     background-color: transparent;
-    margin-bottom: -82px;
+    margin-bottom: -81px;
   }
 
   .header--alpha img.header__heading-logo {filter: invert(1) grayscale(1) contrast(2)}
-  {%- endstyle -%}
-
-  {%- assign sticky_header_type = 'none' -%}
-
-  
+  {%- endstyle -%}  
 {%- endif -%}
 
 {%- style -%}
@@ -354,6 +350,7 @@
       this.header = document.querySelector('.section-header');
       this.headerIsAlwaysSticky = this.getAttribute('data-sticky-type') === 'always' || this.getAttribute('data-sticky-type') === 'reduce-logo-size';
       this.headerBounds = {};
+      this.isAlpha = this.classList.contains('header--alpha');
 
       this.setHeaderHeight();
 
@@ -378,6 +375,9 @@
 
     setHeaderHeight() {
       document.documentElement.style.setProperty('--header-height', `${this.header.offsetHeight}px`);
+      if (this.isAlpha) {
+        document.documentElement.style.setProperty('--header-height', `${this.offsetHeight}px`);
+      }
     }
 
     disconnectedCallback() {
@@ -405,6 +405,11 @@
         requestAnimationFrame(this.hide.bind(this));
       } else if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
         this.header.classList.add('scrolled-past-header');
+
+        if (this.isAlpha) {
+          this.classList.remove('header--alpha', 'color-inverse');
+        }        
+        
         if (!this.preventReveal) {
           requestAnimationFrame(this.reveal.bind(this));
         } else {
@@ -418,6 +423,11 @@
         }
       } else if (scrollTop <= this.headerBounds.top) {
         this.header.classList.remove('scrolled-past-header');
+
+        if (this.isAlpha) {
+          this.classList.add('header--alpha', 'color-inverse');
+        }
+
         requestAnimationFrame(this.reset.bind(this));
       }
 
