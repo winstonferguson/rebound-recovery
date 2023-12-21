@@ -6,21 +6,29 @@
         "template--18615415472430__ded5afd5-f4da-46d8-bee6-4db309670aea-168388821027bba7b9-0": {
           "type": "heading",
           "settings": {
-            "heading": "Party Recovery Packs Perfected by Nutritionists",
+            "heading": "\"You saved my Glastonbury\"",
             "heading_size": "h1"
           }
         },
         "c4fab70c-97f0-4b9b-a3f3-4dd40d54de2c": {
           "type": "text",
           "settings": {
-            "text": "Because dancing all night shouldn't cost you tomorrow!  \"You saved my Glastonbury\" <em>Poppy Delevingne<\/em>",
+            "text": "<em><strong>Poppy Delevingne<\/strong><\/em>",
+            "text_style": "body"
+          }
+        },
+        "69e8daa2-7363-4ae5-b266-34f3a82e9b97": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Because dancing all night shouldn't cost you tomorrow!<\/strong>",
             "text_style": "body"
           }
         }
       },
       "block_order": [
         "template--18615415472430__ded5afd5-f4da-46d8-bee6-4db309670aea-168388821027bba7b9-0",
-        "c4fab70c-97f0-4b9b-a3f3-4dd40d54de2c"
+        "c4fab70c-97f0-4b9b-a3f3-4dd40d54de2c",
+        "69e8daa2-7363-4ae5-b266-34f3a82e9b97"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/landing.jpg",
@@ -51,21 +59,21 @@
         "6048c6e9-b65c-4ef0-8057-70d8fb1b9c98": {
           "type": "headline",
           "settings": {
-            "headline": "Backed by Nutritional Science",
+            "headline": "Party Recovery Packs Perfected by Nutritionists",
             "heading_size": "h1"
           }
         },
         "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-1": {
           "type": "text",
           "settings": {
-            "text": "Rebound contains over 50 high quality nutrients, amino acids and botanicals to support liver detoxification, energy, immunity, cognition, mood and sleep.",
+            "text": "No more wasted tomorrows after a night out!",
             "text_style": "subtitle"
           }
         },
         "2524c427-9585-46a0-a564-a9fb97d2a8bb": {
           "type": "text",
           "settings": {
-            "text": "<strong>More packs, bigger the discount. Plus, free delivery for orders of 6 packs and more.<\/strong>",
+            "text": "<strong>Check out bundle discounts. Free shipping on all orders.<\/strong>",
             "text_style": "price"
           }
         },
