@@ -32,6 +32,17 @@
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <!-- Begin Inspectlet Asynchronous Code -->
+    <script type="text/javascript">
+      (function() {
+      window.__insp = window.__insp || [];
+      __insp.push(['wid', 1463650066]);
+      var ldinsp = function(){
+      if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=1463650066&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+      setTimeout(ldinsp, 0);
+      })();
+    </script>
+<!-- End Inspectlet Asynchronous Code -->
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" id="AnimationsScript" defer="defer"></script>
     {%- endif -%}
