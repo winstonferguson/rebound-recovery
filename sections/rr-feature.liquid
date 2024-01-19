@@ -298,7 +298,7 @@
                       {{ product.metafields.custom.rrp_note }}
                       <br>
                   {%- endif -%} 
-                  {%- if product.selected_or_first_available_variant.metafields.custom.savings_note -%}
+                  {%- if section.settings.show_savings_note_under_price and product.selected_or_first_available_variant.metafields.custom.savings_note -%}
                     <span class="product__variant-savings-note">
                       {{ product.selected_or_first_available_variant.metafields.custom.savings_note }}
                     </span>
@@ -635,14 +635,21 @@
     },
     {
       "type": "header",
-      "content": "Variant Selector"
+      "content": "RR Variants"
     },
     {
       "type": "checkbox",
       "id": "variant_button_picker",
       "default": false,
       "label": "Use variant button picker"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_savings_note_under_price",
+      "default": false,
+      "label": "Use variant button picker"
     }
+   
   ],
   "blocks": [
     {

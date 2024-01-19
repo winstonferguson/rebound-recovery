@@ -154,16 +154,35 @@
     },
     "9b1272e8-4bfe-48df-8e56-b73ab55de632": {
       "type": "rich-text",
+      "blocks": {
+        "heading_mqHAUD": {
+          "type": "heading",
+          "settings": {
+            "heading": "\"You saved my Glastonbury\"",
+            "heading_size": "h1"
+          }
+        },
+        "text_hXt8PK": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Poppy Delevingne<\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mqHAUD",
+        "text_hXt8PK"
+      ],
       "custom_css": [
         ".isolate {border-top: 1px solid #22234e;}"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_top": 48,
+        "padding_bottom": 24,
         "rr_grid_col": "1\/-1",
         "rr_grid_row": "auto",
         "rr_grid_col_divider": true,
@@ -178,20 +197,12 @@
         "template--18909169615150__08f9c56e-1caa-417a-bbfa-716a68ce7560-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "\"YOU SAVED MY GLASTONBURY\" <em>Poppy Delevingne <\/em>",
+            "heading": "<strong>We are rated 4.8 on Trustpilot<\/strong>",
             "heading_size": "h1"
-          }
-        },
-        "text_XKx87p": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>We are rated 4.8 on Trustpilot<\/strong><\/p><p><\/p><h3><\/h3>",
-            "text_style": "body"
           }
         },
         "template--18909169615150__08f9c56e-1caa-417a-bbfa-716a68ce7560-text-1": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "<p>“Absolute game changer.  Where has Rebound been all my life?  Strongly recommend for anyone wanting to bounce back from a fun night” - Stevie<\/p>",
             "text_style": "body"
@@ -207,7 +218,6 @@
       },
       "block_order": [
         "template--18909169615150__08f9c56e-1caa-417a-bbfa-716a68ce7560-heading-1",
-        "text_XKx87p",
         "template--18909169615150__08f9c56e-1caa-417a-bbfa-716a68ce7560-text-1",
         "template--18909169615150__08f9c56e-1caa-417a-bbfa-716a68ce7560-button-1"
       ],

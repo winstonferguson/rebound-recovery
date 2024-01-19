@@ -50,7 +50,9 @@
         "rr_image_sizing_mobile": 70,
         "rr_image_sizing_desktop": 75,
         "rr_image_sizing_position": "top",
-        "add_image_caption": ""
+        "add_image_caption": "",
+        "show_product_badges": false,
+        "product": ""
       }
     },
     "d85fc367-db3e-4ff0-b350-70590ceca325": {
@@ -101,7 +103,8 @@
         "media_position": "left",
         "image_zoom": "lightbox",
         "padding_top": 60,
-        "padding_bottom": 32
+        "padding_bottom": 32,
+        "variant_button_picker": true
       }
     },
     "multicolumn": {
@@ -719,7 +722,9 @@
         "rr_image_sizing_mobile": 60,
         "rr_image_sizing_desktop": 80,
         "rr_image_sizing_position": "center",
-        "add_image_caption": "Happy real life Rebound customers"
+        "add_image_caption": "Happy real life Rebound customers",
+        "show_product_badges": false,
+        "product": ""
       }
     },
     "c884e470-695e-45d9-860e-4bca5eb9fb62": {
