@@ -181,6 +181,12 @@
             </div>
         {%- endcase -%}
       {%- endfor -%}
+      {%- if section.settings.show_product_badges -%}
+      {% liquid 
+          assign product = section.settings.product
+      %}
+        {% render "product-badges", badges: section.settings.product.metafields.custom.badges.value, border: "top" %}
+      {%- endif -%}
     </div>
   </div>
 </div>
@@ -515,6 +521,21 @@
       "type": "inline_richtext",
       "id": "add_image_caption",
       "label": "Image caption"
+    },
+    {
+      "type": "header",
+      "content": "Poduct Badges"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product_badges",
+      "default": false,
+      "label": "Show product badges"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product to use for product badges"
     }
   ],
   "blocks": [
