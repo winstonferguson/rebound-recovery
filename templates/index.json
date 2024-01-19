@@ -6,14 +6,14 @@
         "template--18615415472430__ded5afd5-f4da-46d8-bee6-4db309670aea-168388821027bba7b9-0": {
           "type": "heading",
           "settings": {
-            "heading": "\"You saved my Glastonbury\"",
+            "heading": "Party Recovery Packs Perfected by Nutritionists",
             "heading_size": "h1"
           }
         },
         "c4fab70c-97f0-4b9b-a3f3-4dd40d54de2c": {
           "type": "text",
           "settings": {
-            "text": "<em><strong>Poppy Delevingne<\/strong><\/em>",
+            "text": "",
             "text_style": "body"
           }
         },
@@ -59,21 +59,21 @@
         "6048c6e9-b65c-4ef0-8057-70d8fb1b9c98": {
           "type": "headline",
           "settings": {
-            "headline": "Party Recovery Packs Perfected by Nutritionists",
+            "headline": "No more wasted tomorrows!",
             "heading_size": "h1"
           }
         },
         "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-1": {
           "type": "text",
           "settings": {
-            "text": "No more wasted tomorrows! Be proactive and party smart with Rebound.",
+            "text": "Beautiful nights can lead to rough mornings, low energy, focus and mood.  The Rebound way is party smarter to recover better. Don't take our word for it, read our 4.8 rated <a href=\"https:\/\/uk.trustpilot.com\/review\/reboundrecovery.co\" title=\"https:\/\/uk.trustpilot.com\/review\/reboundrecovery.co\">Trustpilot <\/a>reviews!",
             "text_style": "subtitle"
           }
         },
         "2524c427-9585-46a0-a564-a9fb97d2a8bb": {
           "type": "text",
           "settings": {
-            "text": "<strong>Check out bundle discounts. Free 2-3 day shipping.<\/strong>",
+            "text": "<strong>Free shipping. Hassle free returns.<\/strong>",
             "text_style": "price"
           }
         },
@@ -174,13 +174,32 @@
     },
     "69973fc1-0014-46e6-8cec-537375b44f80": {
       "type": "rich-text",
+      "blocks": {
+        "heading_Pr7mmB": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>\"You saved my Glastonbury”<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_eet6Qz": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Poppy Delevingne<\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Pr7mmB",
+        "text_eet6Qz"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-2",
+        "color_scheme": "accent-1",
         "full_width": true,
-        "padding_top": 12,
-        "padding_bottom": 24,
+        "padding_top": 48,
+        "padding_bottom": 48,
         "rr_grid_col": "1\/-1",
         "rr_grid_row": "auto",
         "rr_grid_col_divider": false,
@@ -195,8 +214,16 @@
         "template--18615415472430__416a7111-b50b-4fb3-a2df-e2fc8c0af4a9-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Rated 4.8 on Trustpilot",
+            "heading": "<strong>We are rated 4.8 on Trustpilot.<\/strong>",
             "heading_size": "h1"
+          }
+        },
+        "text_8rwxjr": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h3><strong>We are rated 4.8 on Trustpilot.<\/strong><\/h3>",
+            "text_style": "body"
           }
         },
         "template--18615415472430__416a7111-b50b-4fb3-a2df-e2fc8c0af4a9-text-1": {
@@ -216,6 +243,7 @@
       },
       "block_order": [
         "template--18615415472430__416a7111-b50b-4fb3-a2df-e2fc8c0af4a9-heading-1",
+        "text_8rwxjr",
         "template--18615415472430__416a7111-b50b-4fb3-a2df-e2fc8c0af4a9-text-1",
         "template--18615415472430__416a7111-b50b-4fb3-a2df-e2fc8c0af4a9-button-1"
       ],
@@ -256,7 +284,7 @@
         "template--18615415472430__d5434413-9171-4fe7-b0b7-fda6d06760a5-16808661921787eaf8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Rebound is developed by practising Nutritional Therapists who know how to hit the dance floor but be proactive about recovering well.<\/p>",
+            "text": "<p>Rebound is developed by practising Nutritional Therapists who know how to hit the dance floor but are proactive about recovering well.<\/p>",
             "text_style": "body"
           }
         }
@@ -791,26 +819,6 @@
         "rr_grid_col_divider": false,
         "max_width": 2000
       }
-    },
-    "b9a1dbd8-20f1-4915-94fa-2f00b8b5caf1": {
-      "type": "rich-text",
-      "custom_css": [
-        ".isolate {border-top: 1px solid #22234e;}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 24,
-        "padding_bottom": 0,
-        "rr_grid_col": "1\/-1",
-        "rr_grid_row": "auto",
-        "rr_grid_col_divider": false,
-        "rr_grid_col_sticky": false,
-        "image_width_mobile": 100,
-        "image_width_desktop": 100
-      }
     }
   },
   "order": [
@@ -828,7 +836,6 @@
     "0b23ee19-b884-4acd-87cc-6a9907c5ad6f",
     "2271f9a4-6515-4702-b016-b0d102776af6",
     "c9874964-a587-453d-a346-a02016f0fea7",
-    "c884e470-695e-45d9-860e-4bca5eb9fb62",
-    "b9a1dbd8-20f1-4915-94fa-2f00b8b5caf1"
+    "c884e470-695e-45d9-860e-4bca5eb9fb62"
   ]
 }
