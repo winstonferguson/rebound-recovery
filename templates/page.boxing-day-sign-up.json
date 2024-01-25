@@ -20,7 +20,7 @@
         "template--21842449432878__8d16e015-4404-4214-8853-f61491e7bd26-paragraph-1": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>You need to make a purchase by January 31st, 2024 to activate this promotion.<\/p>",
+            "text": "<p>You need to make a purchase by January 31st, 2024 to activate this promotion.</p>",
             "text_style": "body"
           }
         },
@@ -46,7 +46,7 @@
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
         "show_text_below": true,
-        "rr_grid_col": "1\/-1",
+        "rr_grid_col": "1/-1",
         "rr_grid_row": "auto"
       }
     }

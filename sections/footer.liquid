@@ -13,10 +13,18 @@
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
   }
 
+  .footer .group-note {
+    text-align: center;
+  }
+
   @media screen and (min-width: 750px) {
     .footer {
       margin-top: {{ section.settings.margin_top }}px;
     }
+
+    .footer .group-note {
+    text-align: right;
+  }
   }
 {%- endstyle -%}
 
@@ -214,6 +222,7 @@
               {%- render 'social-icons' -%}
             </div>
           {%- endif -%}
+            <p class="uppercase group-note">For more community insights, join our <a class="color-inverse" href="https://www.facebook.com/groups/6856517641136698">Facebook group</a></p>
         </div>
       {%- endif %}
     </div>

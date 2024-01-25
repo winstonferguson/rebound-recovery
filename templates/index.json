@@ -55,6 +55,89 @@
         "product": ""
       }
     },
+    "multicolumn_jTUQFE": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_ghzXjC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/energy.svg",
+            "title": "",
+            "text": "<p>Full body support<\/p>",
+            "source": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_a8EACx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/natural.svg",
+            "title": "",
+            "text": "<p>100% clean natural ingredients<\/p>",
+            "source": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_yYMdTq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rated_0d5544c4-528e-4ae3-a203-7db6f944cea4.svg",
+            "title": "",
+            "text": "<p>Rated 4.8 on Trustpilot<\/p>",
+            "source": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_FP74WT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/return-customer_ee1c38b6-622b-44eb-8c17-3370ba9e9fa0.svg",
+            "title": "",
+            "text": "<p>65% return customer rate<\/p>",
+            "source": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_ghzXjC",
+        "column_a8EACx",
+        "column_yYMdTq",
+        "column_FP74WT"
+      ],
+      "custom_css": [
+        "li {text-align: center;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "heading_alignment": "inherit",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "image_size": "auto",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "slide_on_desktop": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 8,
+        "border_top": false,
+        "border_bottom": true,
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto",
+        "rr_grid_col_divider": false,
+        "max_width": 2000
+      }
+    },
     "d85fc367-db3e-4ff0-b350-70590ceca325": {
       "type": "rr-feature",
       "blocks": {
@@ -92,6 +175,9 @@
         "2524c427-9585-46a0-a564-a9fb97d2a8bb",
         "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-3"
       ],
+      "custom_css": [
+        "li {text-align: center;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Rebound-Packaging-Mockup_Tilt.png",
         "rr_lazy_image": false,
@@ -103,8 +189,10 @@
         "media_position": "left",
         "image_zoom": "lightbox",
         "padding_top": 60,
-        "padding_bottom": 32,
-        "variant_button_picker": true
+        "padding_bottom": 60,
+        "variant_button_picker": true,
+        "show_savings_note_under_price": false,
+        "show_product_badges": false
       }
     },
     "multicolumn": {
@@ -175,42 +263,6 @@
         "max_width": 2000
       }
     },
-    "69973fc1-0014-46e6-8cec-537375b44f80": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_Pr7mmB": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>\"You saved my Glastonbury”<\/strong>",
-            "heading_size": "h1"
-          }
-        },
-        "text_eet6Qz": {
-          "type": "text",
-          "settings": {
-            "text": "<p><em>Poppy Delevingne<\/em><\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_Pr7mmB",
-        "text_eet6Qz"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "accent-1",
-        "full_width": true,
-        "padding_top": 48,
-        "padding_bottom": 48,
-        "rr_grid_col": "1\/-1",
-        "rr_grid_row": "auto",
-        "rr_grid_col_divider": false,
-        "rr_grid_col_sticky": false,
-        "image_width_mobile": 100,
-        "image_width_desktop": 100
-      }
-    },
     "416a7111-b50b-4fb3-a2df-e2fc8c0af4a9": {
       "type": "image-with-text",
       "blocks": {
@@ -267,11 +319,84 @@
         "color_scheme": "accent-2",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "padding_top": 40,
-        "padding_bottom": 40,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "rr_grid_col": "1\/-1",
         "rr_grid_row": "auto",
         "rr_image_sizing_full_width_mobile": true
+      }
+    },
+    "69973fc1-0014-46e6-8cec-537375b44f80": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Pr7mmB": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>\"You saved my Glastonbury”<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_eet6Qz": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Poppy Delevingne<\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Pr7mmB",
+        "text_eet6Qz"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto",
+        "rr_grid_col_divider": false,
+        "rr_grid_col_sticky": false,
+        "image_width_mobile": 100,
+        "image_width_desktop": 100
+      }
+    },
+    "video_with_text_7y79KK": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_qBdqWn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Now let me show you something",
+            "heading_size": "h1"
+          }
+        },
+        "text_jxrtjL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"This is Rebound and it has changed my life. It could not be easier...\"<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qBdqWn",
+        "text_jxrtjL"
+      ],
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/Chloe C.mov",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-2",
+        "mobile_content_alignment": "center",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto"
       }
     },
     "d5434413-9171-4fe7-b0b7-fda6d06760a5": {
@@ -700,6 +825,30 @@
         "rr_image_sizing_full_width_mobile": true
       }
     },
+    "video_grPChw": {
+      "type": "video",
+      "disabled": true,
+      "custom_css": [
+        ".video-section {max-width: 500px; text-align: center;}"
+      ],
+      "settings": {
+        "heading": "\"Game Changer\"",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify:\/\/files\/videos\/Chloe C.mov",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "accent-2",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto",
+        "rr_grid_col_sticky": false,
+        "rr_mobile_padding_top": 32,
+        "rr_mobile_padding_bottom": 32
+      }
+    },
     "c9874964-a587-453d-a346-a02016f0fea7": {
       "type": "image-banner",
       "settings": {
@@ -828,10 +977,12 @@
   },
   "order": [
     "ded5afd5-f4da-46d8-bee6-4db309670aea",
+    "multicolumn_jTUQFE",
     "d85fc367-db3e-4ff0-b350-70590ceca325",
     "multicolumn",
-    "69973fc1-0014-46e6-8cec-537375b44f80",
     "416a7111-b50b-4fb3-a2df-e2fc8c0af4a9",
+    "69973fc1-0014-46e6-8cec-537375b44f80",
+    "video_with_text_7y79KK",
     "d5434413-9171-4fe7-b0b7-fda6d06760a5",
     "13e9a2f8-4341-4dd7-9f4f-ba70ad5ec5b5",
     "7ea41a8d-a645-4d08-9e10-237f9a5ea43c",
@@ -840,6 +991,7 @@
     "e37b57cc-a46b-444b-9be0-80604be38856",
     "0b23ee19-b884-4acd-87cc-6a9907c5ad6f",
     "2271f9a4-6515-4702-b016-b0d102776af6",
+    "video_grPChw",
     "c9874964-a587-453d-a346-a02016f0fea7",
     "c884e470-695e-45d9-860e-4bca5eb9fb62"
   ]

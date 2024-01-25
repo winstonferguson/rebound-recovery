@@ -39,7 +39,7 @@
           }
         },
         "7003b2a2-9f3d-45c4-9935-55f729e50afb": {
-          "type": "shopify:\/\/apps\/paywhirl\/blocks\/paywhirl-plan-selector\/41e95d60-82cf-46e8-84de-618d7e4c37b7",
+          "type": "shopify://apps/paywhirl/blocks/paywhirl-plan-selector/41e95d60-82cf-46e8-84de-618d7e4c37b7",
           "settings": {
             "font_scale": 100,
             "theme": "classic",
@@ -69,10 +69,10 @@
             "enable_larger_icons": true,
             "enable_small_text": true,
             "icon_1": "none",
-            "image_1": "shopify:\/\/shop_images\/vegan_08ce16f3-68fe-40bc-9e09-e6a0f2aca7f4.svg",
+            "image_1": "shopify://shop_images/vegan_08ce16f3-68fe-40bc-9e09-e6a0f2aca7f4.svg",
             "heading_1": "Vegan",
             "icon_2": "none",
-            "image_2": "shopify:\/\/shop_images\/uk.svg",
+            "image_2": "shopify://shop_images/uk.svg",
             "heading_2": "Made in the UK in an HACCP approved facility",
             "icon_3": "none",
             "heading_3": ""
@@ -83,7 +83,7 @@
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "none",
-            "content": "<p>Shipping<\/p><p>We offer free 48 hour tracked on all orders, 24 hour tracked and special delivery all with Royal Mail (deliveries Mon-Sat only).  <\/p><p>Orders placed before 1:30pm on weekdays will be sent out same day.<\/p><p>Please note that Royal Mail will endeavour to meet delivery time aims but they are not guaranteed.<\/p><p>Shipping only within the UK for the moment.<\/p><p>Returns<\/p><p>If for any reason you are unhappy with Rebound Recovery packs, simply return unused packs in their original condition within 30 days of purchase to receive a refund.<\/p><p>To start a return within 30 days of purchase, contact georgie@reboundrecovery.co with your confirmation email or proof of purchase. <\/p><p>Please note that returns will need to be sent to the following address: Rebound Recovery Ltd, Soho Works, 2 Television Centre, 101 Wood Lane, London W12 7FA.  <\/p><p>Your item must be sent back unused and in the same condition that you received it.<\/p><p>Refunds<\/p><p>Once we receive your return, we will email you to confirm receipt of your returned item. Your refund will be processed, and a credit will automatically be applied to your original method of payment. <br\/><\/p>",
+            "content": "<p>Shipping</p><p>We offer free 48 hour tracked on all orders, 24 hour tracked and special delivery all with Royal Mail (deliveries Mon-Sat only).  </p><p>Orders placed before 1:30pm on weekdays will be sent out same day.</p><p>Please note that Royal Mail will endeavour to meet delivery time aims but they are not guaranteed.</p><p>Shipping only within the UK for the moment.</p><p>Returns</p><p>If for any reason you are unhappy with Rebound Recovery packs, simply return unused packs in their original condition within 30 days of purchase to receive a refund.</p><p>To start a return within 30 days of purchase, contact georgie@reboundrecovery.co with your confirmation email or proof of purchase. </p><p>Please note that returns will need to be sent to the following address: Rebound Recovery Ltd, Soho Works, 2 Television Centre, 101 Wood Lane, London W12 7FA.  </p><p>Your item must be sent back unused and in the same condition that you received it.</p><p>Refunds</p><p>Once we receive your return, we will email you to confirm receipt of your returned item. Your refund will be processed, and a credit will automatically be applied to your original method of payment. <br/></p>",
             "page": ""
           }
         },
@@ -92,7 +92,7 @@
           "settings": {
             "heading": "Instructions",
             "icon": "none",
-            "content": "<p>Do not exceed the recommended intake unless directed by a healthcare professional.  <\/p><p>It is recommended to continue to take 1 pack\/ day\/ adult for the same number of days after a party as you partied e.g. after a 3 day festival, stag\/ hen party or wedding celebration, continue with the recommended daily intake for 3 days after.<\/p><p>Food supplements are not a substitute for a varied diet.<br\/><br\/>If pregnant\/breastfeeding, taking medication, or have a medical condition, consult a healthcare practitioner before use.<\/p><p>Store in a cool, dry place, out of reach of children.<\/p>",
+            "content": "<p>Do not exceed the recommended intake unless directed by a healthcare professional.  </p><p>It is recommended to continue to take 1 pack/ day/ adult for the same number of days after a party as you partied e.g. after a 3 day festival, stag/ hen party or wedding celebration, continue with the recommended daily intake for 3 days after.</p><p>Food supplements are not a substitute for a varied diet.<br/><br/>If pregnant/breastfeeding, taking medication, or have a medical condition, consult a healthcare practitioner before use.</p><p>Store in a cool, dry place, out of reach of children.</p>",
             "page": ""
           }
         },
@@ -101,7 +101,7 @@
           "settings": {
             "heading": "Ingredients",
             "icon": "none",
-            "content": "<p><strong>Capsule A <\/strong><\/p><p>L-Theanine, N-Acetyl-L-Cysteine, Quercetin, Magnesium (Citrate), Vitamin E (D-Alpha Tocopherol), Calcium (Citrate), Lecithin (Sunflower), Glutamic Acid, L-Cysteine, L-Glutamine, L-Glycine, L-Lysine, L-Methionine, Taurine, B5 Pantothenic Acid (D-Calcium Pantothenate), Vitamin B3 (Niacinamide) , Vitamin B6 (Pyridoxyl-5-Phosphate), Zinc (Picolinate), L-Carnitine, Vitamin B1 (Thiamine Mononitrate), Vitamin B2 (Riboflavin), Iron (Bisglycinate), Manganese, (Citrate), Copper (Citrate), Vitamin A (Palmitate), Vitamin A (Beta Carotene), Folate (Calcium-L-Methylfolate), Biotin, Vitamin B12 (Methylcobalamin), Molybdenum (Sodium Molybdate), Chromium (Picolinate), Botanical  Blend: Seagreens® Wrack Blend (<em>Ascophyllum nodosum <\/em>and <em>Fucus vesiculosus<\/em>), Turmeric Extract Powder (95% Curcuminoids) <em>(Curcuma longa)<\/em>, Milk Thistle Seed <em>(Silybum marianum)<\/em>, Dandelion Root <em>(Taraxacum officinale)<\/em>, Red Beetroot <em>(Beta vulgaris)<\/em>, Grape Seed <em>(Vitis vinifera)<\/em><\/p><p>Capsule Shell (Hydroxypropyl Methylcellulose, Black Iron Oxide)<\/p><p><strong>Capsule B<\/strong><\/p><p>PureWay-C®** providing 150mg Vitamin C (Ascorbic Acid), Setria® Glutathione (reduced form)***, R-Alpha Lipoic Aci,  Co Q10 (Ubiquinol), Citrus Bioflavonoids, Choline (Bitrate), Selenium (Selenomethionine), Botanical Blend: Turmeric Extract (95% Curcuminoids) <em>(Curcuma longa), <\/em>Matcha Green Tea  <em>(Camellia sinensis)<\/em>, Seagreens® Wrack Blend <em>(Ascophyllum nodosum, Fucus vesiculosus), <\/em>Artichoke Leaf <em>(Cynara scolymus)<\/em>, Milk Thistle Seed <em>(Silybum marianum)<\/em><\/p><p>Capsule Shell (Hydroxypropyl Methylcellulose)<\/p><p><strong>Capsule C<\/strong><\/p><p>L-Theanine, L-5-Hydroxytryptophan <em>(Griffonia simplicifolia)<\/em>, Magnesium (Bisglycinate), Botanical Blend, KSM-66® Ashwagandha Root Extract 12:1, (5% Withanolides<em>) (Withania somnifera)<\/em>, Hops <em>(Humulus lupulus), <\/em>Reishi Mushroom <em>(Ganoderma lingzhi), <\/em>Lemon Balm <em>(Melissa officinalis)<\/em><\/p><p>Capsule Shell (Hydroxypropyl Methylcellulose)<\/p><p><\/p><p>*Nutrient Reference Value<\/p><p>**PureWay-C® and PureWay-C® logo are trademarks of One Innovation Labs, LLC. in the U.S. and\/or other countries.<\/p><p>***Setria® is a registered trademark of KYOWA HAKKO BIO CO., LTD.<\/p>",
+            "content": "<p><strong>Capsule A </strong></p><p>L-Theanine, N-Acetyl-L-Cysteine, Quercetin, Magnesium (Citrate), Vitamin E (D-Alpha Tocopherol), Calcium (Citrate), Lecithin (Sunflower), Glutamic Acid, L-Cysteine, L-Glutamine, L-Glycine, L-Lysine, L-Methionine, Taurine, B5 Pantothenic Acid (D-Calcium Pantothenate), Vitamin B3 (Niacinamide) , Vitamin B6 (Pyridoxyl-5-Phosphate), Zinc (Picolinate), L-Carnitine, Vitamin B1 (Thiamine Mononitrate), Vitamin B2 (Riboflavin), Iron (Bisglycinate), Manganese, (Citrate), Copper (Citrate), Vitamin A (Palmitate), Vitamin A (Beta Carotene), Folate (Calcium-L-Methylfolate), Biotin, Vitamin B12 (Methylcobalamin), Molybdenum (Sodium Molybdate), Chromium (Picolinate), Botanical  Blend: Seagreens® Wrack Blend (<em>Ascophyllum nodosum </em>and <em>Fucus vesiculosus</em>), Turmeric Extract Powder (95% Curcuminoids) <em>(Curcuma longa)</em>, Milk Thistle Seed <em>(Silybum marianum)</em>, Dandelion Root <em>(Taraxacum officinale)</em>, Red Beetroot <em>(Beta vulgaris)</em>, Grape Seed <em>(Vitis vinifera)</em></p><p>Capsule Shell (Hydroxypropyl Methylcellulose, Black Iron Oxide)</p><p><strong>Capsule B</strong></p><p>PureWay-C®** providing 150mg Vitamin C (Ascorbic Acid), Setria® Glutathione (reduced form)***, R-Alpha Lipoic Aci,  Co Q10 (Ubiquinol), Citrus Bioflavonoids, Choline (Bitrate), Selenium (Selenomethionine), Botanical Blend: Turmeric Extract (95% Curcuminoids) <em>(Curcuma longa), </em>Matcha Green Tea  <em>(Camellia sinensis)</em>, Seagreens® Wrack Blend <em>(Ascophyllum nodosum, Fucus vesiculosus), </em>Artichoke Leaf <em>(Cynara scolymus)</em>, Milk Thistle Seed <em>(Silybum marianum)</em></p><p>Capsule Shell (Hydroxypropyl Methylcellulose)</p><p><strong>Capsule C</strong></p><p>L-Theanine, L-5-Hydroxytryptophan <em>(Griffonia simplicifolia)</em>, Magnesium (Bisglycinate), Botanical Blend, KSM-66® Ashwagandha Root Extract 12:1, (5% Withanolides<em>) (Withania somnifera)</em>, Hops <em>(Humulus lupulus), </em>Reishi Mushroom <em>(Ganoderma lingzhi), </em>Lemon Balm <em>(Melissa officinalis)</em></p><p>Capsule Shell (Hydroxypropyl Methylcellulose)</p><p></p><p>*Nutrient Reference Value</p><p>**PureWay-C® and PureWay-C® logo are trademarks of One Innovation Labs, LLC. in the U.S. and/or other countries.</p><p>***Setria® is a registered trademark of KYOWA HAKKO BIO CO., LTD.</p>",
             "page": ""
           }
         },
@@ -110,7 +110,7 @@
           "disabled": true,
           "settings": {
             "heading": "Ingredients",
-            "url": "https:\/\/reboundrecovery.co\/cdn\/shop\/files\/Rebound_Recovery_Pack_Ingredients.pdf"
+            "url": "https://reboundrecovery.co/cdn/shop/files/Rebound_Recovery_Pack_Ingredients.pdf"
           }
         },
         "share": {
@@ -165,7 +165,7 @@
         "text_hXt8PK": {
           "type": "text",
           "settings": {
-            "text": "<p><em>Poppy Delevingne<\/em><\/p>"
+            "text": "<p><em>Poppy Delevingne</em></p>"
           }
         }
       },
@@ -183,7 +183,7 @@
         "full_width": true,
         "padding_top": 48,
         "padding_bottom": 24,
-        "rr_grid_col": "1\/-1",
+        "rr_grid_col": "1/-1",
         "rr_grid_row": "auto",
         "rr_grid_col_divider": true,
         "rr_grid_col_sticky": false,
@@ -197,14 +197,14 @@
         "template--18909169615150__08f9c56e-1caa-417a-bbfa-716a68ce7560-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>We are rated 4.8 on Trustpilot<\/strong>",
+            "heading": "<strong>We are rated 4.8 on Trustpilot</strong>",
             "heading_size": "h1"
           }
         },
         "template--18909169615150__08f9c56e-1caa-417a-bbfa-716a68ce7560-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>“Absolute game changer.  Where has Rebound been all my life?  Strongly recommend for anyone wanting to bounce back from a fun night” - Stevie<\/p>",
+            "text": "<p>“Absolute game changer.  Where has Rebound been all my life?  Strongly recommend for anyone wanting to bounce back from a fun night” - Stevie</p>",
             "text_style": "body"
           }
         },
@@ -212,7 +212,7 @@
           "type": "button",
           "settings": {
             "button_label": "Read the reviews",
-            "button_link": "https:\/\/uk.trustpilot.com\/review\/reboundrecovery.co"
+            "button_link": "https://uk.trustpilot.com/review/reboundrecovery.co"
           }
         }
       },
@@ -228,7 +228,7 @@
         "@media screen and (min-width: 750px) {img {padding: 0 20%; }}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Primary_logo_-_tricolor_white_text-RGB_1.svg",
+        "image": "shopify://shop_images/Primary_logo_-_tricolor_white_text-RGB_1.svg",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -240,7 +240,7 @@
         "mobile_content_alignment": "center",
         "padding_top": 40,
         "padding_bottom": 40,
-        "rr_grid_col": "1\/-1",
+        "rr_grid_col": "1/-1",
         "rr_grid_row": "auto",
         "rr_image_sizing_full_width_mobile": true
       }
@@ -264,13 +264,13 @@
         "template--18615416127790__af2cd3e1-2acb-4974-a899-d48fa3e9a333-168129101820da4d57-2": {
           "type": "summary",
           "settings": {
-            "summary": "<p>An advanced blend of 36 vitamins, minerals, amino acids and botanicals supporting the liver to break down and eliminate toxins and boosting cognitive function and energy production.<\/p>"
+            "summary": "<p>An advanced blend of 36 vitamins, minerals, amino acids and botanicals supporting the liver to break down and eliminate toxins and boosting cognitive function and energy production.</p>"
           }
         },
         "template--18615416127790__af2cd3e1-2acb-4974-a899-d48fa3e9a333-168129101820da4d57-3": {
           "type": "special_mention",
           "settings": {
-            "special_mention": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0722\/4272\/5166\/files\/seagreens-small.png?v=1682433857\" alt=\"Seagreens logo\">\n<p><strong>Seagreens® Ascophyllum nodosum<\/strong> - an organic, wild harvested, nutritious food seaweed.  Seagreens provides a natural source of all the minerals and trace elements (many deficient in large populations), rare vitamins, ideal ratios of Omega fatty acids, valuable antioxidants, and soluble dietary fibre.<\/p><p>The iodine in Seagreens has been proven to:<\/p><ul>\n<li>contribute to normal energy-yielding metabolism<\/li>\n<li>contribute to normal functioning of the nervous system<\/li>\n<li>contribute to normal cognitive function<\/li>\n<\/ul><p><a href=\"https:\/\/www.seagreens.co.uk\/\" target=\"_blank\" title=\"https:\/\/www.seagreens.co.uk\/\">https:\/\/www.seagreens.co.uk\/<\/a><\/p><p><strong>N-Acetyl Cysteine (NAC)<\/strong> - a supplement form of cysteine.  NAC is a powerful antioxidant and boosts levels of glutathione, the master antioxidant in your body, andalso helps to promote detoxification.<\/p><p><a href=\"https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC5241507\/\" target=\"_blank\">https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC5241507\/<\/a><\/p>\n<p><strong>Quercetin<\/strong> - a polyphenol from plants and is considered an anti-inflammatory and helps balance the immune system.<\/p><p><a href=\"https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC4808895\/\" target=\"_blank\">https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC4808895\/<\/a><\/p><p><strong>Magnesium<\/strong> - used for more than 300 biochemical reactions in your body and therefore has many health benefits including reducing inflammation and supporting blood sugar balance, cognitive function and heart health.  It is also important for many enzyme reactions especially those involved in energy production and brain chemical production so it therefore plays a key role in the reduction of tiredness and fatigue as well as psychological functions including mood balance and reducing anxiety\/ depression.<\/p>\n<p><strong>Magnesium citrate<\/strong> - also a good form of the mineral for muscle relaxation, reducing stress and increasing sleep quality by supporting optimal sleep-wake cycles (the circadian rhythm).<\/p>\n<p><a href=\"https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC3703169\/\" target=\"_blank\">https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC3703169\/<\/a><\/p><p><a href=\"https:\/\/magsupps.co.uk\/magnesium-benefits\/\" target=\"_blank\">https:\/\/magsupps.co.uk\/magnesium-benefits\/<\/a><\/p>\n<p><strong>Milk Thistle<\/strong> - a botanical that can support liver function and is known to have liver protecting properties. It may also help to reduce inflammation caused by the toxic by-products of breaking down alcohol by boosting antioxidant status in your body.<\/p><p><a href=\"https:\/\/www.healthline.com\/nutrition\/milk-thistle-hangover\" target=\"_blank\">https:\/\/www.healthline.com\/nutrition\/milk-thistle-hangover<\/a><\/p><p><strong>Dandelion<\/strong> - a botanical that can support the liver by increasing the flow of bile, which helps with detoxification.  It also contains a carbohydrate, called polysaccharides which may help protect the liver against disease and support overall function.<\/p><p><a href=\"https:\/\/www.mdpi.com\/1420-3049\/22\/9\/1409\/htm\" target=\"_blank\">https:\/\/www.mdpi.com\/1420-3049\/22\/9\/1409\/htm<\/a><\/p><p><strong>L-Cysteine<\/strong> - an amino acid that helps to speed up the breakdown of acetydehyde, the toxic by-product of drinking alcohol.  Researchers in 2020 found that L-cysteine can support detoxification and prevent alcohol-related hangover symptoms including nausea, headache, stress and anxiety.<\/p><p><a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/32808029\/\" target=\"_blank\">https:\/\/pubmed.ncbi.nlm.nih.gov\/32808029\/<\/a><\/p>"
+            "special_mention": "<img src=\"https://cdn.shopify.com/s/files/1/0722/4272/5166/files/seagreens-small.png?v=1682433857\" alt=\"Seagreens logo\">\n<p><strong>Seagreens® Ascophyllum nodosum</strong> - an organic, wild harvested, nutritious food seaweed.  Seagreens provides a natural source of all the minerals and trace elements (many deficient in large populations), rare vitamins, ideal ratios of Omega fatty acids, valuable antioxidants, and soluble dietary fibre.</p><p>The iodine in Seagreens has been proven to:</p><ul>\n<li>contribute to normal energy-yielding metabolism</li>\n<li>contribute to normal functioning of the nervous system</li>\n<li>contribute to normal cognitive function</li>\n</ul><p><a href=\"https://www.seagreens.co.uk/\" target=\"_blank\" title=\"https://www.seagreens.co.uk/\">https://www.seagreens.co.uk/</a></p><p><strong>N-Acetyl Cysteine (NAC)</strong> - a supplement form of cysteine.  NAC is a powerful antioxidant and boosts levels of glutathione, the master antioxidant in your body, andalso helps to promote detoxification.</p><p><a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5241507/\" target=\"_blank\">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5241507/</a></p>\n<p><strong>Quercetin</strong> - a polyphenol from plants and is considered an anti-inflammatory and helps balance the immune system.</p><p><a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4808895/\" target=\"_blank\">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4808895/</a></p><p><strong>Magnesium</strong> - used for more than 300 biochemical reactions in your body and therefore has many health benefits including reducing inflammation and supporting blood sugar balance, cognitive function and heart health.  It is also important for many enzyme reactions especially those involved in energy production and brain chemical production so it therefore plays a key role in the reduction of tiredness and fatigue as well as psychological functions including mood balance and reducing anxiety/ depression.</p>\n<p><strong>Magnesium citrate</strong> - also a good form of the mineral for muscle relaxation, reducing stress and increasing sleep quality by supporting optimal sleep-wake cycles (the circadian rhythm).</p>\n<p><a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3703169/\" target=\"_blank\">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3703169/</a></p><p><a href=\"https://magsupps.co.uk/magnesium-benefits/\" target=\"_blank\">https://magsupps.co.uk/magnesium-benefits/</a></p>\n<p><strong>Milk Thistle</strong> - a botanical that can support liver function and is known to have liver protecting properties. It may also help to reduce inflammation caused by the toxic by-products of breaking down alcohol by boosting antioxidant status in your body.</p><p><a href=\"https://www.healthline.com/nutrition/milk-thistle-hangover\" target=\"_blank\">https://www.healthline.com/nutrition/milk-thistle-hangover</a></p><p><strong>Dandelion</strong> - a botanical that can support the liver by increasing the flow of bile, which helps with detoxification.  It also contains a carbohydrate, called polysaccharides which may help protect the liver against disease and support overall function.</p><p><a href=\"https://www.mdpi.com/1420-3049/22/9/1409/htm\" target=\"_blank\">https://www.mdpi.com/1420-3049/22/9/1409/htm</a></p><p><strong>L-Cysteine</strong> - an amino acid that helps to speed up the breakdown of acetydehyde, the toxic by-product of drinking alcohol.  Researchers in 2020 found that L-cysteine can support detoxification and prevent alcohol-related hangover symptoms including nausea, headache, stress and anxiety.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/32808029/\" target=\"_blank\">https://pubmed.ncbi.nlm.nih.gov/32808029/</a></p>"
           }
         }
       },
@@ -281,7 +281,7 @@
         "template--18615416127790__af2cd3e1-2acb-4974-a899-d48fa3e9a333-168129101820da4d57-3"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/black_pill--shadow.png",
+        "image": "shopify://shop_images/black_pill--shadow.png",
         "color_scheme": "background-2",
         "padding_top": 60,
         "padding_bottom": 60,
@@ -307,13 +307,13 @@
         "template--18615416127790__3a26edab-17c3-4494-af01-a3094a836c77-1681303427653c0183-2": {
           "type": "summary",
           "settings": {
-            "summary": "<p>A power packed blend of 12 vitamins, minerals and botanicals to help reduce inflammation and to increase antioxidants that boost immune system function and reduce cell damage.<\/p>"
+            "summary": "<p>A power packed blend of 12 vitamins, minerals and botanicals to help reduce inflammation and to increase antioxidants that boost immune system function and reduce cell damage.</p>"
           }
         },
         "template--18615416127790__3a26edab-17c3-4494-af01-a3094a836c77-1681303427653c0183-3": {
           "type": "special_mention",
           "settings": {
-            "special_mention": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0722\/4272\/5166\/files\/purewayc.png?v=1682434133\" alt=\"Pureway C logo\">\n<p><strong>PureWay C®<\/strong> - delivers a high dose of Vitamin C that is gentle on the stomach, has no digestive side effects typical of high doses of vitamin C and has 233% higher retention rate meaning your body takes in much more vitamin C. PureWay C® uses a naturally occurring fat that is easily recognized by our cells to improve absorption and also uses citrus bioflavonoids to boost its effectiveness.<\/p><p>PureWay C® is clinically proven to:<\/p><ul>\n<li>Provide better immune protection <\/li>\n<li>Offer higher free radical scavenging capabilities<\/li>\n<\/ul><p><a href=\"https:\/\/www.purewayc.com\" target=\"_blank\" title=\"https:\/\/www.purewayc.com\">https:\/\/www.purewayc.com<\/a><\/p>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0722\/4272\/5166\/files\/setria.png?v=1682434560\" alt=\"Setria logo\">\n<p><strong>Setria® Glutathione<\/strong> - considered to be the master antioxidant that helps to protect cells from oxidative stress and supports the immune system.<\/p><p>Setria® Glutathione contains a form of glutathione that has been clinically shown to:<\/p><ul>\n<li>Raise blood glutathione levels<\/li>\n<li>Can increase natural killer cell activity two fold, which supports the immune system<\/li>\n<\/ul><p><a href=\"https:\/\/setriaglutathione.com\/en\" target=\"_blank\" title=\"https:\/\/setriaglutathione.com\/en\">https:\/\/setriaglutathione.com\/en<\/a><\/p>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0722\/4272\/5166\/files\/seagreens-small.png?v=1682433857\" alt=\"Seagreens logo\">\n<p><strong>Seagreens® Ascophyllum nodosum<\/strong> - an organic, wild harvested, nutritious food seaweed.  Seagreens provides a natural source of all the minerals and trace elements (many deficient in large populations), rare vitamins, ideal ratios of Omega fatty acids, valuable antioxidants, and soluble dietary fibre.<\/p><p>The iodine in Seagreens has been proven to:<\/p><ul>\n<li>contribute to normal energy-yielding metabolism<\/li>\n<li>contribute to normal functioning of the nervous system<\/li>\n<li>contribute to normal cognitive function<\/li>\n<\/ul><p><a href=\"https:\/\/www.seagreens.co.uk\/\" target=\"_blank\" title=\"https:\/\/www.seagreens.co.uk\/\">https:\/\/www.seagreens.co.uk\/<\/a><\/p><p><strong>Artichoke<\/strong> - a botanical with potential health benefits including blood sugar balancing, improving digestion and heart health, reducing inflammation, protecting the liver and increasing bile which can help with detoxification.<\/p><p><a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/26310198\/\" target=\"_blank\" title=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/26310198\/\">https:\/\/pubmed.ncbi.nlm.nih.gov\/26310198\/<\/a><\/p><p><strong>Turmeric<\/strong> - Curcumin is one of its most important compounds.  It is a natural anti-inflammatory and powerful antioxidant as well as being good food for the brain as it can cross the blood brain barrier to reduce inflammation and support mood.<\/p><p><a href=\"https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC5664031\/\" target=\"_blank\" title=\"https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC5664031\/\">https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC5664031\/<\/a> <\/p><p><strong>Matcha Green Tea<\/strong> - comes from whole green tea leaves and is believed to be rich in antioxidants so it can help to clear free radicals as well as support brain function, mood, blood sugar balance and heart health.<\/p><p><a href=\"https:\/\/www.health.com\/nutrition\/what-is-matcha\" target=\"_blank\" title=\"https:\/\/www.health.com\/nutrition\/what-is-matcha\">https:\/\/www.health.com\/nutrition\/what-is-matcha<\/a><\/p><p><\/p>"
+            "special_mention": "<img src=\"https://cdn.shopify.com/s/files/1/0722/4272/5166/files/purewayc.png?v=1682434133\" alt=\"Pureway C logo\">\n<p><strong>PureWay C®</strong> - delivers a high dose of Vitamin C that is gentle on the stomach, has no digestive side effects typical of high doses of vitamin C and has 233% higher retention rate meaning your body takes in much more vitamin C. PureWay C® uses a naturally occurring fat that is easily recognized by our cells to improve absorption and also uses citrus bioflavonoids to boost its effectiveness.</p><p>PureWay C® is clinically proven to:</p><ul>\n<li>Provide better immune protection </li>\n<li>Offer higher free radical scavenging capabilities</li>\n</ul><p><a href=\"https://www.purewayc.com\" target=\"_blank\" title=\"https://www.purewayc.com\">https://www.purewayc.com</a></p>\n<img src=\"https://cdn.shopify.com/s/files/1/0722/4272/5166/files/setria.png?v=1682434560\" alt=\"Setria logo\">\n<p><strong>Setria® Glutathione</strong> - considered to be the master antioxidant that helps to protect cells from oxidative stress and supports the immune system.</p><p>Setria® Glutathione contains a form of glutathione that has been clinically shown to:</p><ul>\n<li>Raise blood glutathione levels</li>\n<li>Can increase natural killer cell activity two fold, which supports the immune system</li>\n</ul><p><a href=\"https://setriaglutathione.com/en\" target=\"_blank\" title=\"https://setriaglutathione.com/en\">https://setriaglutathione.com/en</a></p>\n<img src=\"https://cdn.shopify.com/s/files/1/0722/4272/5166/files/seagreens-small.png?v=1682433857\" alt=\"Seagreens logo\">\n<p><strong>Seagreens® Ascophyllum nodosum</strong> - an organic, wild harvested, nutritious food seaweed.  Seagreens provides a natural source of all the minerals and trace elements (many deficient in large populations), rare vitamins, ideal ratios of Omega fatty acids, valuable antioxidants, and soluble dietary fibre.</p><p>The iodine in Seagreens has been proven to:</p><ul>\n<li>contribute to normal energy-yielding metabolism</li>\n<li>contribute to normal functioning of the nervous system</li>\n<li>contribute to normal cognitive function</li>\n</ul><p><a href=\"https://www.seagreens.co.uk/\" target=\"_blank\" title=\"https://www.seagreens.co.uk/\">https://www.seagreens.co.uk/</a></p><p><strong>Artichoke</strong> - a botanical with potential health benefits including blood sugar balancing, improving digestion and heart health, reducing inflammation, protecting the liver and increasing bile which can help with detoxification.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/26310198/\" target=\"_blank\" title=\"https://pubmed.ncbi.nlm.nih.gov/26310198/\">https://pubmed.ncbi.nlm.nih.gov/26310198/</a></p><p><strong>Turmeric</strong> - Curcumin is one of its most important compounds.  It is a natural anti-inflammatory and powerful antioxidant as well as being good food for the brain as it can cross the blood brain barrier to reduce inflammation and support mood.</p><p><a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5664031/\" target=\"_blank\" title=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5664031/\">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5664031/</a> </p><p><strong>Matcha Green Tea</strong> - comes from whole green tea leaves and is believed to be rich in antioxidants so it can help to clear free radicals as well as support brain function, mood, blood sugar balance and heart health.</p><p><a href=\"https://www.health.com/nutrition/what-is-matcha\" target=\"_blank\" title=\"https://www.health.com/nutrition/what-is-matcha\">https://www.health.com/nutrition/what-is-matcha</a></p><p></p>"
           }
         }
       },
@@ -324,7 +324,7 @@
         "template--18615416127790__3a26edab-17c3-4494-af01-a3094a836c77-1681303427653c0183-3"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/yellow_pill--shadow.png",
+        "image": "shopify://shop_images/yellow_pill--shadow.png",
         "color_scheme": "background-2",
         "padding_top": 60,
         "padding_bottom": 60,
@@ -350,13 +350,13 @@
         "template--18615416127790__634cb886-1647-49f7-8fc4-d7c584c9bfaa-1681303427653c0183-2": {
           "type": "summary",
           "settings": {
-            "summary": "<p>A combination of 7 calming nutrients, amino acids, botanicals and medicinal mushrooms to support winding down of the nervous system, restful sleep and mood balance.<\/p>"
+            "summary": "<p>A combination of 7 calming nutrients, amino acids, botanicals and medicinal mushrooms to support winding down of the nervous system, restful sleep and mood balance.</p>"
           }
         },
         "template--18615416127790__634cb886-1647-49f7-8fc4-d7c584c9bfaa-1681303427653c0183-3": {
           "type": "special_mention",
           "settings": {
-            "special_mention": "<p><strong>KSM-66 Ashwagandha<\/strong> - a full-spectrum extract with the highest concentration of all major root only extracts. It is produced using a unique proprietary extraction process, based on “Green Chemistry” principles, without using alcohol or any other chemical solvent.<\/p>\n<p>KSM-66 Ashwagandha has been clinically proven to:<\/p>\n<ul>\n<li>Reduce stress, stress-related food cravings and enhance quality of sleep\n<\/li>\n<li> Enhance memory and cognition<\/li>\n<li>Increase endurance, strength and immune function<\/li>\n<\/ul>\n<p><a href=\"https:\/\/ksm66ashwagandhaa.com\/ksm-66\/what-is-ksm-66\/\" target=\"_blank\">https:\/\/ksm66ashwagandhaa.com\/ksm-66\/what-is-ksm-66\/<\/a><\/p>\n<p><strong>Reishi Mushroom<\/strong> -  a rich source of antioxidants and provides immune system support whilst also helping to reduce stress and improve quality of sleep.<\/p><a href=\"https:\/\/www.webmd.com\/diet\/health-benefits-reishi-mushrooms\" target=\"_blank\">https:\/\/www.webmd.com\/diet\/health-benefits-reishi-mushrooms<\/a><p><strong>L-Theanine<\/strong> - is a fast-acting amino acid which can promote the feeling of calm and relaxation.  It also supports brain health by boosting serotonin and dopamine and therefore can help balance mood and induce sleep.<\/p><p><a href=\"https:\/\/www.sciencedirect.com\/science\/article\/pii\/S2213453021001324\" target=\"_blank\">https:\/\/www.sciencedirect.com\/science\/article\/pii\/S2213453021001324<\/a><\/p><p><strong>5-Hydroxytryptophan (5-HTP)<\/strong> - an amino acid that we produce and is a precursor to serotonin, the brain chemical that is important in the regulation of sleep, mood, anxiety, appetite and pain sensation. It is well absorbed orally and has been shown to be effective in a variety of conditions, including depression, headaches, insomnia and weight management issues.<\/p><p><a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/9727088\/\" target=\"_blank\">https:\/\/pubmed.ncbi.nlm.nih.gov\/9727088\/<\/a><\/p><p><strong>Hops<\/strong> - a sedative plant that increases the activity of GABA, a brain chemical that inhibits the central nervous system.  It can therefore help to support the circadian rhythm and boost natural sedation, which can both improve sleep.<\/p><p><a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/22849837\/\" target=\"_blank\">https:\/\/pubmed.ncbi.nlm.nih.gov\/22849837\/<\/a><\/p>"
+            "special_mention": "<p><strong>KSM-66 Ashwagandha</strong> - a full-spectrum extract with the highest concentration of all major root only extracts. It is produced using a unique proprietary extraction process, based on “Green Chemistry” principles, without using alcohol or any other chemical solvent.</p>\n<p>KSM-66 Ashwagandha has been clinically proven to:</p>\n<ul>\n<li>Reduce stress, stress-related food cravings and enhance quality of sleep\n</li>\n<li> Enhance memory and cognition</li>\n<li>Increase endurance, strength and immune function</li>\n</ul>\n<p><a href=\"https://ksm66ashwagandhaa.com/ksm-66/what-is-ksm-66/\" target=\"_blank\">https://ksm66ashwagandhaa.com/ksm-66/what-is-ksm-66/</a></p>\n<p><strong>Reishi Mushroom</strong> -  a rich source of antioxidants and provides immune system support whilst also helping to reduce stress and improve quality of sleep.</p><a href=\"https://www.webmd.com/diet/health-benefits-reishi-mushrooms\" target=\"_blank\">https://www.webmd.com/diet/health-benefits-reishi-mushrooms</a><p><strong>L-Theanine</strong> - is a fast-acting amino acid which can promote the feeling of calm and relaxation.  It also supports brain health by boosting serotonin and dopamine and therefore can help balance mood and induce sleep.</p><p><a href=\"https://www.sciencedirect.com/science/article/pii/S2213453021001324\" target=\"_blank\">https://www.sciencedirect.com/science/article/pii/S2213453021001324</a></p><p><strong>5-Hydroxytryptophan (5-HTP)</strong> - an amino acid that we produce and is a precursor to serotonin, the brain chemical that is important in the regulation of sleep, mood, anxiety, appetite and pain sensation. It is well absorbed orally and has been shown to be effective in a variety of conditions, including depression, headaches, insomnia and weight management issues.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/9727088/\" target=\"_blank\">https://pubmed.ncbi.nlm.nih.gov/9727088/</a></p><p><strong>Hops</strong> - a sedative plant that increases the activity of GABA, a brain chemical that inhibits the central nervous system.  It can therefore help to support the circadian rhythm and boost natural sedation, which can both improve sleep.</p><p><a href=\"https://pubmed.ncbi.nlm.nih.gov/22849837/\" target=\"_blank\">https://pubmed.ncbi.nlm.nih.gov/22849837/</a></p>"
           }
         }
       },
@@ -367,7 +367,7 @@
         "template--18615416127790__634cb886-1647-49f7-8fc4-d7c584c9bfaa-1681303427653c0183-3"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/white_pill--shadow.png",
+        "image": "shopify://shop_images/white_pill--shadow.png",
         "color_scheme": "background-2",
         "padding_top": 60,
         "padding_bottom": 60,

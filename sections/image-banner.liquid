@@ -183,7 +183,6 @@
       {%- endfor -%}
       {%- if section.settings.show_product_badges -%}
       {% liquid 
-          assign product = section.settings.product
       %}
         {% render "product-badges", badges: section.settings.product.metafields.custom.badges.value, border: "top" %}
       {%- endif -%}
