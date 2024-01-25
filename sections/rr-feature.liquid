@@ -364,7 +364,9 @@
               </div>            
             {%- endcase -%}
           {%- endfor -%}
-          {% render "product-badges", badges: section.settings.product.metafields.custom.badges.value, border: "top" %}
+          {%- if section.settings.show_product_badges -%}
+            {% render "product-badges", badges: section.settings.product.metafields.custom.badges.value, border: "top" %}
+          {%- endif %}
           
       </div>
     </div>
@@ -648,8 +650,13 @@
       "id": "show_savings_note_under_price",
       "default": false,
       "label": "Use variant button picker"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product_badges",
+      "default": false,
+      "label": "Show product badges under buy buttons"
     }
-   
   ],
   "blocks": [
     {
