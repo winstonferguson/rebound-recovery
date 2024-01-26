@@ -118,7 +118,17 @@
               {% render block %}
             {%- when 'price' -%}
               {%- if product.metafields.custom.banner -%}
-                <strong>{{ product.metafields.custom.banner }}</strong><br>
+                <strong>
+                  {%- if product.metafields.custom.shipping_policy -%}
+                    {{ product.metafields.custom.shipping_policy }}
+                  {%- elsif shop.shipping_policy.body != blank -%}
+                    <span id="shippingPolicyNote">
+                        {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                    </span>
+                  {%- endif -%}
+                  {{ product.metafields.custom.banner }}
+                </strong>
+    
               {%- endif -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
@@ -131,16 +141,9 @@
               </div>
               {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
                 <div class="product__tax caption rte">
-                  {%- if cart.taxes_included and product.price > 0 -%}
+                  {% comment %} {%- if cart.taxes_included and product.price > 0 -%}
                     {{ 'products.product.include_taxes' | t }}
-                  {%- endif -%}
-                  {%- if product.metafields.custom.shipping_policy -%}
-                    {{ product.metafields.custom.shipping_policy }}
-                  {%- elsif shop.shipping_policy.body != blank -%}
-                    <span id="shippingPolicyNote">
-                        {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                    </span>
-                  {%- endif -%}
+                  {%- endif -%} {% endcomment %}
                   {%- if product.metafields.custom.rrp_note -%}
                     <br>{{ product.metafields.custom.rrp_note }}
                     <br>
