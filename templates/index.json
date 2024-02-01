@@ -85,7 +85,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/return-customer_ee1c38b6-622b-44eb-8c17-3370ba9e9fa0.svg",
             "title": "",
-            "text": "<p>70% return customer rate<\/p>",
+            "text": "<p>70% customer return rate<\/p>",
             "source": "",
             "link_label": "",
             "link": ""
@@ -380,7 +380,7 @@
         "heading_qBdqWn": {
           "type": "heading",
           "settings": {
-            "heading": "Now let me show you something",
+            "heading": "Now let me show you something....",
             "heading_size": "h1"
           }
         },
@@ -397,10 +397,10 @@
         "text_jxrtjL"
       ],
       "custom_css": [
-        ".deferred-media__poster-button {background-color: rgb(233, 83, 29); color: #fff; transform: scale(2) translateX(-25%);}"
+        ".deferred-media__poster-button {background-color: rgb(233, 83, 29); color: #fff; \/* transform: scale(2) translateX(-25%); *\/}"
       ],
       "settings": {
-        "video": "shopify:\/\/files\/videos\/Chloe C.mov",
+        "video": "shopify:\/\/files\/videos\/Chloe C_c0ff60e2-a80c-4c86-82c5-8f6436462fd7.mp4",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "layout": "image_first",
         "desktop_content_position": "middle",
