@@ -3339,3 +3339,9 @@ strong {
   cursor: not-allowed;  
   font-weight: 400;
 }
+
+.price--rrp {
+  text-decoration: line-through;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
