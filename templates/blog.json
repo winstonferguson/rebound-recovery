@@ -3,13 +3,14 @@
     "main": {
       "type": "main-blog",
       "custom_css": [
-        ".blog-articles {margin: 0 auto; max-width: 1300px;}",
-        ".article-card-wrapper {margin: 0 auto; max-width: 650px;}"
+        ".blog-articles {margin: 0 auto; max-width: 1000px;}",
+        ".article-card-wrapper {margin: 0 auto;}",
+        "@media only screen and (min-width: 480px) {.article-card-wrapper {max-width: 60vw; }}"
       ],
       "settings": {
         "layout": "grid",
         "show_image": true,
-        "image_height": "adapt",
+        "image_height": "large",
         "show_date": true,
         "show_author": false,
         "padding_top": 60,

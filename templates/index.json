@@ -85,7 +85,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/return-customer_ee1c38b6-622b-44eb-8c17-3370ba9e9fa0.svg",
             "title": "",
-            "text": "<p>70% customer return rate<\/p>",
+            "text": "<p>70% repeat customer rate <\/p>",
             "source": "",
             "link_label": "",
             "link": ""
@@ -163,14 +163,14 @@
         "template--18615415472430__d85fc367-db3e-4ff0-b350-70590ceca325-1681456595504d8e76-1": {
           "type": "text",
           "settings": {
-            "text": "Beautiful nights can lead to rough mornings, low energy, focus and mood.  The Rebound way is party smarter to recover better. Don't take our word for it, read our 4.8 rated <a href=\"https:\/\/uk.trustpilot.com\/review\/reboundrecovery.co\" title=\"https:\/\/uk.trustpilot.com\/review\/reboundrecovery.co\">Trustpilot <\/a>reviews!",
+            "text": "Beautiful nights can lead to rough mornings with low energy, focus and mood.  Rebound packs allow you to party smarter and recover better. Don't take our word for it, read our <a href=\"https:\/\/uk.trustpilot.com\/review\/reboundrecovery.co\" title=\"https:\/\/uk.trustpilot.com\/review\/reboundrecovery.co\">Trustpilot <\/a>reviews.",
             "text_style": "subtitle"
           }
         },
         "2524c427-9585-46a0-a564-a9fb97d2a8bb": {
           "type": "text",
           "settings": {
-            "text": "<strong>Free shipping. Hassle free returns.<\/strong>",
+            "text": "<strong>Next day shipping. Hassle free returns.<\/strong>",
             "text_style": "price"
           }
         },
@@ -427,7 +427,7 @@
         "template--18615415472430__d5434413-9171-4fe7-b0b7-fda6d06760a5-16808661921787eaf8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Rebound is developed by practising Nutritional Therapists who know how to hit the dance floor but are proactive about recovering well.<\/p>",
+            "text": "<p>Developed by Nutritional Therapists with over 50 years of clinical practice and experience in supplements and natural health.<\/p>",
             "text_style": "body"
           }
         }
@@ -988,6 +988,17 @@
         "rr_grid_col_divider": false,
         "max_width": 2000
       }
+    },
+    "custom_liquid_Yhe3qA": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script id=\"viewed_product\">\n      if (item == null) {\n        var _learnq = _learnq || [];\n        var item = {\n          Name: \"Rebound Recovery Pack\",\n          ProductID: 8230394986798,\n          Categories: [\"Home page\"],\n          ImageURL: \"https:\/\/reboundrecovery.co\/cdn\/shop\/files\/Rebound-Packaging-Mockup_StraightShadow_958f92ee-d499-493b-9cdd-79d9fdfedc53_grande.png?v=1703153245\",\n          URL: \"https:\/\/reboundrecovery.co\/products\/rebound-recovery-pack\",\n          Brand: \"Rebound Recovery \",\n          Price: \"£22.99\",\n          CompareAtPrice: \"£0.00\"\n        };\n        _learnq.push(['track', 'Viewed Product', item]);\n        _learnq.push(['trackViewedItem', {\n          Title: item.Name,\n          ItemId: item.ProductID,\n          Categories: item.Categories,\n          ImageUrl: item.ImageURL,\n          Url: item.URL,\n          Metadata: {\n            Brand: item.Brand,\n            Price: item.Price,\n            CompareAtPrice: item.CompareAtPrice\n          }\n        }]);\n      }\n    <\/script>\n<script>\nwindow.addEventListener('load', function() {\n  var _learnq = window._learnq || [];\n  function addedToCart() {\n    fetch(`${window.location.origin}\/cart.js`)\n    .then(res => res.clone().json().then(data => {\n      var cart = {\n        total_price: data.total_price\/100,\n        $value: data.total_price\/100,\n        total_discount: data.total_discount,\n        original_total_price: data.original_total_price\/100,\n        items: data.items\n      }\n      if (item !== 'undefined') {\n        cart = Object.assign(cart, item)\n      }\n      if (klAjax) {\n          _learnq.push(['track', 'Added to Cart', cart]);\n          klAjax = false;\n        }\n    }))\n  };\n  (function (ns, fetch) {\n    ns.fetch = function() {\n      const response = fetch.apply(this, arguments);\n      response.then(res => {\n        if (`${window.location.origin}\/cart\/add.js`\n          .includes(res.url)) {\n            addedToCart()\n        }\n      });\n      return response\n    }\n  }(window, window.fetch));\n  var klAjax = true;\n  var atcButtons = document.querySelectorAll(\"form[action*='\/cart\/add'] button[type='submit']\");\n  for (var i = 0; i < atcButtons.length; i++) {\n      atcButtons[i].addEventListener(\"click\", function() {\n        if (klAjax) {\n          _learnq.push(['track', 'Added to Cart', item]);\n          klAjax = false;\n        }\n      })\n  }\n});\n<\/script>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "rr_grid_col": "1\/-1",
+        "rr_grid_row": "auto"
+      }
     }
   },
   "order": [
@@ -1008,6 +1019,7 @@
     "2271f9a4-6515-4702-b016-b0d102776af6",
     "video_grPChw",
     "c9874964-a587-453d-a346-a02016f0fea7",
-    "c884e470-695e-45d9-860e-4bca5eb9fb62"
+    "c884e470-695e-45d9-860e-4bca5eb9fb62",
+    "custom_liquid_Yhe3qA"
   ]
 }

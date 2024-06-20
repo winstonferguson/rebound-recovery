@@ -12,6 +12,7 @@
       "blocks": {
         "template--21842449432878__8d16e015-4404-4214-8853-f61491e7bd26-heading-1": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Join & Buy to Get 30% Off For Life",
             "heading_size": "h1"
@@ -19,6 +20,7 @@
         },
         "template--21842449432878__8d16e015-4404-4214-8853-f61491e7bd26-paragraph-1": {
           "type": "paragraph",
+          "disabled": true,
           "settings": {
             "text": "<p>You need to make a purchase by January 31st, 2024 to activate this promotion.</p>",
             "text_style": "body"
@@ -26,6 +28,7 @@
         },
         "template--21842449432878__8d16e015-4404-4214-8853-f61491e7bd26-email_form-1": {
           "type": "email_form",
+          "disabled": true,
           "settings": {
           }
         }
@@ -36,6 +39,7 @@
         "template--21842449432878__8d16e015-4404-4214-8853-f61491e7bd26-email_form-1"
       ],
       "settings": {
+        "custom_liquid": "<iframe id=\"refcandy-candyjar\" data-id=\"psjwd9o7my9zp5iguc39m7duo\" data-height=\"900\" data-width=\"100%\" frameborder=0></iframe> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=\"//portal.referralcandy.com/assets/widgets/refcandy-candyjar.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"refcandy-candyjar-js\");</script>",
         "customer_tag": "30 for life",
         "image_overlay_opacity": 0,
         "show_background_image": true,

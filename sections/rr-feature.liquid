@@ -34,8 +34,8 @@
     flex-direction: column;
     gap: 30px;
     margin-top: 20px;
-  } 
-  
+  }
+
   .rr-feature__blocks .price,
   .rr-feature__blocks .form__label {
     text-align: center;
@@ -53,12 +53,12 @@
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
-    }  
-    
+    }
+
     .rr-feature__blocks {
       max-width: 680px;
-    } 
-    
+    }
+
     .rr-feature__cta {
       align-items: end;
       flex-direction: row;
@@ -114,7 +114,7 @@
     .caption {
       text-align: left;
     }
- 
+
   }
 
   @media screen and (min-width: 1280px) {
@@ -170,7 +170,7 @@
       background-color: rgb(var(--color-foreground));
       color: rgb(var(--color-background));
     }
-  
+
     .section-{{ section.id }}-padding .product-form__input input[type='radio'] + label {
       border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity));
       background-color: rgb(var(--color-background));
@@ -188,7 +188,7 @@
       cursor: pointer;
       position: relative;
     }
-  
+
     .section-{{ section.id }}-padding .product-form__input input[type='radio'] {
       clip: rect(0, 0, 0, 0);
       overflow: hidden;
@@ -218,26 +218,25 @@
       }
     }
   </style>
-
 {%- endif %}
 
 {% liquid
   assign product = section.settings.product
   assign image_loading = 'lazy'
   assign multipack = product.metafields.custom.only_multipack
-  assign multipack_prices = nil
-  assign multipack_quantities = nil  
-        
+  assign multipack_prices = null
+  assign multipack_quantities = null
+
   if section.settings.rr_lazy_image == false
     assign image_loading = 'eager'
   endif
 
   if multipack
-    assign multipack_quantities = product.metafields.custom.multipack_order.value | map: 'quantity' 
-    assign multipack_min_qty =  multipack_quantities | first | times: 1
-    assign multipack_prices = product.metafields.custom.multipack_order.value | json     
-  endif  
-%}  
+    assign multipack_quantities = product.metafields.custom.multipack_order.value | map: 'quantity'
+    assign multipack_min_qty = multipack_quantities | first | times: 1
+    assign multipack_prices = product.metafields.custom.multipack_order.value | json
+  endif
+%}
 
 <div class="rr-feature color-{{ section.settings.color_scheme }}  section-{{ section.id }}-padding isolate">
   <div class="rr-feature__wrapper page-width content-container content-container--full-width">
@@ -249,126 +248,132 @@
       {%- endif -%}
     </div>
     <div class="rr-feature__blocks rr-capsule-details__block-wrapper page-width {{ section.settings.content_alignment }}">
-        {%- for block in section.blocks -%}
-          {%- case block.type -%}
-            {%- when '@app' -%}
-                {% render block %}
-            {%- when 'headline' -%}
-              <h2 class="rr-feature__headline {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-                {{ block.settings.headline | escape }}
-              </h2>
-            {%- when 'text' -%}
-              <p
-                class="rr-feature__text {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}"
-                {{ block.shopify_attributes }}
-              >
-                {{ block.settings.text }}
-              </p>
-            {%- when 'buy_buttons' -%}
-              {%- liquid
-                assign product = section.settings.product
-                assign product_form_id = 'product-form-' | append: section.id
-                assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when '@app' -%}
+            {% render block %}
+          {%- when 'headline' -%}
+            <h2 class="rr-feature__headline {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+              {{ block.settings.headline | escape }}
+            </h2>
+          {%- when 'text' -%}
+            <p
+              class="rr-feature__text {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}"
+              {{ block.shopify_attributes }}
+            >
+              {{ block.settings.text }}
+            </p>
+          {%- when 'buy_buttons' -%}
+            {%- liquid
+              assign product = section.settings.product
+              assign product_form_id = 'product-form-' | append: section.id
+              assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id
+            -%}
+            <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+              {%-
+                render 'price',
+                product: product,
+                use_variant: true,
+                show_badges: true,
+                price_class: 'price--small',
+                selling_min_qty: multipack_min_qty,
               -%}
-              <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                {%- render 'price',
-                  product: product,
-                  use_variant: true,
-                  show_badges: true,
-                  price_class: 'price--small',
-                  selling_min_qty: multipack_min_qty,
-                -%}  
 
-                <div class="product__tax caption rte">
-                  {% comment %}
-                    This has been disabled as the shipping policy is now featured above
-                    {%- if product.metafields.custom.shipping_policy -%}
-                      {{ product.metafields.custom.shipping_policy }}
-                      <br>
-                    {%- elsif shop.shipping_policy.body != blank -%}
-                      {%- if product.selected_or_first_available_variant.option1 != '3' -%}
-                        {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                      {%- else -%}
-                        Shipping calculated at checkout.
-                      {%- endif -%}                    
-                      <br>
+              <div class="product__tax caption rte">
+                {% comment %}
+                  This has been disabled as the shipping policy is now featured above
+                  {%- if product.metafields.custom.shipping_policy -%}
+                    {{ product.metafields.custom.shipping_policy }}
+                    <br>
+                  {%- elsif shop.shipping_policy.body != blank -%}
+                    {%- if product.selected_or_first_available_variant.option1 != '3' -%}
+                      {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                    {%- else -%}
+                      Shipping calculated at checkout.
                     {%- endif -%}
-                  {% endcomment %}
-                  {%- if product.metafields.custom.rrp_note -%}
-                      {{ product.metafields.custom.rrp_note }}
-                      <br>
-                  {%- endif -%} 
-                  {%- if section.settings.show_savings_note_under_price and product.selected_or_first_available_variant.metafields.custom.savings_note -%}
-                    <span class="product__variant-savings-note">
-                      {{ product.selected_or_first_available_variant.metafields.custom.savings_note }}
-                    </span>
+                    <br>
                   {%- endif -%}
-                </div> 
-              </div>
-              
-              <div class="rr-feature__cta">   
-                {%- if multipack -%}                 
-                  {%- render 'rr-multipack-qty-selector',
-                    product: product,
-                    product_form_id: product_form_id,
-                    section: section, 
-                    selling_min_qty: multipack_min_qty,
-                    selling_quantities: multipack_quantities,
-                    multipack_prices: multipack_prices
-                  -%}
-
-                {%- else -%}
-                  {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id, variant_button_picker: section.settings.variant_button_picker %}   
-
-                  {%- unless settings.hide_qty_input -%}
-                    <quantity-input class="quantity">
-                      <button class="quantity__button no-js-hidden" name="minus" type="button">
-                        <span class="visually-hidden">
-                          {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
-                        </span>
-                        {% render 'icon-minus' %}
-                      </button>
-                      <input
-                        class="quantity__input"
-                        type="number"
-                        name="quantity"
-                        id="Quantity-{{ section.id }}"
-                        data-cart-quantity="{{ cart_qty }}"
-                        data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-                        min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-                        {% if product.selected_or_first_available_variant.quantity_rule.max != null %}
-                          data-max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
-                          max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
-                        {% endif %}
-                        step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
-                        value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-                        form="{{ product_form_id }}"
-                      />
-                      <button class="quantity__button no-js-hidden" name="plus" type="button">
-                        <span class="visually-hidden">
-                          {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
-                        </span>
-                        {% render 'icon-plus' %}
-                      </button>
-                    </quantity-input>
-                  {%- endunless -%}
+                {% endcomment %}
+                {%- if product.metafields.custom.rrp_note -%}
+                  {{ product.metafields.custom.rrp_note }}
+                  <br>
                 {%- endif -%}
+                {%- if section.settings.show_savings_note_under_price
+                  and product.selected_or_first_available_variant.metafields.custom.savings_note
+                -%}
+                  <span class="product__variant-savings-note">
+                    {{ product.selected_or_first_available_variant.metafields.custom.savings_note }}
+                  </span>
+                {%- endif -%}
+              </div>
+            </div>
 
-                {%- render 'buy-buttons',
-                  block: block,
-                  buy_now: true,
+            <div class="rr-feature__cta">
+              {%- if multipack -%}
+                {%- render 'rr-multipack-qty-selector',
                   product: product,
                   product_form_id: product_form_id,
-                  section_id: section.id
-                -%} 
-              </div>            
-            {%- endcase -%}
-          {%- endfor -%}
-          {%- if section.settings.show_product_badges -%}
-            {% render "product-badges", badges: section.settings.product.metafields.custom.badges.value, border: "top" %}
-          {%- endif %}
-          
-      </div>
+                  section: section,
+                  selling_min_qty: multipack_min_qty,
+                  selling_quantities: multipack_quantities,
+                  multipack_prices: multipack_prices
+                -%}
+
+              {%- else -%}
+                {% render 'product-variant-picker',
+                  product: product,
+                  block: block,
+                  product_form_id: product_form_id,
+                  variant_button_picker: section.settings.variant_button_picker
+                %}
+
+                {%- unless settings.hide_qty_input -%}
+                  <quantity-input class="quantity">
+                    <button class="quantity__button no-js-hidden" name="minus" type="button">
+                      <span class="visually-hidden">
+                        {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
+                      </span>
+                      {% render 'icon-minus' %}
+                    </button>
+                    <input
+                      class="quantity__input"
+                      type="number"
+                      name="quantity"
+                      id="Quantity-{{ section.id }}"
+                      data-cart-quantity="{{ cart_qty }}"
+                      data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+                      min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+                      {% if product.selected_or_first_available_variant.quantity_rule.max != null %}
+                        data-max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
+                        max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
+                      {% endif %}
+                      step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
+                      value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+                      form="{{ product_form_id }}"
+                    >
+                    <button class="quantity__button no-js-hidden" name="plus" type="button">
+                      <span class="visually-hidden">
+                        {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
+                      </span>
+                      {% render 'icon-plus' %}
+                    </button>
+                  </quantity-input>
+                {%- endunless -%}
+              {%- endif -%}
+
+              {%- render 'buy-buttons',
+                block: block,
+                buy_now: true,
+                product: product,
+                product_form_id: product_form_id,
+                section_id: section.id
+              -%}
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
+      {%- if section.settings.show_product_badges -%}
+        {% render 'product-badges', badges: section.settings.product.metafields.custom.badges.value, border: 'top' %}
+      {%- endif %}
     </div>
   </div>
 </div>

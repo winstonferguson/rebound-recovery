@@ -890,12 +890,15 @@ class VariantSelects extends HTMLElement {
       this.updateVariantMetadata();
     }
 
+    const shippingPolicyNote = document.querySelector('#shippingPolicyNote');
+
+    if (!shippingPolicyNote) return console.log('Shipping policy note not found');
+
     if (this.currentVariant.option1 !== '3') {
-      document.querySelector('#shippingPolicyNote').innerHTML = "Free 2-3 day shipping."
+      document.querySelector('#shippingPolicyNote').innerHTML = "Free 2-3 day shipping.";
     } else {
-      document.querySelector('#shippingPolicyNote').innerHTML = "Shipping calculated at checkout."
+      document.querySelector('#shippingPolicyNote').innerHTML = "Shipping calculated at checkout.";
     }
-;
   }
 
   updateOptions() {
@@ -946,7 +949,12 @@ class VariantSelects extends HTMLElement {
   }
 
   updateVariantMetadata() {
-    document.querySelector(".product__variant-savings-note").innerHTML = this.variantMetadata[this.currentVariant.id];
+    const savingsNote = document.querySelector(".product__variant-savings-note");
+    if (savingsNote) {
+      savingsNote.innerHTML = this.variantMetadata[this.currentVariant.id];
+    } else {
+      console.log("No savings note found");
+    }
   }
 
   updateVariantStatuses() {

@@ -29,6 +29,10 @@
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     }
 
+    .section-{{ section.id }}-padding .rr-caption {
+      font-size: {{ section.settings.caption_size }}px;
+    }
+
     @media screen and (min-width: 750px) {
       .section-{{ section.id }}-padding {
         padding-top: {{ section.settings.padding_top }}px;
@@ -144,15 +148,21 @@
                   {% comment %} {%- if cart.taxes_included and product.price > 0 -%}
                     {{ 'products.product.include_taxes' | t }}
                   {%- endif -%} {% endcomment %}
+                </div>
+              {%- endif -%}
+              {%- if product.metafields.custom.rrp_note or product__variant-savings-note -%}
+                <div class="rr-caption">
                   {%- if product.metafields.custom.rrp_note -%}
-                    <br>{{ product.metafields.custom.rrp_note }}
-                    <br>
-                    <span class="product__variant-savings-note">
-                      {%- if product.selected_or_first_available_variant.metafields.custom.savings_note -%}
-                          {{ product.selected_or_first_available_variant.metafields.custom.savings_note }}
-                      {%- endif -%}
+                    <span class="product__rrp-note">
+                      {{ product.metafields.custom.rrp_note }}
                     </span>
-                  {%- endif -%}                  
+                    <br>
+                  {%- endif -%} 
+                  {%- if product.selected_or_first_available_variant.metafields.custom.savings_note -%}
+                    <span class="product__variant-savings-note">
+                      {{ product.selected_or_first_available_variant.metafields.custom.savings_note }}  
+                    </span>
+                  {%- endif -%}
                 </div>
               {%- endif -%}
               <div {{ block.shopify_attributes }}>
@@ -2037,6 +2047,16 @@
       "id": "enable_sticky_info",
       "default": true,
       "label": "t:sections.main-product.settings.enable_sticky_info.label"
+    },
+    {
+      "type": "range",
+      "id": "caption_size",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "label": "Caption text size",
+      "default": 12
     },
     {
       "type": "header",

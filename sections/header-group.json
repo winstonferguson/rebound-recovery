@@ -11,7 +11,7 @@
             "text": "Rated 4.8 on TRUSTPILOT - READ OUR REVIEWS!",
             "text_alignment": "center",
             "color_scheme": "accent-1",
-            "link": "https://www.trustpilot.com/review/reboundrecovery.co"
+            "link": "https:\/\/www.trustpilot.com\/review\/reboundrecovery.co"
           }
         },
         "eabe449b-1ae1-4a13-a95e-9b5832a43bab": {
@@ -21,7 +21,7 @@
             "text": "FREE SHIPPING on 6 PACKS OR MORE - RATED 4.8 on TRUSTPILOT",
             "text_alignment": "center",
             "color_scheme": "accent-2",
-            "link": "https://uk.trustpilot.com/review/reboundrecovery.co"
+            "link": "https:\/\/uk.trustpilot.com\/review\/reboundrecovery.co"
           }
         }
       },
@@ -48,23 +48,10 @@
         "padding_top": 12,
         "padding_bottom": 12
       }
-    },
-    "ece305c2-07fd-446d-9c48-15259f872d6f": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52,
-        "rr_grid_col": "1/-1",
-        "rr_grid_row": "auto"
-      }
     }
   },
   "order": [
     "announcement-bar",
-    "header",
-    "ece305c2-07fd-446d-9c48-15259f872d6f"
+    "header"
   ]
 }
